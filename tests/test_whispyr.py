@@ -28,15 +28,14 @@ def whispir():
     return whispyr.Whispir(
         username=TEST_USERNAME,
         password=TEST_PASSWORD,
-        api_key=TEST_API_KEY,
-        workspace=TEST_WORKSPACE)
+        api_key=TEST_API_KEY)
 
 
 @httpretty.activate
 def test_basic_auth_and_api_key_provided(whispir):
     base_url = whispyr.whispyr.WHISPIR_BASE_URL
     url = _mkurl(base_url, 'fake')
-    httpretty.register_uri(httpretty.GET, url)
+    httpretty.register_uri(httpretty.GET, url, body='{}')
     whispir.request('get', 'fake')
     assert httpretty.has_request()
     request = httpretty.last_request()
@@ -63,7 +62,8 @@ def test_messages_create(whispir):
         body='Your request has been accepted for processing',
         location=location
     )
-    whispir.messages.create(
+    workspace = whispir.workspaces.Workspace(id=TEST_WORKSPACE)
+    workspace.messages.create(
         to='+441171024524', subject='foo', body='bar')
 
     assert httpretty.has_request()
