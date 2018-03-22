@@ -27,6 +27,16 @@ def test_send_message_for_root_workspace(whispir, cassete):
     assert message['id'] == _msg_location(location)
 
 
+def test_send_alias_creates_message(whispir, cassete):
+    message = whispir.messages.send(
+        to='success@simulator.amazonses.com',
+        subject='whispyr test',
+        body='test message, please disregard')
+    assert len(cassete) == 1
+    location = cassete.responses[0]['headers']['Location'][0]
+    assert message['id'] == _msg_location(location)
+
+
 def _msg_location(url):
     path = urlparse(url).path
     return path.split('/')[-1]
