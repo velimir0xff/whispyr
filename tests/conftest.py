@@ -26,7 +26,7 @@ def whispir(pytestconfig):
 
 
 @pytest.fixture
-def cassete(request, pytestconfig):
+def cassette(request, pytestconfig):
     mode = pytestconfig.getoption('--vcr-mode')
     api_key = pytestconfig.getoption('--whispir-api-key')
     options = {
