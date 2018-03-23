@@ -12,9 +12,7 @@ def test_messages_create(whispir, cassete):
         to='success@simulator.amazonses.com',
         subject='whispyr test',
         body='test message, please disregard')
-    assert len(cassete) == 1
-    location = cassete.responses[0]['headers']['Location'][0]
-    assert message['id'] == _msg_location(location)
+    _check_message_created(message, cassete)
 
 
 def test_send_message_for_root_workspace(whispir, cassete):
@@ -22,9 +20,7 @@ def test_send_message_for_root_workspace(whispir, cassete):
         to='success@simulator.amazonses.com',
         subject='whispyr test',
         body='test message, please disregard')
-    assert len(cassete) == 1
-    location = cassete.responses[0]['headers']['Location'][0]
-    assert message['id'] == _msg_location(location)
+    _check_message_created(message, cassete)
 
 
 def test_send_alias_creates_message(whispir, cassete):
@@ -32,6 +28,10 @@ def test_send_alias_creates_message(whispir, cassete):
         to='success@simulator.amazonses.com',
         subject='whispyr test',
         body='test message, please disregard')
+    _check_message_created(message, cassete)
+
+
+def _check_message_created(message, cassete):
     assert len(cassete) == 1
     location = cassete.responses[0]['headers']['Location'][0]
     assert message['id'] == _msg_location(location)
