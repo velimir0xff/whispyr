@@ -3,13 +3,23 @@
 """Tests for `whispyr` package"""
 
 import base64
-import conftest
 import httpretty
+import pytest
 import re
 
 import whispyr
 
 httpretty.HTTPretty.allow_net_connect = False
+
+
+TEST_USERNAME = 'U53RN4M3'
+TEST_PASSWORD = 'P4ZZW0RD'
+TEST_API_KEY = 'V4L1D4P1K3Y'
+
+
+@pytest.fixture
+def whispir():
+    return whispyr.Whispir(TEST_USERNAME, TEST_PASSWORD, TEST_API_KEY)
 
 
 @httpretty.activate
@@ -21,8 +31,7 @@ def test_basic_auth(whispir):
     request = httpretty.last_request()
     assert 'Authorization' in request.headers
     basic_auth = request.headers['Authorization']
-    expected_basic = _basic_auth(
-        conftest.TEST_USERNAME, conftest.TEST_PASSWORD)
+    expected_basic = _basic_auth(TEST_USERNAME, TEST_PASSWORD)
     assert basic_auth == expected_basic
 
 
@@ -35,7 +44,7 @@ def test_api_key_provided(whispir):
     request = httpretty.last_request()
     assert 'apikey' in request.querystring
     api_key = request.querystring['apikey'][0]
-    assert api_key == conftest.TEST_API_KEY
+    assert api_key == TEST_API_KEY
 
 
 @httpretty.activate
