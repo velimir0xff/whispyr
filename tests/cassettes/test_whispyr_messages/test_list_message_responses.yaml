@@ -1,0 +1,58 @@
+interactions:
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/vnd.whispir.messageresponse-v1+json
+        Accept-Encoding:
+          - gzip, deflate
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.messageresponse-v1+json
+        User-Agent:
+          - whispyr/0.1.0
+        authorization:
+          - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+      method: GET
+      uri: https://api.whispir.com/workspaces/8080DE5434485ED4/messages/9F148597C9CB1B2F/messageresponses?apikey=V4L1D4P1K3Y&limit=20&offset=0
+    response:
+      body:
+        string: |-
+          {
+            "messageresponses" : [ {
+              "percentageTotal" : "100%",
+              "responseCount" : "1",
+              "link" : [ ],
+              "type" : "notmatched"
+            } ],
+            "link" : [ {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/9F148597C9CB1B2F/messageresponses?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+              "rel" : "self",
+              "method" : "GET"
+            } ]
+          }
+      headers:
+        Cache-Control:
+          - max-age=0
+          - no-cache="set-cookie"
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.messageresponse-v1+json
+        Date:
+          - Fri, 23 Mar 2018 20:11:19 GMT
+        Expires:
+          - Fri, 23 Mar 2018 20:11:19 GMT
+        Server:
+          - Apache
+        Vary:
+          - Accept-Encoding
+        X-Mashery-Responder:
+          - prod-j-worker-ap-southeast-2b-31.mashery.com
+        content-length:
+          - '362'
+      status:
+        code: 200
+        message: OK
+version: 1

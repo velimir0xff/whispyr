@@ -6,4 +6,4 @@ __author__ = """Grigory Starinkin"""
 __email__ = 'starinkin@gmail.com'
 __version__ = '0.1.0'
 
-from .whispyr import Whispir, MessageStatus
+from .whispyr import Whispir, MessageStatus, MessageResponse

@@ -15,14 +15,14 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
-      uri: https://api.whispir.com/workspaces/8080DE5434485ED4/messages/E9A5630CECBC7EB7/messagestatus?apikey=V4L1D4P1K3Y&limit=20&offset=0&view=summary
+      uri: https://api.whispir.com/workspaces/8080DE5434485ED4/messages/E9A5630CECBC7EB7/messagestatus?apikey=V4L1D4P1K3Y&limit=20&offset=0
     response:
       body:
         string: |-
           {
             "messageStatuses" : [ {
               "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/E9A5630CECBC7EB7/messagestatus?view=summary&limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/E9A5630CECBC7EB7/messagestatus?limit=20&offset=0&apikey=V4L1D4P1K3Y",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -59,17 +59,17 @@ interactions:
         Content-Type:
           - application/vnd.whispir.messagestatus-v1+json
         Date:
-          - Fri, 23 Mar 2018 17:53:02 GMT
+          - Fri, 23 Mar 2018 20:09:25 GMT
         Expires:
-          - Fri, 23 Mar 2018 17:53:02 GMT
+          - Fri, 23 Mar 2018 20:09:25 GMT
         Server:
           - Apache
         Vary:
           - Accept-Encoding
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-31.mashery.com
+          - prod-j-worker-ap-southeast-2a-30.mashery.com
         content-length:
-          - '805'
+          - '792'
       status:
         code: 200
         message: OK

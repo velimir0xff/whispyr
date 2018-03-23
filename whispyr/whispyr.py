@@ -223,13 +223,9 @@ class MessageStatuses(Collection):
     list_name = 'messageStatuses'
     resource = 'messagestatus'
 
-    def list(self, view='summary', **kwargs):
-        kwargs['view'] = view
-        return super().list(**kwargs)
 
-    def detailed_list(self, view='detailed', **kwargs):
-        kwargs['view'] = view
-        return super().list(**kwargs)
+class MessageResponses(Collection):
+    pass
 
 
 class Workspace(Container):
@@ -242,13 +238,19 @@ class Message(Container):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.statuses = MessageStatuses(self.whispir, self)
+        self.responses = MessageResponses(self.whispir, self)
+
 
 class MessageStatus(Container):
     pass
 
 
+class MessageResponse(Container):
+    pass
+
+
 def _singularize(string):
-    rules = {'ies': 'y', 'ses': 's', 's': ''}
+    rules = {'ies': 'y', 'uses': 'us', 's': ''}
     for suffix, replacement in rules.items():
         if string.endswith(suffix):
             return string[:-len(suffix)] + replacement
