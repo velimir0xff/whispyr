@@ -64,7 +64,6 @@ class Whispir:
         self.workspaces = Workspaces(self)
         self.messages = Messages(self)
 
-
     def request(self, method, path, **kwargs):
         url = urljoin(self._base_url, path)
         response = self._session.request(method, url, **kwargs)
@@ -95,14 +94,15 @@ class Collection:
 
     def __init__(self, whispir, base_container=None):
         self.whispir = whispir
-        self.name = (getattr(self, 'name', False) or
-                     self.__class__.__name__.lower())
+        class_name = self.__class__.__name__
+        self.name = (getattr(self, 'name', False) or class_name.lower())
         type_name = (getattr(self, 'type_name', False) or
                      _singularize(self.name))
         self.vnd_type = 'application/vnd.whispir.{}-v1+json'.format(type_name)
         self.list_name = getattr(self, 'list_name', self.name)
-        self.container = (getattr(self, "container", False) or
-                          globals()[type_name.capitalize()])
+        self.container = (getattr(self, 'container', False) or
+                          globals()[_singularize(class_name)])
+        self.resource = (getattr(self, 'resource', False) or self.name)
         self.base_container = base_container
 
         # TODO: inherit from container class
@@ -116,7 +116,7 @@ class Collection:
         setattr(self, self.container.__name__, ContainerProxy)
 
     def path(self, id=None):
-        path = self.name
+        path = self.resource
         if id:
             path = '{}/{}'.format(path, id)
 
@@ -218,6 +218,20 @@ class Messages(Collection):
         return path.split('/')[-1]
 
 
+class MessageStatuses(Collection):
+
+    list_name = 'messageStatuses'
+    resource = 'messagestatus'
+
+    def list(self, view='summary', **kwargs):
+        kwargs['view'] = view
+        return super().list(**kwargs)
+
+    def detailed_list(self, view='detailed', **kwargs):
+        kwargs['view'] = view
+        return super().list(**kwargs)
+
+
 class Workspace(Container):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -225,11 +239,16 @@ class Workspace(Container):
 
 
 class Message(Container):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.statuses = MessageStatuses(self.whispir, self)
+
+class MessageStatus(Container):
     pass
 
 
 def _singularize(string):
-    rules = {'ies': 'y', 's': ''}
+    rules = {'ies': 'y', 'ses': 's', 's': ''}
     for suffix, replacement in rules.items():
         if string.endswith(suffix):
             return string[:-len(suffix)] + replacement

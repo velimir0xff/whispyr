@@ -6,6 +6,8 @@
 from collections import Iterable, MutableMapping
 from urllib.parse import urlparse
 
+from whispyr import MessageStatus
+
 
 def test_messages_create(whispir, cassette):
     workspace = whispir.workspaces.Workspace(id='8080DE5434485ED4')
@@ -41,6 +43,30 @@ def test_show_message(whispir, cassette):
 def test_show_message_from_root_workspace(whispir, cassette):
     message = whispir.messages.show('E9A5630CECBC7EB7')
     _check_shown_message(message)
+
+
+def test_show_message_statuses(whispir, cassette):
+    workspace = whispir.workspaces.Workspace(id='8080DE5434485ED4')
+    message = workspace.messages.Message(id='E9A5630CECBC7EB7')
+    statuses = message.statuses.list()
+    assert isinstance(statuses, Iterable)
+    statuses = list(statuses)
+    assert len(statuses) > 0
+    for status in statuses:
+        assert isinstance(status, MessageStatus)
+        assert 'categories' in status
+
+
+def test_show_detailed_statuses(whispir, cassette):
+    workspace = whispir.workspaces.Workspace(id='8080DE5434485ED4')
+    message = workspace.messages.Message(id='9F148597C9CB1B2F')
+    statuses = message.statuses.detailed_list()
+    assert isinstance(statuses, Iterable)
+    statuses = list(statuses)
+    assert len(statuses) > 0
+    for status in statuses:
+        assert isinstance(status, MessageStatus)
+        assert 'status' in status
 
 
 def _check_shown_message(message):
