@@ -4,12 +4,15 @@
 
 from . import __version__
 
-import collections
+from collections import Callable, UserDict
+
+import operator
+import functools
 
 from requests import Session
 from requests.auth import HTTPBasicAuth, AuthBase
 
-from urllib.parse import urljoin, urlparse
+from urllib.parse import urljoin, urlparse, parse_qsl
 
 
 WHISPIR_BASE_URL = 'https://api.whispir.com'
@@ -48,16 +51,19 @@ class WhispirAuth(AuthBase):
 
 class Whispir:
 
-    def __init__(self, username, password, api_key, base_url=WHISPIR_BASE_URL):
+    def __init__(self, username, password, api_key,
+                 base_url=WHISPIR_BASE_URL, page_size=20):
         self._base_url = base_url
         self._session = Session()
         self._session.auth = WhispirAuth(api_key, username, password)
+        self.page_size = page_size
         self._session.headers.update({
             'User-Agent': 'whispyr/{}'.format(__version__)
         })
         # collections
-        self.messages = Messages(self)
         self.workspaces = Workspaces(self)
+        self.messages = Messages(self)
+
 
     def request(self, method, path, **kwargs):
         url = urljoin(self._base_url, path)
@@ -94,10 +100,12 @@ class Collection:
         type_name = (getattr(self, 'type_name', False) or
                      _singularize(self.name))
         self.vnd_type = 'application/vnd.whispir.{}-v1+json'.format(type_name)
+        self.list_name = getattr(self, 'list_name', self.name)
         self.container = (getattr(self, "container", False) or
                           globals()[type_name.capitalize()])
         self.base_container = base_container
 
+        # TODO: inherit from container class
         class ContainerProxy(metaclass=ContainerProxyMeta):
             collection = self
             container = self.container
@@ -126,13 +134,43 @@ class Collection:
         })
         return self.whispir.request(method, path, headers=headers, **kwargs)
 
+    def _containerize(self, item):
+        return self.container(self, **item)
+
     def create(self, **kwargs):
         path = self.path()
-        response = self.request('post', path, json=kwargs)
-        return self.container(self, **response.json())
+        item = self.request('post', path, json=kwargs)
+        return self._containerize(item)
 
+    def list(self, **kwargs):
+        path = self.path()
+        kwargs['limit'] = self.whispir.page_size
+        kwargs['offset'] = 0
 
-class Container(collections.UserDict):
+        while True:
+            result = self._try_list(path, kwargs)
+            for item in result.get(self.list_name, []):
+                yield self._containerize(item)
+
+            links = result.get('link', [])
+            link = _find_link(links, 'next')
+            if not link:
+                return
+
+            uri = urlparse(link['uri'])
+            query = dict(parse_qsl(uri.query))
+            kwargs['limit'] = query['limit']
+            kwargs['offset'] = query['offset']
+
+    def _try_list(self, path, params):
+        try:
+            return self.request('get', path, params=params)
+        except (ClientError, JSONDecodeError) as e:
+            if e.response.status_code == 404:
+                return {}
+            raise
+
+class Container(UserDict):
 
     def __init__(self, collection, **kwargs):
         self.collection = collection
@@ -163,6 +201,12 @@ class Messages(Collection):
 
     send = create
 
+    def _containerize(self, item):
+        link = _find_link(item['link'], 'self')
+        msg_id = self.__message_id_from_url(link['uri'])
+        item['id'] = msg_id
+        return self.Message(**item)
+
     @staticmethod
     def __message_id_from_url(url):
         path = urlparse(url).path
@@ -186,3 +230,16 @@ def _singularize(string):
             return string[:-len(suffix)] + replacement
 
     return string
+
+
+def _find_it(seq, thing, default=None):
+    predicate = thing
+    if not isinstance(predicate, Callable):
+        predicate = functools.partial(operator.eq, thing)
+    return next((it for it in seq if predicate(it)), default)
+
+
+def _find_link(links, relation, default=None):
+    def is_relation(it):
+        return it['rel'] == relation
+    return _find_it(links, is_relation, default)
