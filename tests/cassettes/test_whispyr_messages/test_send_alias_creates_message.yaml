@@ -1,28 +1,49 @@
 interactions:
-- request:
-    body: '{"to": "success@simulator.amazonses.com", "subject": "whispyr test", "body":
-      "test message, please disregard"}'
-    headers:
-      Accept: [application/vnd.whispir.message-v1+json]
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      Content-Length: ['110']
-      Content-Type: [application/vnd.whispir.message-v1+json]
-      User-Agent: [whispyr/0.1.0]
-      authorization: [Basic VTUzUk40TTM6UDRaWlcwUkQ=]
-    method: POST
-    uri: https://api.whispir.com/messages?apikey=V4L1D4P1K3Y
-  response:
-    body: {string: Your request has been accepted for processing}
-    headers:
-      Cache-Control: [max-age=0, no-cache="set-cookie"]
-      Connection: [keep-alive]
-      Content-Length: ['45']
-      Content-Type: [application/vnd.whispir.message-v1+json]
-      Date: ['Thu, 22 Mar 2018 22:32:33 GMT']
-      Expires: ['Thu, 22 Mar 2018 22:32:33 GMT']
-      Location: ['https://api.whispir.com/messages/A1DBA0853BFA5D81?apikey=V4L1D4P1K3Y']
-      Server: [Apache]
-      X-Mashery-Responder: [prod-j-worker-ap-southeast-2b-31.mashery.com]
-    status: {code: 202, message: Accepted}
+  - request:
+      body: |-
+        {"to": "success@simulator.amazonses.com", "subject": "whispyr test", "body": "test message, please disregard"}
+      headers:
+        Accept:
+          - application/vnd.whispir.message-v1+json
+        Accept-Encoding:
+          - gzip, deflate
+        Connection:
+          - keep-alive
+        Content-Length:
+          - '110'
+        Content-Type:
+          - application/vnd.whispir.message-v1+json
+        User-Agent:
+          - whispyr/0.1.0
+        authorization:
+          - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+      method: POST
+      uri: https://api.whispir.com/messages?apikey=V4L1D4P1K3Y
+    response:
+      body:
+        string: |-
+          Your request has been accepted for processing
+      headers:
+        Cache-Control:
+          - max-age=0
+          - no-cache="set-cookie"
+        Connection:
+          - keep-alive
+        Content-Length:
+          - '45'
+        Content-Type:
+          - application/vnd.whispir.message-v1+json
+        Date:
+          - Fri, 23 Mar 2018 11:48:17 GMT
+        Expires:
+          - Fri, 23 Mar 2018 11:48:17 GMT
+        Location:
+          - https://api.whispir.com/messages/CB604B25F9F69CE0?apikey=V4L1D4P1K3Y
+        Server:
+          - Apache
+        X-Mashery-Responder:
+          - prod-j-worker-ap-southeast-2a-32.mashery.com
+      status:
+        code: 202
+        message: Accepted
 version: 1

@@ -5,7 +5,9 @@
 import base64
 import os
 import pytest
+import prettyserializer
 
+from collections import ByteString
 from vcr import VCR
 from whispyr import Whispir
 
@@ -40,9 +42,11 @@ def cassete(request, pytestconfig):
         'cassette_library_dir': cassettes_dir(request),
         'match_on': (
             'method', 'scheme', 'host', 'port', 'path', 'query', 'headers'
-        )
+        ),
+        'serializer': 'pretty-yaml'
     }
     vcr = VCR(**options)
+    vcr.register_serializer('pretty-yaml', prettyserializer)
     path = request.function.__name__
     with vcr.use_cassette(path) as cass:
         yield cass
@@ -76,7 +80,7 @@ def scrub_sensetive(pattern, replacement=''):
 
 
 def replace(string, pattern, replacement):
-    if isinstance(string, (bytes, bytearray)):
+    if isinstance(string, ByteString):
         pattern = pattern.encode('ascii')
         replacement = replacement.encode('ascii')
     return string.replace(pattern, replacement)
