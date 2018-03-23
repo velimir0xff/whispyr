@@ -32,6 +32,23 @@ def test_send_alias_creates_message(whispir, cassette):
     _check_message_created(message, cassette)
 
 
+def test_show_message(whispir, cassette):
+    workspace = whispir.workspaces.Workspace(id='8080DE5434485ED4')
+    message = workspace.messages.show('E9A5630CECBC7EB7')
+    _check_shown_message(message)
+
+
+def test_show_message_from_root_workspace(whispir, cassette):
+    message = whispir.messages.show('E9A5630CECBC7EB7')
+    _check_shown_message(message)
+
+
+def _check_shown_message(message):
+    assert isinstance(message, MutableMapping)
+    assert 'id' in message
+    assert 'subject' in message
+
+
 def test_list_messages_for_root_workspace(whispir, cassette):
     messages = whispir.messages.list()
     _check_list_messages(messages)

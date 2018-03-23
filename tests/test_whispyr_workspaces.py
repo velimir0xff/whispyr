@@ -19,6 +19,15 @@ def test_list_workspaces(cassette, whispir):
     workspaces = list(workspaces)
     assert len(workspaces) > 0
     for workspace in workspaces:
-        assert isinstance(workspace, MutableMapping)
-        assert 'id' in workspace
-        assert 'projectName' in workspace
+        _check_workspace(workspace)
+
+
+def test_show_workspace(cassette, whispir):
+    workspace = whispir.workspaces.show('8080DE5434485ED4')
+    _check_workspace(workspace)
+
+
+def _check_workspace(workspace):
+    assert isinstance(workspace, MutableMapping)
+    assert 'id' in workspace
+    assert 'projectName' in workspace

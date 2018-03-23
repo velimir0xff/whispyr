@@ -142,6 +142,11 @@ class Collection:
         item = self.request('post', path, json=kwargs)
         return self._containerize(item)
 
+    def show(self, id):
+        path = self.path(id)
+        item = self.request('get', path)
+        return self._containerize(item)
+
     def list(self, **kwargs):
         path = self.path()
         kwargs['limit'] = self.whispir.page_size

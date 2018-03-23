@@ -1,0 +1,108 @@
+interactions:
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/vnd.whispir.message-v1+json
+        Accept-Encoding:
+          - gzip, deflate
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.message-v1+json
+        User-Agent:
+          - whispyr/0.1.0
+        authorization:
+          - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+      method: GET
+      uri: https://api.whispir.com/messages/E9A5630CECBC7EB7?apikey=V4L1D4P1K3Y
+    response:
+      body:
+        string: |-
+          {
+            "to" : "success@simulator.amazonses.com",
+            "subject" : "test",
+            "body" : "test",
+            "label" : "",
+            "type" : "default",
+            "repetitionCount" : 0,
+            "dlr" : {
+              "period" : "",
+              "rule" : "",
+              "type" : "",
+              "publishToWeb" : false,
+              "expiryDay" : 0,
+              "expiryHour" : 0,
+              "expiryMin" : 0,
+              "feedIds" : "",
+              "bool" : false
+            },
+            "repeatDays" : 0,
+            "repeatHrs" : 0,
+            "repeatMin" : 0,
+            "voice" : { },
+            "from" : "U53RN4M3@User.us.whispir.com",
+            "direction" : "OUTGOING",
+            "responseCount" : "0",
+            "social" : {
+              "social" : [ {
+                "id" : "social"
+              }, {
+                "id" : "social_long"
+              } ]
+            },
+            "createdTime" : 1521790904000,
+            "link" : [ {
+              "uri" : "https://api.whispir.com/messages/E9A5630CECBC7EB7?apikey=V4L1D4P1K3Y",
+              "rel" : "self",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/messages/E9A5630CECBC7EB7/messagestatus?apikey=V4L1D4P1K3Y&view=summary",
+              "rel" : "summaryStatus",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/messages/E9A5630CECBC7EB7/messagestatus?apikey=V4L1D4P1K3Y&view=detailed",
+              "rel" : "detailedStatus",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/messages/E9A5630CECBC7EB7/messageresponses?apikey=V4L1D4P1K3Y&view=summary&filter=default",
+              "rel" : "summaryResponses",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/messages/E9A5630CECBC7EB7/messageresponses?apikey=V4L1D4P1K3Y&view=detailed&filter=default",
+              "rel" : "detailedResponses",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/messages/E9A5630CECBC7EB7/messageresponses?apikey=V4L1D4P1K3Y&view=summary&filter=responserule",
+              "rel" : "summaryResponsesWithResponseRule",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/messages/E9A5630CECBC7EB7/messageresponses?apikey=V4L1D4P1K3Y&view=detailed&filter=responserule",
+              "rel" : "detailedResponsesWithResponseRule",
+              "method" : "GET"
+            } ]
+          }
+      headers:
+        Cache-Control:
+          - max-age=0
+          - no-cache="set-cookie"
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.message-v1+json
+        Date:
+          - Fri, 23 Mar 2018 19:27:47 GMT
+        Expires:
+          - Fri, 23 Mar 2018 19:27:47 GMT
+        Server:
+          - Apache
+        Vary:
+          - Accept-Encoding
+        X-Mashery-Responder:
+          - prod-j-worker-ap-southeast-2a-30.mashery.com
+        content-length:
+          - '2048'
+      status:
+        code: 200
+        message: OK
+version: 1

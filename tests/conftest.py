@@ -6,6 +6,8 @@ import base64
 import os
 import pytest
 import prettyserializer
+import itertools
+import functools
 
 from collections import ByteString
 from vcr import VCR
@@ -29,6 +31,7 @@ def whispir(pytestconfig):
 def cassette(request, pytestconfig):
     mode = pytestconfig.getoption('--vcr-mode')
     api_key = pytestconfig.getoption('--whispir-api-key')
+    username = pytestconfig.getoption('--whispir-username')
     options = {
         'record_mode': mode,
         'filter_headers': [
@@ -36,7 +39,9 @@ def cassette(request, pytestconfig):
             ('set-cookie', None)
         ],
         'filter_query_parameters': [('apikey', TEST_API_KEY)],
-        'before_record_response': scrub_sensetive(api_key, TEST_API_KEY),
+        'before_record_response': scrub_patterns(
+            ((api_key, TEST_API_KEY), (username, TEST_USERNAME))
+        ),
         'path_transformer': VCR.ensure_suffix('.yaml'),
         'decode_compressed_response': True,
         'cassette_library_dir': cassettes_dir(request),
@@ -59,7 +64,7 @@ def replace_auth(key, value, request):
     return 'Basic {}'.format(b64auth.decode('utf-8'))
 
 
-def scrub_sensetive(pattern, replacement=''):
+def scrub_pattern(pattern, replacement=''):
     def scrub_it(string):
         return replace(string, pattern, replacement)
 
@@ -77,6 +82,17 @@ def scrub_sensetive(pattern, replacement=''):
         response['body']['string'] = scrub_it(response['body']['string'])
         return response
     return before_record_response
+
+
+def scrub_patterns(patches):
+    pipeline = itertools.starmap(scrub_pattern, patches)
+    return compose(pipeline)
+
+
+def compose(functions):
+    def compose_impl(f, g):
+        return lambda x: f(g(x))
+    return functools.reduce(compose_impl, functions, lambda x: x)
 
 
 def replace(string, pattern, replacement):

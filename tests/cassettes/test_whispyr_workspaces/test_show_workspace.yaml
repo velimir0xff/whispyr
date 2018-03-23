@@ -1,0 +1,143 @@
+interactions:
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/vnd.whispir.workspace-v1+json
+        Accept-Encoding:
+          - gzip, deflate
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.workspace-v1+json
+        User-Agent:
+          - whispyr/0.1.0
+        authorization:
+          - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+      method: GET
+      uri: https://api.whispir.com/workspaces/8080DE5434485ED4?apikey=V4L1D4P1K3Y
+    response:
+      body:
+        string: |-
+          {
+            "id" : "8080DE5434485ED4",
+            "projectName" : "api test",
+            "projectNumber" : "42",
+            "status" : "A",
+            "link" : [ {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4?apikey=V4L1D4P1K3Y",
+              "rel" : "self",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4?apikey=V4L1D4P1K3Y",
+              "rel" : "editWorkspaces",
+              "method" : "PUT",
+              "type" : "application/vnd.whispir.workspace-v1+xml,application/vnd.whispir.workspace-v1+json"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages?apikey=V4L1D4P1K3Y",
+              "rel" : "retrieveMessage",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages?apikey=V4L1D4P1K3Y",
+              "rel" : "createMessage",
+              "method" : "POST",
+              "type" : "application/vnd.whispir.message-v1+xml,application/vnd.whispir.message-v1+json"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages?apikey=V4L1D4P1K3Y",
+              "rel" : "createMessage",
+              "method" : "POST",
+              "type" : "application/vnd.whispir.bulkmessage-v1+xml,application/vnd.whispir.bulkmessage-v1+json"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/contacts?apikey=V4L1D4P1K3Y",
+              "rel" : "retrieveContacts",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/contacts?apikey=V4L1D4P1K3Y",
+              "rel" : "createContact",
+              "method" : "POST",
+              "type" : "application/vnd.whispir.contact-v1+xml,application/vnd.whispir.contact-v1+json"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/users?apikey=V4L1D4P1K3Y",
+              "rel" : "createUser",
+              "method" : "POST",
+              "type" : "application/vnd.whispir.user-v1+xml,application/vnd.whispir.user-v1+json"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/users?apikey=V4L1D4P1K3Y",
+              "rel" : "retrieveUsers",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/templates?apikey=V4L1D4P1K3Y",
+              "rel" : "createTemplate",
+              "method" : "POST",
+              "type" : "application/vnd.whispir.template-v1+xml,application/vnd.whispir.template-v1+json"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/templates?apikey=V4L1D4P1K3Y",
+              "rel" : "retrieveTemplate",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/distributionlists?apikey=V4L1D4P1K3Y",
+              "rel" : "createDistList",
+              "method" : "POST",
+              "type" : "application/vnd.whispir.distributionlist-v1+xml,application/vnd.whispir.distributionlist-v1+json"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/distributionlists?apikey=V4L1D4P1K3Y",
+              "rel" : "retrieveDistLists",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4?apikey=V4L1D4P1K3Y",
+              "rel" : "createScenario",
+              "method" : "POST",
+              "type" : "application/vnd.whispir.scenario-v1+xml,application/vnd.whispir.scenario-v1+json"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/scenarios?apikey=V4L1D4P1K3Y",
+              "rel" : "retrieveScenarios",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/responserules?apikey=V4L1D4P1K3Y",
+              "rel" : "retrieveResponseRules",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/responserules?apikey=V4L1D4P1K3Y",
+              "rel" : "createResponseRule",
+              "method" : "POST",
+              "type" : "application/vnd.whispir.responserule-v1+xml,application/vnd.whispir.responserule-v1+json"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/resources?apikey=V4L1D4P1K3Y",
+              "rel" : "createResource",
+              "method" : "POST",
+              "type" : "application/vnd.whispir.resource-v1+xml,application/vnd.whispir.resource-v1+json"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/resources?apikey=V4L1D4P1K3Y",
+              "rel" : "retrieveResources",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/resources?apikey=V4L1D4P1K3Y",
+              "rel" : "importContacts",
+              "method" : "POST",
+              "type" : "application/vnd.whispir.importcontact-v1+xml,application/vnd.whispir.importcontact-v1+json"
+            } ]
+          }
+      headers:
+        Cache-Control:
+          - max-age=0
+          - no-cache="set-cookie"
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.workspace-v1+json
+        Date:
+          - Fri, 23 Mar 2018 15:36:43 GMT
+        Expires:
+          - Fri, 23 Mar 2018 15:36:43 GMT
+        Server:
+          - Apache
+        Vary:
+          - Accept-Encoding
+        X-Mashery-Responder:
+          - prod-j-worker-ap-southeast-2b-33.mashery.com
+        content-length:
+          - '4555'
+      status:
+        code: 200
+        message: OK
+version: 1
