@@ -1,0 +1,350 @@
+interactions:
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/vnd.whispir.message-v1+json
+        Accept-Encoding:
+          - gzip, deflate
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.message-v1+json
+        User-Agent:
+          - whispyr/0.1.0
+        authorization:
+          - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+      method: GET
+      uri: https://api.whispir.com/workspaces/8080DE5434485ED4/messages?apikey=V4L1D4P1K3Y&limit=20&offset=0
+    response:
+      body:
+        string: |-
+          {
+            "messages" : [ {
+              "subject" : "whispyr test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521805692000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/9339B9B907A8D569?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "whispyr test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521805467000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/49301F2192E06EB9?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "whispyr test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521804965000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/A9E3C8AA69EB0E56?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "<script>alert('hi')</script>",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "1",
+              "createdTime" : 1521793515000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/9F148597C9CB1B2F?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "<script>alert('hi')</script>",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521793343000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/E06B0CD74962E9EB?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521790945000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/B2D126945C6AF1CF?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521790941000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/881DD3AFBC52F768?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521790939000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/040EDC408ACC9BFC?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521790937000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/DA4E1E6713C7FE45?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521790935000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/B93CDA7E93E08C9E?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521790933000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/A05D49D6817AD415?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521790930000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/B044489D1F6B2687?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521790928000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/0BF17CCD1AC868A8?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521790926000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/287E057347B50833?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521790924000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/650E2BCB2373875F?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521790922000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/AA8341E12CFFCA4B?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521790919000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/013EB3078091CD0B?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521790917000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/9B58CB9FFA48B71E?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521790915000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/EAF98ADECEBA1B46?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1521790912000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/618D43426EA1D4D5?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            } ],
+            "status" : "",
+            "link" : [ ]
+          }
+      headers:
+        Cache-Control:
+          - max-age=0
+          - no-cache="set-cookie"
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.message-v1+json
+        Date:
+          - Fri, 23 Mar 2018 11:48:21 GMT
+        Expires:
+          - Fri, 23 Mar 2018 11:48:21 GMT
+        Server:
+          - Apache
+        Vary:
+          - Accept-Encoding
+        X-Mashery-Responder:
+          - prod-j-worker-ap-southeast-2b-33.mashery.com
+        content-length:
+          - '9386'
+      status:
+        code: 200
+        message: OK
+version: 1
