@@ -36,7 +36,8 @@ def cassette(request, pytestconfig):
         'record_mode': mode,
         'filter_headers': [
             ('authorization', replace_auth),
-            ('set-cookie', None)
+            ('set-cookie', None),
+            ('cookie', None)
         ],
         'filter_query_parameters': [('apikey', TEST_API_KEY)],
         'before_record_response': scrub_patterns(
