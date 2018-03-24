@@ -1,0 +1,59 @@
+interactions:
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/vnd.whispir.template-v1+json
+        Accept-Encoding:
+          - gzip, deflate
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.template-v1+json
+        User-Agent:
+          - whispyr/0.1.0
+        authorization:
+          - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+      method: GET
+      uri: https://api.whispir.com/workspaces/8080DE5434485ED4/templates?apikey=V4L1D4P1K3Y&limit=20&offset=0
+    response:
+      body:
+        string: |-
+          {
+            "status" : "1 to 1 of 1    ",
+            "messagetemplates" : [ {
+              "messageTemplateName" : "Whispyr test template",
+              "messageTemplateDescription" : "Create templates test",
+              "id" : "EBC0F5EBB8AA2B39",
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/templates/EBC0F5EBB8AA2B39?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            } ],
+            "link" : [ ]
+          }
+      headers:
+        Cache-Control:
+          - max-age=0
+          - no-cache="set-cookie"
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.template-v1+json
+        Date:
+          - Sat, 24 Mar 2018 08:47:11 GMT
+        Expires:
+          - Sat, 24 Mar 2018 08:47:11 GMT
+        Server:
+          - Apache
+        Vary:
+          - Accept-Encoding
+        X-Mashery-Responder:
+          - prod-j-worker-ap-southeast-2b-33.mashery.com
+        content-length:
+          - '444'
+      status:
+        code: 200
+        message: OK
+version: 1

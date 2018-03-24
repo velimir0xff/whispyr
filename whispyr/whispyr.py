@@ -63,15 +63,13 @@ class Whispir:
         # collections
         self.workspaces = Workspaces(self)
         self.messages = Messages(self)
+        self.templates = Templates(self)
 
     def request(self, method, path, **kwargs):
         url = urljoin(self._base_url, path)
         response = self._session.request(method, url, **kwargs)
         if response.ok:
-            try:
-                return response.json()
-            except ValueError:
-                raise JSONDecodeError(response)
+            return self._maybe_return_json(response)
         else:
             if 400 <= response.status_code < 500:
                 error = ClientError
@@ -79,6 +77,15 @@ class Whispir:
                 error = ServerError
 
             raise error(response)
+
+    def _maybe_return_json(self, response):
+        if not response.content:
+            return
+
+        try:
+            return response.json()
+        except ValueError:
+            raise JSONDecodeError(response)
 
 
 class ContainerProxyMeta(type):
@@ -175,6 +182,15 @@ class Collection:
                 return {}
             raise
 
+    def update(self, id, **kwargs):
+        path = self.path(id)
+        self.request('put', path, json=kwargs)
+
+    def delete(self, id):
+        path = self.path(id)
+        self.request('delete', path)
+
+
 class Container(UserDict):
 
     def __init__(self, collection, **kwargs):
@@ -228,10 +244,15 @@ class MessageResponses(Collection):
     pass
 
 
+class Templates(Collection):
+    list_name = 'messagetemplates'
+
+
 class Workspace(Container):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.messages = Messages(self.whispir, self)
+        self.templates = Templates(self.whispir, self)
 
 
 class Message(Container):
@@ -252,6 +273,10 @@ class MessageResponse(Container):
     # * detailedResponses
     # * summaryResponsesWithResponseRule
     # * summaryResponsesWithResponseRule
+    pass
+
+
+class Template(Container):
     pass
 
 
