@@ -3,53 +3,54 @@
 
 """Tests for `whispyr` package"""
 
-from collections import Iterable, MutableMapping
 from urllib.parse import urlparse
 
-from whispyr import MessageStatus, MessageResponse
+from whispyr import Message, MessageStatus, MessageResponse
 
 
-def test_messages_create(whispir, cassette):
-    workspace = whispir.workspaces.Workspace(id='8080DE5434485ED4')
+def test_messages_create(workspace, cassette):
     message = workspace.messages.create(
         to='success@simulator.amazonses.com',
         subject='whispyr test',
         body='test message, please disregard')
-    _check_message_created(message, cassette)
+    _check_created_message(message, cassette)
 
 
-def test_send_message_for_root_workspace(whispir, cassette):
+def test_send_generic_message(whispir, cassette):
     message = whispir.messages.create(
         to='success@simulator.amazonses.com',
         subject='whispyr test',
         body='test message, please disregard')
-    _check_message_created(message, cassette)
+    _check_created_message(message, cassette)
 
 
-def test_send_alias_creates_message(whispir, cassette):
-    message = whispir.messages.send(
+def test_send_alias_creates_message(workspace, cassette):
+    message = workspace.messages.send(
         to='success@simulator.amazonses.com',
         subject='whispyr test',
         body='test message, please disregard')
-    _check_message_created(message, cassette)
+    _check_created_message(message, cassette)
 
 
-def test_show_message(whispir, cassette):
-    workspace = whispir.workspaces.Workspace(id='8080DE5434485ED4')
-    message = workspace.messages.show('E9A5630CECBC7EB7')
-    _check_shown_message(message)
+def test_show_message(workspace, cassette):
+    _test_show_message(workspace.messages)
 
 
-def test_show_message_from_root_workspace(whispir, cassette):
-    message = whispir.messages.show('E9A5630CECBC7EB7')
-    _check_shown_message(message)
+def test_show_generic_message(whispir, cassette):
+    _test_show_message(whispir.messages)
 
 
-def test_list_message_statuses(whispir, cassette):
-    workspace = whispir.workspaces.Workspace(id='8080DE5434485ED4')
-    message = workspace.messages.Message(id='E9A5630CECBC7EB7')
+def _test_show_message(messages):
+    message = next(messages.list())
+    message = messages.show(message['id'])
+    _check_message(message)
+
+
+def test_list_message_statuses(workspace, cassette):
+    # message ID here is explicitly specified as it's easier than to
+    # send a response back from test
+    message = workspace.messages.Message(id='09CD9065116DF39F')
     statuses = message.statuses.list()
-    assert isinstance(statuses, Iterable)
     statuses = list(statuses)
     assert len(statuses) > 0
     for status in statuses:
@@ -57,48 +58,48 @@ def test_list_message_statuses(whispir, cassette):
         assert 'categories' in status
 
 
-def test_list_message_responses(whispir, cassette):
-    workspace = whispir.workspaces.Workspace(id='8080DE5434485ED4')
-    message = workspace.messages.Message(id='9F148597C9CB1B2F')
+def test_list_message_responses(workspace, cassette):
+    # message ID here is explicitly specified as it's easier than to
+    # send a response back from test
+    message = workspace.messages.Message(id='09CD9065116DF39F')
     responses = message.responses.list()
-    assert isinstance(responses, Iterable)
     responses = list(responses)
     assert len(responses) > 0
     for response in responses:
         assert isinstance(response, MessageResponse)
         assert 'responseCount' in response
 
-def _check_shown_message(message):
-    assert isinstance(message, MutableMapping)
+
+def _check_message(message):
+    assert isinstance(message, Message)
     assert 'id' in message
     assert 'subject' in message
 
 
-def test_list_messages_for_root_workspace(whispir, cassette):
+def test_list_generic_messages(whispir, cassette):
     messages = whispir.messages.list()
     _check_list_messages(messages)
 
 
-def test_list_messages(whispir, cassette):
-    workspace = whispir.workspaces.Workspace(id='8080DE5434485ED4')
+def test_list_messages(workspace, cassette):
     messages = workspace.messages.list()
     _check_list_messages(messages)
 
 
 def _check_list_messages(messages):
-    assert isinstance(messages, Iterable)
     messages = list(messages)
     assert len(messages) > 0
     for message in messages:
-        assert isinstance(message, MutableMapping)
+        assert isinstance(message, Message)
         assert 'id' in message
         assert 'subject' in message
 
 
-def _check_message_created(message, cassette):
+def _check_created_message(message, cassette):
     assert len(cassette) == 1
-    location = cassette.responses[0]['headers']['Location'][0]
+    location = cassette.responses[-1]['headers']['Location'][0]
     assert message['id'] == _msg_location(location)
+    assert isinstance(message, Message)
 
 
 def _msg_location(url):

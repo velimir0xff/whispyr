@@ -86,7 +86,11 @@ CONTEXT_SETTINGS = dict(default_map=read_config())
 def cli(ctx, username, password, api_key, workspace, verbosity):
     """Command line interface for Whispir API"""
     setup_logging(verbosity)
-    ctx.obj = Whispir(username, password, api_key)
+    whispir = Whispir(username, password, api_key)
+    if workspace and ctx.invoked_subcommand != 'workspaces':
+        ctx.obj = whispir.workspaces.Workspace(id=workspace)
+    else:
+        ctx.obj = whispir
 
 
 @cli.group()
@@ -101,6 +105,28 @@ def messages(ctx):
 def workspaces(ctx):
     """create and view workspaces"""
     ctx.obj = ctx.obj.workspaces
+
+
+@cli.group()
+@click.pass_context
+def templates(ctx):
+    """create, read, update and delete templates"""
+    ctx.obj = ctx.obj.templates
+
+
+@templates.command()
+@click.pass_obj
+def list(templates):
+    """list available templates"""
+    echo_json(dict_list(templates.list()))
+
+
+@templates.command()
+@click.argument('id')
+@click.pass_obj
+def delete(templates, id):
+    """delete template with a given ID"""
+    templates.delete(id)
 
 
 @workspaces.command()
@@ -131,7 +157,7 @@ def send(messages):
 def sms(messages, **kwargs):
     """send SMS"""
     resp = messages.create(**kwargs)
-    echo_json(resp)
+    echo_json(dict(resp))
 
 
 def echo_json(obj):

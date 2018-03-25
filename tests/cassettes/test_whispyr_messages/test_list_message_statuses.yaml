@@ -15,37 +15,37 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
-      uri: https://api.whispir.com/workspaces/8080DE5434485ED4/messages/E9A5630CECBC7EB7/messagestatus?apikey=V4L1D4P1K3Y&limit=20&offset=0
+      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/09CD9065116DF39F/messagestatus?apikey=V4L1D4P1K3Y&limit=20&offset=0
     response:
       body:
         string: |-
           {
             "messageStatuses" : [ {
               "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4/messages/E9A5630CECBC7EB7/messagestatus?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/09CD9065116DF39F/messagestatus?limit=20&offset=0&apikey=V4L1D4P1K3Y",
                 "rel" : "self",
                 "method" : "GET"
               } ],
               "categories" : [ {
                 "name" : "Sent",
                 "recipientCount" : 0,
-                "percentageTotal" : "NaN%"
+                "percentageTotal" : "0.0%"
               }, {
                 "name" : "Pending",
                 "recipientCount" : 0,
-                "percentageTotal" : "NaN%"
+                "percentageTotal" : "0.0%"
               }, {
                 "name" : "Received",
                 "recipientCount" : 0,
-                "percentageTotal" : "NaN%"
+                "percentageTotal" : "0.0%"
               }, {
                 "name" : "Acknowledged",
-                "recipientCount" : 0,
-                "percentageTotal" : "NaN%"
+                "recipientCount" : 1,
+                "percentageTotal" : "100.0%"
               }, {
                 "name" : "Undeliverable",
                 "recipientCount" : 0,
-                "percentageTotal" : "NaN%"
+                "percentageTotal" : "0.0%"
               } ]
             } ],
             "link" : [ ]
@@ -59,17 +59,17 @@ interactions:
         Content-Type:
           - application/vnd.whispir.messagestatus-v1+json
         Date:
-          - Fri, 23 Mar 2018 20:09:25 GMT
+          - Sat, 24 Mar 2018 18:37:28 GMT
         Expires:
-          - Fri, 23 Mar 2018 20:09:25 GMT
+          - Sat, 24 Mar 2018 18:37:28 GMT
         Server:
           - Apache
         Vary:
           - Accept-Encoding
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-30.mashery.com
+          - prod-j-worker-ap-southeast-2b-33.mashery.com
         content-length:
-          - '792'
+          - '794'
       status:
         code: 200
         message: OK

@@ -18,7 +18,7 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
-      uri: https://api.whispir.com/messages?apikey=V4L1D4P1K3Y
+      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages?apikey=V4L1D4P1K3Y
     response:
       body:
         string: |-
@@ -34,15 +34,15 @@ interactions:
         Content-Type:
           - application/vnd.whispir.message-v1+json
         Date:
-          - Fri, 23 Mar 2018 11:48:17 GMT
+          - Sat, 24 Mar 2018 18:37:20 GMT
         Expires:
-          - Fri, 23 Mar 2018 11:48:17 GMT
+          - Sat, 24 Mar 2018 18:37:20 GMT
         Location:
-          - https://api.whispir.com/messages/CB604B25F9F69CE0?apikey=V4L1D4P1K3Y
+          - https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/1AC63D58EF4947CE?apikey=V4L1D4P1K3Y
         Server:
           - Apache
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-32.mashery.com
+          - prod-j-worker-ap-southeast-2a-30.mashery.com
       status:
         code: 202
         message: Accepted

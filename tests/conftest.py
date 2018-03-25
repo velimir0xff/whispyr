@@ -29,6 +29,14 @@ def whispir(pytestconfig):
 
 @pytest.fixture
 def cassette(request, pytestconfig):
+    cassette_library_dir = cassettes_dir(request)
+    vcr = make_vcr(pytestconfig, cassette_library_dir)
+    path = request.function.__name__
+    with vcr.use_cassette(path) as cass:
+        yield cass
+
+
+def make_vcr(pytestconfig, cassette_library_dir):
     mode = pytestconfig.getoption('--vcr-mode')
     api_key = pytestconfig.getoption('--whispir-api-key')
     username = pytestconfig.getoption('--whispir-username')
@@ -45,7 +53,7 @@ def cassette(request, pytestconfig):
         ),
         'path_transformer': VCR.ensure_suffix('.yaml'),
         'decode_compressed_response': True,
-        'cassette_library_dir': cassettes_dir(request),
+        'cassette_library_dir': cassette_library_dir,
         'match_on': (
             'method', 'scheme', 'host', 'port', 'path', 'query', 'headers'
         ),
@@ -53,9 +61,33 @@ def cassette(request, pytestconfig):
     }
     vcr = VCR(**options)
     vcr.register_serializer('pretty-yaml', prettyserializer)
-    path = request.function.__name__
-    with vcr.use_cassette(path) as cass:
-        yield cass
+    return vcr
+
+
+def recorded_fixture(name=None, library_dir='tests/cassettes/fixtures'):
+    def decorator(fixture):
+        path = name or fixture.__name__
+
+        @pytest.fixture(name=fixture.__name__)
+        # TODO: figure out required fixtures from decorated function
+        def wrapper(pytestconfig, whispir):
+            vcr = make_vcr(pytestconfig, library_dir)
+            with vcr.use_cassette(path):
+                return fixture(whispir)
+        return wrapper
+
+    return decorator
+
+
+@recorded_fixture()
+def workspace(whispir):
+    project_name = 'whispyr tests'
+    for workspace in whispir.workspaces.list():
+        if workspace['projectName'] == project_name:
+            return workspace
+
+    workspace = whispir.workspaces.create(projectName=project_name, status='A')
+    return whispir.workspaces.show(workspace['id'])
 
 
 def replace_auth(key, value, request):

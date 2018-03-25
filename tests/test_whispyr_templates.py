@@ -2,58 +2,83 @@
 
 """Templates tests for `whispyr` package"""
 
-from whispyr.whispyr import Template
-from collections import Iterable
+import pytest
+import uuid
+
+from whispyr import Template, ClientError
 
 
-def test_create_template(whispir, cassette):
-    workspace = whispir.workspaces.Workspace(id='8080DE5434485ED4')
-    template = workspace.templates.create(
-        messageTemplateName='Whispyr test template',
-        messageTemplateDescription='Create templates test',
+@pytest.fixture(params=[True])
+def template(request, workspace):
+    delete = request.param
+    return _create_fixture_template(
+        request, workspace.templates, delete=delete)
+
+
+@pytest.fixture(params=[True])
+def generic_template(request, whispir):
+    delete = request.param
+    return _create_fixture_template(
+        request, whispir.templates, delete=delete)
+
+
+@pytest.fixture(params=[2])
+def templates(workspace, request):
+    num = request.param
+    templates = []
+    for _ in range(num):
+        name = str(uuid.uuid4())
+        template = _create_fixture_template(request, workspace.templates, name)
+        templates.append(template)
+    return templates
+
+
+def _create_fixture_template(request, templates,
+                             name='Whispyr test template',
+                             description='Create templates test',
+                             delete=True):
+    template = templates.create(
+        messageTemplateName=name,
+        messageTemplateDescription=description,
         subject='test template',
         body='This is the body of my test SMS message',
         email={},
         voice={},
-        web={})
-    _check_template_instance(template)
+        web={}
+    )
+
+    if delete:
+        def _delete_template():
+            templates.delete(template['id'])
+
+        request.addfinalizer(_delete_template)
+
+    return template
 
 
-def test_create_generic_template(whispir, cassette):
-    template = whispir.templates.create(
-        messageTemplateName='Whispyr test generic template',
-        messageTemplateDescription='Create templates test',
-        subject='test template',
-        body='This is the body of my test SMS message',
-        email={},
-        voice={},
-        web={})
-    _check_template_instance(template)
-
-
-def test_list_templates(whispir, cassette):
-    workspace = whispir.workspaces.Workspace(id='8080DE5434485ED4')
+@pytest.mark.parametrize('templates', [4], indirect=True)
+def test_list_templates(workspace, cassette, templates):
     templates = workspace.templates.list()
     templates = list(templates)
-    assert len(templates) > 0
+    assert len(templates) == 4
     for template in templates:
         _check_template_instance(template)
 
 
-def test_show_template(whispir, cassette):
-    workspace = whispir.workspaces.Workspace(id='8080DE5434485ED4')
-    template = workspace.templates.show('EBC0F5EBB8AA2B39')
+def test_show_template(workspace, cassette, template):
+    _test_show_template(workspace.templates, template['id'])
+
+
+def test_show_generic_template(whispir, cassette, generic_template):
+    _test_show_template(whispir.templates, generic_template['id'])
+
+
+def _test_show_template(templates, template_id):
+    template = templates.show(template_id)
     _check_template_instance(template)
 
 
-def test_show_generic_template(whispir, cassette):
-    template = whispir.templates.show('F0B35D18CA4984E7')
-    _check_template_instance(template)
-
-
-def test_update_template(whispir, cassette):
-    workspace = whispir.workspaces.Workspace(id='8080DE5434485ED4')
-    template = workspace.templates.show('EBC0F5EBB8AA2B39')
+def test_update_template(workspace, cassette, template):
     description = template['messageTemplateDescription']
     new_description = '{} updated'.format(description)
     workspace.templates.update(
@@ -62,18 +87,27 @@ def test_update_template(whispir, cassette):
         messageTemplateDescription=new_description,
         subject=template['subject'],
         body=template['body'])
-    updated_template = workspace.templates.show('EBC0F5EBB8AA2B39')
+    updated_template = workspace.templates.show(template['id'])
     _check_template_instance(updated_template)
     assert updated_template['messageTemplateDescription'] == new_description
 
 
-def test_delete_template(whispir, cassette):
-    workspace = whispir.workspaces.Workspace(id='8080DE5434485ED4')
-    workspace.templates.delete('EBC0F5EBB8AA2B39')
+@pytest.mark.parametrize('template', [False], indirect=True)
+def test_delete_template(workspace, cassette, template):
+    _test_delete(workspace.templates, template)
+
+@pytest.mark.parametrize('generic_template', [False], indirect=True)
+def test_delete_generic_template(whispir, cassette, generic_template):
+    _test_delete(whispir.templates, generic_template)
 
 
-def test_delete_generic_template(whispir, cassette):
-    whispir.templates.delete('F0B35D18CA4984E7')
+def _test_delete(templates, template):
+    templates.delete(template['id'])
+    with pytest.raises(ClientError) as excinfo:
+        templates.show(template['id'])
+
+    exc = excinfo.value
+    assert exc.response.status_code == 404
 
 
 def _check_template_instance(template):
