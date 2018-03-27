@@ -29,6 +29,36 @@ interactions:
               "from" : "Grigory Starinkin",
               "direction" : "OUTGOING",
               "responseCount" : "0",
+              "createdTime" : 1522191823000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/99BA2511ADEB0ED9?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "whispyr test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
+              "createdTime" : 1522191819000,
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/595FB47DE2D79613?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
+              "subject" : "whispyr test",
+              "repetitionCount" : 0,
+              "repeatDays" : 0,
+              "repeatHrs" : 0,
+              "repeatMin" : 0,
+              "from" : "Grigory Starinkin",
+              "direction" : "OUTGOING",
+              "responseCount" : "0",
               "createdTime" : 1521916640000,
               "link" : [ {
                 "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/1AC63D58EF4947CE?limit=20&offset=0&apikey=V4L1D4P1K3Y",
@@ -123,17 +153,17 @@ interactions:
         Content-Type:
           - application/vnd.whispir.message-v1+json
         Date:
-          - Sat, 24 Mar 2018 18:37:22 GMT
+          - Tue, 27 Mar 2018 23:03:45 GMT
         Expires:
-          - Sat, 24 Mar 2018 18:37:22 GMT
+          - Tue, 27 Mar 2018 23:03:45 GMT
         Server:
           - Apache
         Vary:
           - Accept-Encoding
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-32.mashery.com
+          - prod-j-worker-ap-southeast-2b-31.mashery.com
         content-length:
-          - '2901'
+          - '3843'
       status:
         code: 200
         message: OK
@@ -153,7 +183,7 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/1AC63D58EF4947CE?apikey=V4L1D4P1K3Y
+      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/99BA2511ADEB0ED9?apikey=V4L1D4P1K3Y
     response:
       body:
         string: |-
@@ -189,33 +219,33 @@ interactions:
                 "id" : "social_long"
               } ]
             },
-            "createdTime" : 1521916640000,
+            "createdTime" : 1522191823000,
             "link" : [ {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/1AC63D58EF4947CE?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/99BA2511ADEB0ED9?apikey=V4L1D4P1K3Y",
               "rel" : "self",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/1AC63D58EF4947CE/messagestatus?apikey=V4L1D4P1K3Y&view=summary",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/99BA2511ADEB0ED9/messagestatus?apikey=V4L1D4P1K3Y&view=summary",
               "rel" : "summaryStatus",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/1AC63D58EF4947CE/messagestatus?apikey=V4L1D4P1K3Y&view=detailed",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/99BA2511ADEB0ED9/messagestatus?apikey=V4L1D4P1K3Y&view=detailed",
               "rel" : "detailedStatus",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/1AC63D58EF4947CE/messageresponses?apikey=V4L1D4P1K3Y&view=summary&filter=default",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/99BA2511ADEB0ED9/messageresponses?apikey=V4L1D4P1K3Y&view=summary&filter=default",
               "rel" : "summaryResponses",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/1AC63D58EF4947CE/messageresponses?apikey=V4L1D4P1K3Y&view=detailed&filter=default",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/99BA2511ADEB0ED9/messageresponses?apikey=V4L1D4P1K3Y&view=detailed&filter=default",
               "rel" : "detailedResponses",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/1AC63D58EF4947CE/messageresponses?apikey=V4L1D4P1K3Y&view=summary&filter=responserule",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/99BA2511ADEB0ED9/messageresponses?apikey=V4L1D4P1K3Y&view=summary&filter=responserule",
               "rel" : "summaryResponsesWithResponseRule",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/1AC63D58EF4947CE/messageresponses?apikey=V4L1D4P1K3Y&view=detailed&filter=responserule",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/99BA2511ADEB0ED9/messageresponses?apikey=V4L1D4P1K3Y&view=detailed&filter=responserule",
               "rel" : "detailedResponsesWithResponseRule",
               "method" : "GET"
             } ]
@@ -228,15 +258,15 @@ interactions:
         Content-Type:
           - application/vnd.whispir.message-v1+json
         Date:
-          - Sat, 24 Mar 2018 18:37:23 GMT
+          - Tue, 27 Mar 2018 23:03:46 GMT
         Expires:
-          - Sat, 24 Mar 2018 18:37:23 GMT
+          - Tue, 27 Mar 2018 23:03:46 GMT
         Server:
           - Apache
         Vary:
           - Accept-Encoding
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-33.mashery.com
+          - prod-j-worker-ap-southeast-2a-30.mashery.com
         content-length:
           - '2278'
       status:

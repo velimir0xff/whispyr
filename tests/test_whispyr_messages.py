@@ -3,6 +3,8 @@
 
 """Tests for `whispyr` package"""
 
+import itertools
+
 from urllib.parse import urlparse
 
 from whispyr import Message, MessageStatus, MessageResponse
@@ -87,7 +89,7 @@ def test_list_messages(workspace, cassette):
 
 
 def _check_list_messages(messages):
-    messages = list(messages)
+    messages = list(itertools.islice(messages, 25))
     assert len(messages) > 0
     for message in messages:
         assert isinstance(message, Message)

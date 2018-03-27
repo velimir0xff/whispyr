@@ -15,106 +15,6 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
-      uri: https://api.whispir.com/workspaces?apikey=V4L1D4P1K3Y&limit=20&offset=0
-    response:
-      body:
-        string: |-
-          {
-            "workspaces" : [ {
-              "id" : "8080DE5434485ED4",
-              "projectName" : "api test",
-              "projectNumber" : "42",
-              "status" : "A",
-              "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4?limit=20&offset=0&apikey=V4L1D4P1K3Y",
-                "rel" : "self",
-                "method" : "GET"
-              } ]
-            }, {
-              "id" : "82C9C5DF11C63AED",
-              "projectName" : "Master",
-              "projectNumber" : "",
-              "status" : "A",
-              "billingcostcentre" : "na",
-              "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/82C9C5DF11C63AED?limit=20&offset=0&apikey=V4L1D4P1K3Y",
-                "rel" : "self",
-                "method" : "GET"
-              } ]
-            }, {
-              "id" : "C3A1B60DEED39BB3",
-              "projectName" : "Sandbox",
-              "projectNumber" : "",
-              "status" : "A",
-              "billingcostcentre" : "na",
-              "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/C3A1B60DEED39BB3?limit=20&offset=0&apikey=V4L1D4P1K3Y",
-                "rel" : "self",
-                "method" : "GET"
-              } ]
-            }, {
-              "id" : "C7E1D64BD3F17B45",
-              "projectName" : "Training",
-              "projectNumber" : "",
-              "status" : "A",
-              "billingcostcentre" : "na",
-              "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/C7E1D64BD3F17B45?limit=20&offset=0&apikey=V4L1D4P1K3Y",
-                "rel" : "self",
-                "method" : "GET"
-              } ]
-            }, {
-              "id" : "B6302F7C7B9A8982",
-              "projectName" : "whispyr tests",
-              "status" : "A",
-              "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982?limit=20&offset=0&apikey=V4L1D4P1K3Y",
-                "rel" : "self",
-                "method" : "GET"
-              } ]
-            } ],
-            "status" : "1 to 5 of 5    ",
-            "link" : [ ]
-          }
-      headers:
-        Cache-Control:
-          - max-age=0
-          - no-cache="set-cookie"
-        Connection:
-          - keep-alive
-        Content-Type:
-          - application/vnd.whispir.workspace-v1+json
-        Date:
-          - Sat, 24 Mar 2018 15:56:13 GMT
-        Expires:
-          - Sat, 24 Mar 2018 15:56:13 GMT
-        Server:
-          - Apache
-        Vary:
-          - Accept-Encoding
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-33.mashery.com
-        content-length:
-          - '1670'
-      status:
-        code: 200
-        message: OK
-  - request:
-      body: null
-      headers:
-        Accept:
-          - application/vnd.whispir.workspace-v1+json
-        Accept-Encoding:
-          - gzip, deflate
-        Connection:
-          - keep-alive
-        Content-Type:
-          - application/vnd.whispir.workspace-v1+json
-        User-Agent:
-          - whispyr/0.1.0
-        authorization:
-          - Basic VTUzUk40TTM6UDRaWlcwUkQ=
-      method: GET
       uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982?apikey=V4L1D4P1K3Y
     response:
       body:
@@ -219,14 +119,15 @@ interactions:
       headers:
         Cache-Control:
           - max-age=0
+          - no-cache="set-cookie"
         Connection:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.workspace-v1+json
         Date:
-          - Sat, 24 Mar 2018 15:56:14 GMT
+          - Tue, 27 Mar 2018 23:13:50 GMT
         Expires:
-          - Sat, 24 Mar 2018 15:56:14 GMT
+          - Tue, 27 Mar 2018 23:13:50 GMT
         Server:
           - Apache
         Vary:

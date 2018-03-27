@@ -51,17 +51,17 @@ interactions:
             },
             "voice" : { },
             "responseTemplateId" : "7D9A8AAA54747711",
-            "id" : "DE081FFA6D2D0422",
+            "id" : "48E21015E86B0591",
             "link" : [ {
-              "uri" : "https://api.whispir.com/templates/DE081FFA6D2D0422?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/templates/48E21015E86B0591?apikey=V4L1D4P1K3Y",
               "rel" : "self",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/templates/DE081FFA6D2D0422?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/templates/48E21015E86B0591?apikey=V4L1D4P1K3Y",
               "rel" : "updateTemplate",
               "method" : "PUT"
             }, {
-              "uri" : "https://api.whispir.com/templates/DE081FFA6D2D0422?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/templates/48E21015E86B0591?apikey=V4L1D4P1K3Y",
               "rel" : "deleteTemplate",
               "method" : "DELETE"
             } ]
@@ -75,11 +75,11 @@ interactions:
         Content-Type:
           - application/vnd.whispir.template-v1+json
         Date:
-          - Sun, 25 Mar 2018 07:24:15 GMT
+          - Tue, 27 Mar 2018 23:11:19 GMT
         Expires:
-          - Sun, 25 Mar 2018 07:24:15 GMT
+          - Tue, 27 Mar 2018 23:11:19 GMT
         Location:
-          - https://api.whispir.com/templates/DE081FFA6D2D0422?apikey=V4L1D4P1K3Y
+          - https://api.whispir.com/templates/48E21015E86B0591?apikey=V4L1D4P1K3Y
         Server:
           - Apache
         Vary:
@@ -107,7 +107,7 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
-      uri: https://api.whispir.com/templates/DE081FFA6D2D0422?apikey=V4L1D4P1K3Y
+      uri: https://api.whispir.com/templates/48E21015E86B0591?apikey=V4L1D4P1K3Y
     response:
       body:
         string: |-
@@ -140,17 +140,17 @@ interactions:
             },
             "voice" : { },
             "responseTemplateId" : "7D9A8AAA54747711",
-            "id" : "DE081FFA6D2D0422",
+            "id" : "48E21015E86B0591",
             "link" : [ {
-              "uri" : "https://api.whispir.com/templates/DE081FFA6D2D0422?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/templates/48E21015E86B0591?apikey=V4L1D4P1K3Y",
               "rel" : "self",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/templates/DE081FFA6D2D0422?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/templates/48E21015E86B0591?apikey=V4L1D4P1K3Y",
               "rel" : "deleteTemplate",
               "method" : "DELETE"
             }, {
-              "uri" : "https://api.whispir.com/templates/DE081FFA6D2D0422?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/templates/48E21015E86B0591?apikey=V4L1D4P1K3Y",
               "rel" : "updateTemplate",
               "method" : "PUT"
             } ]
@@ -163,15 +163,15 @@ interactions:
         Content-Type:
           - application/vnd.whispir.template-v1+json
         Date:
-          - Sun, 25 Mar 2018 07:24:15 GMT
+          - Tue, 27 Mar 2018 23:11:19 GMT
         Expires:
-          - Sun, 25 Mar 2018 07:24:15 GMT
+          - Tue, 27 Mar 2018 23:11:19 GMT
         Server:
           - Apache
         Vary:
           - Accept-Encoding
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-31.mashery.com
+          - prod-j-worker-ap-southeast-2b-33.mashery.com
         content-length:
           - '1122'
       status:
@@ -195,7 +195,7 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
-      uri: https://api.whispir.com/templates/DE081FFA6D2D0422?apikey=V4L1D4P1K3Y
+      uri: https://api.whispir.com/templates/48E21015E86B0591?apikey=V4L1D4P1K3Y
     response:
       body:
         string: ''
@@ -205,9 +205,9 @@ interactions:
         Connection:
           - keep-alive
         Date:
-          - Sun, 25 Mar 2018 07:24:16 GMT
+          - Tue, 27 Mar 2018 23:11:20 GMT
         Expires:
-          - Sun, 25 Mar 2018 07:24:16 GMT
+          - Tue, 27 Mar 2018 23:11:20 GMT
         Server:
           - Apache
         X-Mashery-Responder:

@@ -51,17 +51,17 @@ interactions:
             },
             "voice" : { },
             "responseTemplateId" : "7D9A8AAA54747711",
-            "id" : "EB7C514D276FEB63",
+            "id" : "FFF31D894F3EABBF",
             "link" : [ {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/EB7C514D276FEB63?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/FFF31D894F3EABBF?apikey=V4L1D4P1K3Y",
               "rel" : "self",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/EB7C514D276FEB63?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/FFF31D894F3EABBF?apikey=V4L1D4P1K3Y",
               "rel" : "updateTemplate",
               "method" : "PUT"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/EB7C514D276FEB63?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/FFF31D894F3EABBF?apikey=V4L1D4P1K3Y",
               "rel" : "deleteTemplate",
               "method" : "DELETE"
             } ]
@@ -75,11 +75,11 @@ interactions:
         Content-Type:
           - application/vnd.whispir.template-v1+json
         Date:
-          - Sun, 25 Mar 2018 07:28:44 GMT
+          - Tue, 27 Mar 2018 23:11:25 GMT
         Expires:
-          - Sun, 25 Mar 2018 07:28:44 GMT
+          - Tue, 27 Mar 2018 23:11:25 GMT
         Location:
-          - https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/EB7C514D276FEB63?apikey=V4L1D4P1K3Y
+          - https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/FFF31D894F3EABBF?apikey=V4L1D4P1K3Y
         Server:
           - Apache
         Vary:
@@ -109,7 +109,7 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/EB7C514D276FEB63?apikey=V4L1D4P1K3Y
+      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/FFF31D894F3EABBF?apikey=V4L1D4P1K3Y
     response:
       body:
         string: ''
@@ -119,13 +119,13 @@ interactions:
         Connection:
           - keep-alive
         Date:
-          - Sun, 25 Mar 2018 07:28:45 GMT
+          - Tue, 27 Mar 2018 23:11:25 GMT
         Expires:
-          - Sun, 25 Mar 2018 07:28:45 GMT
+          - Tue, 27 Mar 2018 23:11:25 GMT
         Server:
           - Apache
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-31.mashery.com
+          - prod-j-worker-ap-southeast-2a-30.mashery.com
       status:
         code: 204
         message: No Content
@@ -145,7 +145,7 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/EB7C514D276FEB63?apikey=V4L1D4P1K3Y
+      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/FFF31D894F3EABBF?apikey=V4L1D4P1K3Y
     response:
       body:
         string: |-
@@ -162,15 +162,15 @@ interactions:
         Content-Type:
           - application/vnd.whispir.template-v1+json
         Date:
-          - Sun, 25 Mar 2018 07:28:46 GMT
+          - Tue, 27 Mar 2018 23:11:26 GMT
         Expires:
-          - Sun, 25 Mar 2018 07:28:46 GMT
+          - Tue, 27 Mar 2018 23:11:26 GMT
         Server:
           - Apache
         Vary:
           - Accept-Encoding
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-31.mashery.com
+          - prod-j-worker-ap-southeast-2b-33.mashery.com
         content-length:
           - '165'
       status:

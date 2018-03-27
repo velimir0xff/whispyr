@@ -34,11 +34,11 @@ interactions:
         Content-Type:
           - application/vnd.whispir.message-v1+json
         Date:
-          - Sat, 24 Mar 2018 18:37:18 GMT
+          - Tue, 27 Mar 2018 23:03:41 GMT
         Expires:
-          - Sat, 24 Mar 2018 18:37:18 GMT
+          - Tue, 27 Mar 2018 23:03:41 GMT
         Location:
-          - https://api.whispir.com/messages/E8BE61AFD0651EE2?apikey=V4L1D4P1K3Y
+          - https://api.whispir.com/messages/857E5CC80C199252?apikey=V4L1D4P1K3Y
         Server:
           - Apache
         X-Mashery-Responder:

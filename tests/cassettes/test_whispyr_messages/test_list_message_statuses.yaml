@@ -59,15 +59,15 @@ interactions:
         Content-Type:
           - application/vnd.whispir.messagestatus-v1+json
         Date:
-          - Sat, 24 Mar 2018 18:37:28 GMT
+          - Tue, 27 Mar 2018 23:03:50 GMT
         Expires:
-          - Sat, 24 Mar 2018 18:37:28 GMT
+          - Tue, 27 Mar 2018 23:03:50 GMT
         Server:
           - Apache
         Vary:
           - Accept-Encoding
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-33.mashery.com
+          - prod-j-worker-ap-southeast-2b-31.mashery.com
         content-length:
           - '794'
       status:

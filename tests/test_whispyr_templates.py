@@ -65,7 +65,6 @@ def test_list_templates(workspace, cassette, templates):
         _check_template_instance(template)
 
 
-@pytest.mark.xfail(reason='TODO: Pagination seems to be broken on whispir side')
 @pytest.mark.parametrize('templates', [55], indirect=True)
 def test_list_templates_paginated(request, workspace, cassette, templates):
     templates = workspace.templates.list()

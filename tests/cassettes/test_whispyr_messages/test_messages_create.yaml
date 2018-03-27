@@ -26,7 +26,6 @@ interactions:
       headers:
         Cache-Control:
           - max-age=0
-          - no-cache="set-cookie"
         Connection:
           - keep-alive
         Content-Length:
@@ -34,15 +33,15 @@ interactions:
         Content-Type:
           - application/vnd.whispir.message-v1+json
         Date:
-          - Sat, 24 Mar 2018 18:15:08 GMT
+          - Tue, 27 Mar 2018 23:03:39 GMT
         Expires:
-          - Sat, 24 Mar 2018 18:15:08 GMT
+          - Tue, 27 Mar 2018 23:03:39 GMT
         Location:
-          - https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/EB4F5C211FE5A92C?apikey=V4L1D4P1K3Y
+          - https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/595FB47DE2D79613?apikey=V4L1D4P1K3Y
         Server:
           - Apache
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-32.mashery.com
+          - prod-j-worker-ap-southeast-2a-30.mashery.com
       status:
         code: 202
         message: Accepted

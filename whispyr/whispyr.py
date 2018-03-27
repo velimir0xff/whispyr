@@ -4,10 +4,7 @@
 
 from . import __version__
 
-from collections import Callable, UserDict
-
-import operator
-import functools
+from collections import UserDict
 
 from requests import Session
 from requests.auth import HTTPBasicAuth, AuthBase
@@ -154,15 +151,32 @@ class Collection:
         item = self.request('get', path)
         return self._containerize(item)
 
+    def _get_page(self, path, **kwargs):
+        result = self._try_get(path, kwargs)
+        return self._page_items(result)
+
+    def _page_items(self, response):
+        return response.get(self.list_name, [])
+
     def list(self, **kwargs):
         path = self.path()
+
+        list_items = self._list
+        if 'offset' in kwargs or 'limit' in kwargs:
+            list_items = self._get_page
+
+        for item in list_items(path, **kwargs):
+            yield self._containerize(item)
+
+    def _list(self, path, **kwargs):
         kwargs['limit'] = self.whispir.page_size
         kwargs['offset'] = 0
 
         while True:
-            result = self._try_list(path, kwargs)
-            for item in result.get(self.list_name, []):
-                yield self._containerize(item)
+            result = self._try_get(path, kwargs)
+            items = self._page_items(result)
+            for item in items:
+                yield item
 
             links = result.get('link', [])
             link = _find_link(links, 'next')
@@ -174,7 +188,7 @@ class Collection:
             kwargs['limit'] = query['limit']
             kwargs['offset'] = query['offset']
 
-    def _try_list(self, path, params):
+    def _try_get(self, path, params):
         try:
             return self.request('get', path, params=params)
         except (ClientError, JSONDecodeError) as e:
@@ -191,6 +205,30 @@ class Collection:
         self.request('delete', path)
 
 
+class Nonpaginatable:
+
+    def _list(self, path, **kwargs):
+        return self._get_page(path, **kwargs)
+
+
+class Streamable:
+
+    def _list(self, path, **kwargs):
+        limit = self.whispir.page_size
+        kwargs['limit'] = limit
+        kwargs['offset'] = 0
+
+        while True:
+            item = None
+            for item in self._get_page(path, **kwargs):
+                yield item
+
+            if not item:
+                break
+
+            kwargs['offset'] += limit
+
+
 class Container(UserDict):
 
     def __init__(self, collection, **kwargs):
@@ -205,11 +243,11 @@ class Container(UserDict):
         return self['id']
 
 
-class Workspaces(Collection):
+class Workspaces(Nonpaginatable, Collection):
     pass
 
 
-class Messages(Collection):
+class Messages(Streamable, Collection):
 
     def create(self, **kwargs):
         try:
@@ -244,7 +282,7 @@ class MessageResponses(Collection):
     pass
 
 
-class Templates(Collection):
+class Templates(Nonpaginatable, Collection):
     list_name = 'messagetemplates'
 
 
@@ -289,14 +327,7 @@ def _singularize(string):
     return string
 
 
-def _find_it(seq, thing, default=None):
-    predicate = thing
-    if not isinstance(predicate, Callable):
-        predicate = functools.partial(operator.eq, thing)
-    return next((it for it in seq if predicate(it)), default)
-
-
 def _find_link(links, relation, default=None):
     def is_relation(it):
         return it['rel'] == relation
-    return _find_it(links, is_relation, default)
+    return next((it for it in links if is_relation(it)), default)

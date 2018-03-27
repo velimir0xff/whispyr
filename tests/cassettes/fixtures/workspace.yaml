@@ -15,7 +15,7 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
-      uri: https://api.whispir.com/workspaces?apikey=V4L1D4P1K3Y&limit=20&offset=0
+      uri: https://api.whispir.com/workspaces?apikey=V4L1D4P1K3Y
     response:
       body:
         string: |-
@@ -26,7 +26,7 @@ interactions:
               "projectNumber" : "42",
               "status" : "A",
               "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4?apikey=V4L1D4P1K3Y",
                 "rel" : "self",
                 "method" : "GET"
               } ]
@@ -37,7 +37,7 @@ interactions:
               "status" : "A",
               "billingcostcentre" : "na",
               "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/82C9C5DF11C63AED?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/workspaces/82C9C5DF11C63AED?apikey=V4L1D4P1K3Y",
                 "rel" : "self",
                 "method" : "GET"
               } ]
@@ -48,7 +48,7 @@ interactions:
               "status" : "A",
               "billingcostcentre" : "na",
               "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/C3A1B60DEED39BB3?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/workspaces/C3A1B60DEED39BB3?apikey=V4L1D4P1K3Y",
                 "rel" : "self",
                 "method" : "GET"
               } ]
@@ -59,7 +59,7 @@ interactions:
               "status" : "A",
               "billingcostcentre" : "na",
               "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/C7E1D64BD3F17B45?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/workspaces/C7E1D64BD3F17B45?apikey=V4L1D4P1K3Y",
                 "rel" : "self",
                 "method" : "GET"
               } ]
@@ -68,7 +68,7 @@ interactions:
               "projectName" : "whispyr tests",
               "status" : "A",
               "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982?apikey=V4L1D4P1K3Y",
                 "rel" : "self",
                 "method" : "GET"
               } ]
@@ -85,17 +85,17 @@ interactions:
         Content-Type:
           - application/vnd.whispir.workspace-v1+json
         Date:
-          - Sat, 24 Mar 2018 18:14:32 GMT
+          - Tue, 27 Mar 2018 23:03:37 GMT
         Expires:
-          - Sat, 24 Mar 2018 18:14:32 GMT
+          - Tue, 27 Mar 2018 23:03:37 GMT
         Server:
           - Apache
         Vary:
           - Accept-Encoding
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-32.mashery.com
+          - prod-j-worker-ap-southeast-2b-31.mashery.com
         content-length:
-          - '1670'
+          - '1580'
       status:
         code: 200
         message: OK
