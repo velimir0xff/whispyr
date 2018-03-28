@@ -61,6 +61,7 @@ class Whispir:
         self.workspaces = Workspaces(self)
         self.messages = Messages(self)
         self.templates = Templates(self)
+        self.response_rules = ResponseRules(self)
 
     def request(self, method, path, **kwargs):
         url = urljoin(self._base_url, path)
@@ -286,11 +287,16 @@ class Templates(Nonpaginatable, Collection):
     list_name = 'messagetemplates'
 
 
+class ResponseRules(Nonpaginatable, Collection):
+    list_name = 'responseRules'
+
+
 class Workspace(Container):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.messages = Messages(self.whispir, self)
         self.templates = Templates(self.whispir, self)
+        self.response_rules = ResponseRules(self.whispir, self)
 
 
 class Message(Container):
@@ -315,6 +321,10 @@ class MessageResponse(Container):
 
 
 class Template(Container):
+    pass
+
+
+class ResponseRule(Container):
     pass
 
 

@@ -1,0 +1,227 @@
+interactions:
+  - request:
+      body: |-
+        {"name": "be378e94-fdf7-42a5-90d6-0ff9cb5eeff9", "description": "fdd3ced6-ca5f-4fb0-ac84-4d939b2985b9", "responseTemplatePatterns": {"responseTemplatePattern": [{"name": "52c9d8b5-a832-4dc9-89f4-c7328c39ca0e", "textPrompt": "YES", "voicePrompt": "1", "spokenVoicePrompt": "to select YES", "pattern": "startswith", "colour": "#00947d"}]}}
+      headers:
+        Accept:
+          - application/vnd.whispir.responserule-v1+json
+        Accept-Encoding:
+          - gzip, deflate
+        Connection:
+          - keep-alive
+        Content-Length:
+          - '337'
+        Content-Type:
+          - application/vnd.whispir.responserule-v1+json
+        User-Agent:
+          - whispyr/0.1.0
+        authorization:
+          - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+      method: POST
+      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules?apikey=V4L1D4P1K3Y
+    response:
+      body:
+        string: |-
+          {
+            "id" : "5BF990CCD4DAE3F9",
+            "name" : "be378e94-fdf7-42a5-90d6-0ff9cb5eeff9",
+            "description" : "fdd3ced6-ca5f-4fb0-ac84-4d939b2985b9",
+            "responseTemplatePatterns" : {
+              "responseTemplatePattern" : [ {
+                "name" : "52c9d8b5-a832-4dc9-89f4-c7328c39ca0e",
+                "textPrompt" : "YES",
+                "voicePrompt" : "1",
+                "spokenVoicePrompt" : "to select YES",
+                "pattern" : "startswith",
+                "colour" : "#00947d"
+              } ]
+            },
+            "link" : [ {
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules/5BF990CCD4DAE3F9?apikey=V4L1D4P1K3Y",
+              "rel" : "self",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules/5BF990CCD4DAE3F9?apikey=V4L1D4P1K3Y",
+              "rel" : "updateResponseRule",
+              "method" : "PUT",
+              "type" : "application/vnd.whispir.responserule-v1+xml,application/vnd.whispir.responserule-v1+json"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules/5BF990CCD4DAE3F9?apikey=V4L1D4P1K3Y",
+              "rel" : "deleteResponseRule",
+              "method" : "DELETE"
+            } ]
+          }
+      headers:
+        Cache-Control:
+          - max-age=0
+          - no-cache="set-cookie"
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.responserule-v1+json
+        Date:
+          - Wed, 28 Mar 2018 21:57:05 GMT
+        Expires:
+          - Wed, 28 Mar 2018 21:57:05 GMT
+        Location:
+          - https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules/5BF990CCD4DAE3F9?apikey=V4L1D4P1K3Y
+        Server:
+          - Apache
+        Vary:
+          - Accept-Encoding
+        X-Mashery-Responder:
+          - prod-j-worker-ap-southeast-2a-30.mashery.com
+        content-length:
+          - '1121'
+      status:
+        code: 201
+        message: Created
+  - request:
+      body: |-
+        {"name": "be378e94-fdf7-42a5-90d6-0ff9cb5eeff9 updated", "description": "fdd3ced6-ca5f-4fb0-ac84-4d939b2985b9 updated", "responseTemplatePatterns": {"responseTemplatePattern": [{"name": "52c9d8b5-a832-4dc9-89f4-c7328c39ca0e", "textPrompt": "YES", "voicePrompt": "1", "spokenVoicePrompt": "to select YES", "pattern": "startswith", "colour": "#00947d"}]}}
+      headers:
+        Accept:
+          - application/vnd.whispir.responserule-v1+json
+        Accept-Encoding:
+          - gzip, deflate
+        Connection:
+          - keep-alive
+        Content-Length:
+          - '353'
+        Content-Type:
+          - application/vnd.whispir.responserule-v1+json
+        User-Agent:
+          - whispyr/0.1.0
+        authorization:
+          - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+      method: PUT
+      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules/5BF990CCD4DAE3F9?apikey=V4L1D4P1K3Y
+    response:
+      body:
+        string: ''
+      headers:
+        Cache-Control:
+          - max-age=0
+        Connection:
+          - keep-alive
+        Date:
+          - Wed, 28 Mar 2018 21:57:06 GMT
+        Expires:
+          - Wed, 28 Mar 2018 21:57:06 GMT
+        Server:
+          - Apache
+        X-Mashery-Responder:
+          - prod-j-worker-ap-southeast-2b-33.mashery.com
+      status:
+        code: 204
+        message: No Content
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/vnd.whispir.responserule-v1+json
+        Accept-Encoding:
+          - gzip, deflate
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.responserule-v1+json
+        User-Agent:
+          - whispyr/0.1.0
+        authorization:
+          - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+      method: GET
+      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules/5BF990CCD4DAE3F9?apikey=V4L1D4P1K3Y
+    response:
+      body:
+        string: |-
+          {
+            "id" : "5BF990CCD4DAE3F9",
+            "name" : "be378e94-fdf7-42a5-90d6-0ff9cb5eeff9 updated",
+            "description" : "fdd3ced6-ca5f-4fb0-ac84-4d939b2985b9 updated",
+            "responseTemplatePatterns" : {
+              "responseTemplatePattern" : [ {
+                "name" : "52c9d8b5-a832-4dc9-89f4-c7328c39ca0e",
+                "textPrompt" : "YES",
+                "voicePrompt" : "1",
+                "spokenVoicePrompt" : "to select YES",
+                "pattern" : "startswith",
+                "colour" : "#00947d"
+              } ]
+            },
+            "link" : [ {
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules/5BF990CCD4DAE3F9?apikey=V4L1D4P1K3Y",
+              "rel" : "self",
+              "method" : "GET"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules/5BF990CCD4DAE3F9?apikey=V4L1D4P1K3Y",
+              "rel" : "updateResponseRule",
+              "method" : "PUT",
+              "type" : "application/vnd.whispir.responserule-v1+xml,application/vnd.whispir.responserule-v1+json"
+            }, {
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules/5BF990CCD4DAE3F9?apikey=V4L1D4P1K3Y",
+              "rel" : "deleteResponseRule",
+              "method" : "DELETE"
+            } ]
+          }
+      headers:
+        Cache-Control:
+          - max-age=0
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.responserule-v1+json
+        Date:
+          - Wed, 28 Mar 2018 21:57:07 GMT
+        Expires:
+          - Wed, 28 Mar 2018 21:57:07 GMT
+        Server:
+          - Apache
+        Vary:
+          - Accept-Encoding
+        X-Mashery-Responder:
+          - prod-j-worker-ap-southeast-2a-32.mashery.com
+        content-length:
+          - '1137'
+      status:
+        code: 200
+        message: OK
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/vnd.whispir.responserule-v1+json
+        Accept-Encoding:
+          - gzip, deflate
+        Connection:
+          - keep-alive
+        Content-Length:
+          - '0'
+        Content-Type:
+          - application/vnd.whispir.responserule-v1+json
+        User-Agent:
+          - whispyr/0.1.0
+        authorization:
+          - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+      method: DELETE
+      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules/5BF990CCD4DAE3F9?apikey=V4L1D4P1K3Y
+    response:
+      body:
+        string: ''
+      headers:
+        Cache-Control:
+          - max-age=0
+        Connection:
+          - keep-alive
+        Date:
+          - Wed, 28 Mar 2018 21:57:07 GMT
+        Expires:
+          - Wed, 28 Mar 2018 21:57:07 GMT
+        Server:
+          - Apache
+        X-Mashery-Responder:
+          - prod-j-worker-ap-southeast-2b-33.mashery.com
+      status:
+        code: 204
+        message: No Content
+version: 1
