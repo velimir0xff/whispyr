@@ -310,16 +310,10 @@ class Message(Container):
 
 
 class MessageStatus(Container):
-    # TODO: add docs with an example how to get detailed view:
-    # * detailedStatus
     pass
 
 
 class MessageResponse(Container):
-    # TODO: add docs with an example how to get:
-    # * detailedResponses
-    # * summaryResponsesWithResponseRule
-    # * summaryResponsesWithResponseRule
     pass
 
 
