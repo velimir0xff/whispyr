@@ -62,6 +62,7 @@ class Whispir:
         self.messages = Messages(self)
         self.templates = Templates(self)
         self.response_rules = ResponseRules(self)
+        self.contacts = Contacts(self)
 
     def request(self, method, path, **kwargs):
         url = urljoin(self._base_url, path)
@@ -86,15 +87,6 @@ class Whispir:
             raise JSONDecodeError(response)
 
 
-class ContainerProxyMeta(type):
-
-    def __new__(mcl, name, bases, nmspc):
-        container = nmspc['container']
-        prefix = container.__class__.__name__.capitalize()
-        name = prefix + 'Proxy'
-        return super(ContainerProxyMeta, mcl).__new__(mcl, name, bases, nmspc)
-
-
 class Collection:
 
     def __init__(self, whispir, base_container=None):
@@ -110,8 +102,7 @@ class Collection:
         self.resource = (getattr(self, 'resource', False) or self.name)
         self.base_container = base_container
 
-        # TODO: inherit from container class
-        class ContainerProxy(metaclass=ContainerProxyMeta):
+        class ContainerProxy(self.container):
             collection = self
             container = self.container
 
@@ -232,10 +223,28 @@ class Streamable:
 
 class Container(UserDict):
 
-    def __init__(self, collection, **kwargs):
+    def __init__(self, collection, id=None, **kwargs):
         self.collection = collection
         self.whispir = collection.whispir
+
+        if not id:
+            id = self.id_from_links(kwargs.get('link', []))
+
+        if id:
+            kwargs['id'] = id
+
         super().__init__(kwargs)
+
+    @classmethod
+    def id_from_links(cls, links):
+        link = _find_link(links, 'self')
+        if link:
+            return cls.id_from_uri(link['uri'])
+
+    @staticmethod
+    def id_from_uri(url):
+        path = urlparse(url).path
+        return path.split('/')[-1]
 
     def path(self):
         return self.collection.path(self.id())
@@ -255,22 +264,11 @@ class Messages(Streamable, Collection):
             super().create(**kwargs)
         except JSONDecodeError as e:
             headers = e.response.headers
-            msg_id = self.__message_id_from_url(headers['location'])
+            msg_id = self.Message.id_from_uri(headers['location'])
 
         return self.Message(id=msg_id)
 
     send = create
-
-    def _containerize(self, item):
-        link = _find_link(item['link'], 'self')
-        msg_id = self.__message_id_from_url(link['uri'])
-        item['id'] = msg_id
-        return self.Message(**item)
-
-    @staticmethod
-    def __message_id_from_url(url):
-        path = urlparse(url).path
-        return path.split('/')[-1]
 
 
 class MessageStatuses(Collection):
@@ -291,12 +289,17 @@ class ResponseRules(Nonpaginatable, Collection):
     list_name = 'responseRules'
 
 
+class Contacts(Collection):
+    pass
+
+
 class Workspace(Container):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.messages = Messages(self.whispir, self)
         self.templates = Templates(self.whispir, self)
         self.response_rules = ResponseRules(self.whispir, self)
+        self.contacts = Contacts(self.whispir, self)
 
 
 class Message(Container):
@@ -325,6 +328,10 @@ class Template(Container):
 
 
 class ResponseRule(Container):
+    pass
+
+
+class Contact(Container):
     pass
 
 
