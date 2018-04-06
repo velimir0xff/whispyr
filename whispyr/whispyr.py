@@ -281,7 +281,7 @@ class MessageResponses(Collection):
     pass
 
 
-class Templates(Nonpaginatable, Collection):
+class Templates(Collection):
     list_name = 'messagetemplates'
 
 
