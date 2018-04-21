@@ -8,15 +8,22 @@ import pytest
 import prettyserializer
 import itertools
 import functools
+import uuid
+import random
+import hashlib
 
 from collections import ByteString
+
 from vcr import VCR
+from vcr.request import Request
+
 from whispyr import Whispir
 
 
 TEST_USERNAME = 'U53RN4M3'
 TEST_PASSWORD = 'P4ZZW0RD'
 TEST_API_KEY = 'V4L1D4P1K3Y'
+TEST_GCM_API_KEY = '9OO9l3ClouDm355491n94P1K3y'
 
 
 @pytest.fixture
@@ -25,6 +32,11 @@ def whispir(pytestconfig):
     password = pytestconfig.getoption('--whispir-password')
     api_key = pytestconfig.getoption('--whispir-api-key')
     return Whispir(username, password, api_key)
+
+
+@pytest.fixture
+def gcm_api_key(pytestconfig):
+    return pytestconfig.getoption('--whispir-gcm-api-key')
 
 
 @pytest.fixture
@@ -40,6 +52,10 @@ def make_vcr(pytestconfig, cassette_library_dir):
     mode = pytestconfig.getoption('--vcr-mode')
     api_key = pytestconfig.getoption('--whispir-api-key')
     username = pytestconfig.getoption('--whispir-username')
+    gcm_api_key = pytestconfig.getoption('--whispir-gcm-api-key')
+    scrubber = scrub_patterns(((api_key, TEST_API_KEY),
+                               (username, TEST_USERNAME),
+                               (gcm_api_key, TEST_GCM_API_KEY)))
     options = {
         'record_mode': mode,
         'filter_headers': [
@@ -48,9 +64,8 @@ def make_vcr(pytestconfig, cassette_library_dir):
             ('cookie', None)
         ],
         'filter_query_parameters': [('apikey', TEST_API_KEY)],
-        'before_record_response': scrub_patterns(
-            ((api_key, TEST_API_KEY), (username, TEST_USERNAME))
-        ),
+        'before_record_response': scrubber,
+        'before_record_request': scrubber,
         'path_transformer': VCR.ensure_suffix('.yaml'),
         'decode_compressed_response': True,
         'cassette_library_dir': cassette_library_dir,
@@ -104,7 +119,8 @@ def scrub_pattern(pattern, replacement=''):
     def scrub_them_all(seq):
         return list(map(scrub_it, seq))
 
-    def before_record_response(response):
+    @functools.singledispatch
+    def before_record(response):
         if 'Set-Cookie' in response['headers']:
             del response['headers']['Set-Cookie']
 
@@ -114,7 +130,15 @@ def scrub_pattern(pattern, replacement=''):
         }
         response['body']['string'] = scrub_it(response['body']['string'])
         return response
-    return before_record_response
+
+    @before_record.register(Request)
+    def _(request):
+        orig_body = request.body
+        if orig_body:
+            request.body = scrub_it(orig_body)
+        return request
+
+    return before_record
 
 
 def scrub_patterns(patches):
@@ -149,6 +173,8 @@ def pytest_addoption(parser):
                      help='Whispir password')
     parser.addoption('--whispir-api-key', default=TEST_API_KEY,
                      help='Whispir API key')
+    parser.addoption('--whispir-gcm-api-key', default=TEST_GCM_API_KEY,
+                     help='Whispir Google Cloud Messaging API key')
     parser.addoption('--vcr-mode', default='once',
                      choices=['once', 'new_episodes', 'none', 'all'],
                      help='Set VCR mode')

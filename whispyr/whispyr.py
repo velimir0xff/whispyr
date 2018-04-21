@@ -342,3 +342,4 @@ def _find_link(links, relation, default=None):
     def is_relation(it):
         return it['rel'] == relation
     return next((it for it in links if is_relation(it)), default)
+        self.apps = Apps(self)
