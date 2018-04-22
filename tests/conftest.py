@@ -16,6 +16,7 @@ from collections import ByteString
 
 from vcr import VCR
 from vcr.request import Request
+from vcr.util import CaseInsensitiveDict
 
 from whispyr import Whispir
 
@@ -128,14 +129,26 @@ def scrub_pattern(pattern, replacement=''):
         response['headers'] = {
             name: scrub_them_all(values) for name, values in headers.items()
         }
-        response['body']['string'] = scrub_it(response['body']['string'])
+        new_body = scrub_it(response['body']['string'])
+        response['body']['string'] = new_body
+
+        headers = CaseInsensitiveDict(response['headers'])
+        if 'content-length' in headers:
+            headers['content-length'] = [str(len(new_body))]
+            response['headers'] = dict(headers)
+
         return response
 
     @before_record.register(Request)
     def _(request):
         orig_body = request.body
         if orig_body:
-            request.body = scrub_it(orig_body)
+            new_body = scrub_it(orig_body)
+            request.body = new_body
+            headers = request.headers
+            if 'content-length' in headers:
+                headers['content-length'] = str(len(new_body))
+
         return request
 
     return before_record

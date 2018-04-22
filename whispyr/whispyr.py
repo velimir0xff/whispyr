@@ -63,6 +63,7 @@ class Whispir:
         self.templates = Templates(self)
         self.response_rules = ResponseRules(self)
         self.contacts = Contacts(self)
+        self.apps = Apps(self)
 
     def request(self, method, path, **kwargs):
         url = urljoin(self._base_url, path)

@@ -1,7 +1,7 @@
 interactions:
   - request:
       body: |-
-        {"name": "ed5e57f8778a4ac6951d96994dc12c80", "description": "App (ed5e57f8778a4ac6951d96994dc12c80) to test whispyr apps CRUD works", "bundleId": "1", "gcm": {"gcmProjectId": "foobar-204e3", "gcmProjectNumber": 383181709987, "gcmApiKey": "9OO9l3ClouDm355491n94P1K3y"}, "registrationTypes": ["INVITE"]}
+        {"name": "f29650836a503af7e289ee12e0d1d3b9", "description": "App (f29650836a503af7e289ee12e0d1d3b9) to test whispyr apps CRUD works", "bundleId": "1", "gcm": {"gcmProjectId": "foobar-204e3", "gcmProjectNumber": 383181709987, "gcmApiKey": "9OO9l3ClouDm355491n94P1K3y"}, "registrationTypes": ["INVITE"]}
       headers:
         Accept:
           - application/vnd.whispir.app-v1+json
@@ -10,7 +10,7 @@ interactions:
         Connection:
           - keep-alive
         Content-Length:
-          - '314'
+          - '301'
         Content-Type:
           - application/vnd.whispir.app-v1+json
         User-Agent:
@@ -23,12 +23,12 @@ interactions:
       body:
         string: |-
           {
-            "id" : "35808A845A88A314",
-            "name" : "ed5e57f8778a4ac6951d96994dc12c80",
-            "description" : "App (ed5e57f8778a4ac6951d96994dc12c80) to test whispyr apps CRUD works",
+            "id" : "006A294CE764916D",
+            "name" : "f29650836a503af7e289ee12e0d1d3b9",
+            "description" : "App (f29650836a503af7e289ee12e0d1d3b9) to test whispyr apps CRUD works",
             "bundleId" : "1",
             "options" : {
-              "apiKey" : "04c04eb0-b2c8-4dc5-802f-9e378fed385c",
+              "apiKey" : "0beb5eea-5ec8-4b7a-aba9-29b751d9f4e6",
               "deviceLimit" : "3",
               "contactDescriptionField" : ""
             },
@@ -38,25 +38,25 @@ interactions:
               "gcmApiKey" : "9OO9l3ClouDm355491n94P1K3y"
             },
             "apns" : {
-              "certificateDate" : "2018-04-21T14:59:05.047Z"
+              "certificateDate" : "2018-04-22T10:48:04.448Z"
             },
             "apnsSandbox" : {
-              "certificateDate" : "2018-04-21T14:59:05.047Z"
+              "certificateDate" : "2018-04-22T10:48:04.448Z"
             },
             "registrationTypes" : [ "INVITE" ],
             "managedBySystem" : false,
             "defaultWorkspaceEnabled" : true,
             "link" : [ {
-              "uri" : "https://api.whispir.com/apps/35808A845A88A314?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/apps/006A294CE764916D?apikey=V4L1D4P1K3Y",
               "rel" : "self",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/apps/35808A845A88A314?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/apps/006A294CE764916D?apikey=V4L1D4P1K3Y",
               "rel" : "updateAPP",
               "method" : "PUT",
               "type" : "application/vnd.whispir.app-v1+xml,application/vnd.whispir.app-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/apps/35808A845A88A314?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/apps/006A294CE764916D?apikey=V4L1D4P1K3Y",
               "rel" : "deleteAPP",
               "method" : "DELETE"
             } ]
@@ -70,19 +70,19 @@ interactions:
         Content-Type:
           - application/vnd.whispir.app-v1+json
         Date:
-          - Sat, 21 Apr 2018 14:59:05 GMT
+          - Sun, 22 Apr 2018 10:48:04 GMT
         Expires:
-          - Sat, 21 Apr 2018 14:59:05 GMT
+          - Sun, 22 Apr 2018 10:48:04 GMT
         Location:
-          - https://api.whispir.com/apps/35808A845A88A314?apikey=V4L1D4P1K3Y
+          - https://api.whispir.com/apps/006A294CE764916D?apikey=V4L1D4P1K3Y
         Server:
           - Apache
         Vary:
           - Accept-Encoding
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-30.mashery.com
+          - prod-j-worker-ap-southeast-2b-33.mashery.com
         content-length:
-          - '1265'
+          - '1213'
       status:
         code: 201
         message: Created
@@ -104,7 +104,7 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
-      uri: https://api.whispir.com/apps/35808A845A88A314?apikey=V4L1D4P1K3Y
+      uri: https://api.whispir.com/apps/006A294CE764916D?apikey=V4L1D4P1K3Y
     response:
       body:
         string: ''
@@ -114,13 +114,13 @@ interactions:
         Connection:
           - keep-alive
         Date:
-          - Sat, 21 Apr 2018 14:59:05 GMT
+          - Sun, 22 Apr 2018 10:48:05 GMT
         Expires:
-          - Sat, 21 Apr 2018 14:59:05 GMT
+          - Sun, 22 Apr 2018 10:48:05 GMT
         Server:
           - Apache
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-31.mashery.com
+          - prod-j-worker-ap-southeast-2a-32.mashery.com
       status:
         code: 204
         message: No Content
@@ -140,7 +140,7 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
-      uri: https://api.whispir.com/apps/35808A845A88A314?apikey=V4L1D4P1K3Y
+      uri: https://api.whispir.com/apps/006A294CE764916D?apikey=V4L1D4P1K3Y
     response:
       body:
         string: |-
@@ -157,15 +157,15 @@ interactions:
         Content-Type:
           - application/vnd.whispir.app-v1+json
         Date:
-          - Sat, 21 Apr 2018 14:59:07 GMT
+          - Sun, 22 Apr 2018 10:48:07 GMT
         Expires:
-          - Sat, 21 Apr 2018 14:59:07 GMT
+          - Sun, 22 Apr 2018 10:48:07 GMT
         Server:
           - Apache
         Vary:
           - Accept-Encoding
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-32.mashery.com
+          - prod-j-worker-ap-southeast-2a-30.mashery.com
         content-length:
           - '165'
         transfer-encoding:
