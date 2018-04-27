@@ -1,7 +1,7 @@
 interactions:
   - request:
       body: |-
-        {"name": "f29650836a503af7e289ee12e0d1d3b9", "description": "App (f29650836a503af7e289ee12e0d1d3b9) to test whispyr apps CRUD works", "bundleId": "1", "gcm": {"gcmProjectId": "foobar-204e3", "gcmProjectNumber": 383181709987, "gcmApiKey": "9OO9l3ClouDm355491n94P1K3y"}, "registrationTypes": ["INVITE"]}
+        {"name": "8d3e10e65c146b4a109110c10724c53a", "description": "App (8d3e10e65c146b4a109110c10724c53a) to test whispyr apps CRUD works", "bundleId": "1", "options": {"workspaces": "B6302F7C7B9A8982", "deviceLimit": 3, "apiKey": "a52842de-a44d-40b4-a366-eda9ac7b5d0f", "clientSecret": "b3385696-60f5-42c9-9d73-ecd7e9ba1041"}, "gcm": {"gcmProjectId": "foobar-204e3", "gcmProjectNumber": 383181709987, "gcmApiKey": "9OO9l3ClouDm355491n94P1K3y"}, "registrationTypes": ["INVITE"]}
       headers:
         Accept:
           - application/vnd.whispir.app-v1+json
@@ -10,7 +10,7 @@ interactions:
         Connection:
           - keep-alive
         Content-Length:
-          - '301'
+          - '472'
         Content-Type:
           - application/vnd.whispir.app-v1+json
         User-Agent:
@@ -23,14 +23,14 @@ interactions:
       body:
         string: |-
           {
-            "id" : "006A294CE764916D",
-            "name" : "f29650836a503af7e289ee12e0d1d3b9",
-            "description" : "App (f29650836a503af7e289ee12e0d1d3b9) to test whispyr apps CRUD works",
+            "id" : "A6D0A9A79C4DCCA0",
+            "name" : "8d3e10e65c146b4a109110c10724c53a",
+            "description" : "App (8d3e10e65c146b4a109110c10724c53a) to test whispyr apps CRUD works",
             "bundleId" : "1",
             "options" : {
-              "apiKey" : "0beb5eea-5ec8-4b7a-aba9-29b751d9f4e6",
+              "apiKey" : "a52842de-a44d-40b4-a366-eda9ac7b5d0f",
               "deviceLimit" : "3",
-              "contactDescriptionField" : ""
+              "workspaces" : "B6302F7C7B9A8982"
             },
             "gcm" : {
               "gcmProjectId" : "foobar-204e3",
@@ -38,25 +38,25 @@ interactions:
               "gcmApiKey" : "9OO9l3ClouDm355491n94P1K3y"
             },
             "apns" : {
-              "certificateDate" : "2018-04-22T10:48:04.448Z"
+              "certificateDate" : "2018-04-27T22:03:47.471Z"
             },
             "apnsSandbox" : {
-              "certificateDate" : "2018-04-22T10:48:04.448Z"
+              "certificateDate" : "2018-04-27T22:03:47.471Z"
             },
             "registrationTypes" : [ "INVITE" ],
             "managedBySystem" : false,
             "defaultWorkspaceEnabled" : true,
             "link" : [ {
-              "uri" : "https://api.whispir.com/apps/006A294CE764916D?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/apps/A6D0A9A79C4DCCA0?apikey=V4L1D4P1K3Y",
               "rel" : "self",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/apps/006A294CE764916D?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/apps/A6D0A9A79C4DCCA0?apikey=V4L1D4P1K3Y",
               "rel" : "updateAPP",
               "method" : "PUT",
               "type" : "application/vnd.whispir.app-v1+xml,application/vnd.whispir.app-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/apps/006A294CE764916D?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/apps/A6D0A9A79C4DCCA0?apikey=V4L1D4P1K3Y",
               "rel" : "deleteAPP",
               "method" : "DELETE"
             } ]
@@ -70,19 +70,21 @@ interactions:
         Content-Type:
           - application/vnd.whispir.app-v1+json
         Date:
-          - Sun, 22 Apr 2018 10:48:04 GMT
+          - Fri, 27 Apr 2018 22:03:47 GMT
         Expires:
-          - Sun, 22 Apr 2018 10:48:04 GMT
+          - Fri, 27 Apr 2018 22:03:47 GMT
         Location:
-          - https://api.whispir.com/apps/006A294CE764916D?apikey=V4L1D4P1K3Y
+          - https://api.whispir.com/apps/A6D0A9A79C4DCCA0?apikey=V4L1D4P1K3Y
         Server:
           - Apache
         Vary:
           - Accept-Encoding
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-33.mashery.com
+          - prod-j-worker-ap-southeast-2a-32.mashery.com
         content-length:
-          - '1213'
+          - '1216'
+        transfer-encoding:
+          - chunked
       status:
         code: 201
         message: Created
@@ -104,7 +106,7 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
-      uri: https://api.whispir.com/apps/006A294CE764916D?apikey=V4L1D4P1K3Y
+      uri: https://api.whispir.com/apps/A6D0A9A79C4DCCA0?apikey=V4L1D4P1K3Y
     response:
       body:
         string: ''
@@ -114,13 +116,13 @@ interactions:
         Connection:
           - keep-alive
         Date:
-          - Sun, 22 Apr 2018 10:48:05 GMT
+          - Fri, 27 Apr 2018 22:03:48 GMT
         Expires:
-          - Sun, 22 Apr 2018 10:48:05 GMT
+          - Fri, 27 Apr 2018 22:03:48 GMT
         Server:
           - Apache
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-32.mashery.com
+          - prod-j-worker-ap-southeast-2a-30.mashery.com
       status:
         code: 204
         message: No Content
@@ -140,7 +142,7 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
-      uri: https://api.whispir.com/apps/006A294CE764916D?apikey=V4L1D4P1K3Y
+      uri: https://api.whispir.com/apps/A6D0A9A79C4DCCA0?apikey=V4L1D4P1K3Y
     response:
       body:
         string: |-
@@ -157,15 +159,15 @@ interactions:
         Content-Type:
           - application/vnd.whispir.app-v1+json
         Date:
-          - Sun, 22 Apr 2018 10:48:07 GMT
+          - Fri, 27 Apr 2018 22:03:51 GMT
         Expires:
-          - Sun, 22 Apr 2018 10:48:07 GMT
+          - Fri, 27 Apr 2018 22:03:51 GMT
         Server:
           - Apache
         Vary:
           - Accept-Encoding
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-30.mashery.com
+          - prod-j-worker-ap-southeast-2a-32.mashery.com
         content-length:
           - '165'
         transfer-encoding:
