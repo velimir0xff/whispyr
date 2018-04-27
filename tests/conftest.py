@@ -106,6 +106,116 @@ def workspace(whispir):
     return whispir.workspaces.show(workspace['id'])
 
 
+@pytest.fixture(params=[False])
+def app(request, whispir, workspace, gcm_api_key, cassette):
+    delete = request.param
+    return _create_fixture_app(
+        request, whispir.apps, workspace, gcm_api_key, delete=delete)
+
+
+@pytest.fixture(params=[2])
+def apps(request, whispir, workspace, gcm_api_key, cassette):
+    num = request.param
+    return [_create_fixture_app(request, whispir.apps, workspace, gcm_api_key)
+            for _ in range(num)]
+
+
+def _create_fixture_app(request, apps, workspace, gcm_api_key, delete=True):
+    name = hashlib.md5(str(uuid.uuid4()).encode('utf-8')).hexdigest()
+    app = {
+        'name': name,
+        'description': 'App ({}) to test whispyr apps CRUD works'.format(name),
+        'bundleId': '1',
+        'options': {
+            'workspaces': workspace['id'],
+            'deviceLimit': 3,
+            'apiKey': str(uuid.uuid4()),
+            'clientSecret': str(uuid.uuid4())
+        },
+        'gcm': {
+            'gcmProjectId': 'foobar-204e3',
+            'gcmProjectNumber': 383181709987,
+            'gcmApiKey': gcm_api_key
+        },
+        'registrationTypes': [
+            'INVITE'
+        ]
+    }
+
+    app = apps.create(**app)
+
+    if delete:
+        def _delete():
+            apps.delete(app['id'])
+
+        request.addfinalizer(_delete)
+
+    return app
+
+
+@pytest.fixture(params=[False])
+def contact(request, workspace, cassette):
+    delete = request.param
+    return _create_fixture_contact(
+        request, workspace.contacts, delete=delete)
+
+
+@pytest.fixture(params=[True])
+def generic_contact(request, whispir, cassette):
+    delete = request.param
+    return _create_fixture_contact(
+        request, whispir.contacts, delete=delete)
+
+
+@pytest.fixture(params=[2])
+def contacts(request, workspace, cassette):
+    num = request.param
+    return [_create_fixture_contact(request, workspace.contacts)
+            for _ in range(num)]
+
+
+def _create_fixture_contact(request, contacts, delete=True):
+    email = 'success+{}@simulator.amazonses.com'.format(uuid.uuid4())
+    number = random.randrange(61420000000, 61430000000)
+    contact = {
+        'firstName': 'John',
+        'lastName': 'Wick',
+        'status': 'A',
+        'timezone': 'Australia/Melbourne',
+        'workEmailAddress1': email,
+        'workMobilePhone1': str(number),
+        'workCountry': 'Australia',
+        'messagingoptions': [
+            {
+                'channel': 'sms',
+                'enabled': 'true',
+                'primary': 'WorkMobilePhone1'
+            },
+            {
+                'channel': 'email',
+                'enabled': 'true',
+                'primary': 'WorkEmailAddress1'
+            },
+            {
+                'channel': 'voice',
+                'enabled': 'true',
+                'primary': 'WorkMobilePhone1'
+            }
+        ]
+    }
+
+    contact = contacts.create(**contact)
+    contact = contacts.show(contact['id'])
+
+    if delete:
+        def _delete():
+            contacts.delete(contact['id'])
+
+        request.addfinalizer(_delete)
+
+    return contact
+
+
 def replace_auth(key, value, request):
     username = TEST_USERNAME.encode('utf-8')
     password = TEST_PASSWORD.encode('utf-8')

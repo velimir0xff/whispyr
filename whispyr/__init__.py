@@ -7,6 +7,6 @@ __email__ = 'starinkin@gmail.com'
 __version__ = '0.1.0'
 
 from .whispyr import Whispir, Message, MessageStatus, MessageResponse, \
-    Template, Workspace, ResponseRule, Contact
+    Template, Workspace, ResponseRule, Contact, App
 
 from .whispyr import WhispirError, ClientError, ServerError, JSONDecodeError

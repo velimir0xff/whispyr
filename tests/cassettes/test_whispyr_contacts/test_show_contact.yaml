@@ -1,7 +1,7 @@
 interactions:
   - request:
       body: |-
-        {"firstName": "John", "lastName": "Wick", "status": "A", "timezone": "Australia/Melbourne", "workEmailAddress1": "success+7af86737-079c-4bb5-a1c1-0d7da6ccf785@simulator.amazonses.com", "workMobilePhone1": "61423456789", "workCountry": "Australia", "messagingoptions": [{"channel": "sms", "enabled": "true", "primary": "WorkMobilePhone1"}, {"channel": "email", "enabled": "true", "primary": "WorkEmailAddress1"}, {"channel": "voice", "enabled": "true", "primary": "WorkMobilePhone1"}]}
+        {"firstName": "John", "lastName": "Wick", "status": "A", "timezone": "Australia/Melbourne", "workEmailAddress1": "success+f684efa0-769c-40a9-957f-898e7b32aed3@simulator.amazonses.com", "workMobilePhone1": "61425631021", "workCountry": "Australia", "messagingoptions": [{"channel": "sms", "enabled": "true", "primary": "WorkMobilePhone1"}, {"channel": "email", "enabled": "true", "primary": "WorkEmailAddress1"}, {"channel": "voice", "enabled": "true", "primary": "WorkMobilePhone1"}]}
       headers:
         Accept:
           - application/vnd.whispir.contact-v1+json
@@ -31,13 +31,13 @@ interactions:
               "latitude" : 0.0,
               "type" : "CurrentLocation"
             } ],
-            "lastModifiedTime" : "2018-04-01T07:11:25+10:00",
+            "lastModifiedTime" : "2018-04-22T22:54:50+10:00",
             "status" : "A",
             "timezone" : "+10",
-            "workEmailAddress1" : "success+7af86737-079c-4bb5-a1c1-0d7da6ccf785@simulator.amazonses.com",
-            "workMobilePhone1" : "61423456789",
+            "workEmailAddress1" : "success+f684efa0-769c-40a9-957f-898e7b32aed3@simulator.amazonses.com",
+            "workMobilePhone1" : "61425631021",
             "workCountry" : "Australia",
-            "mri" : "John_Wick.1338739.whispyr_tests@Contact.us.whispir.com",
+            "mri" : "John_Wick.1372087.whispyr_tests@Contact.us.whispir.com",
             "messagingoptions" : [ {
               "channel" : "sms",
               "primary" : "WorkMobilePhone1",
@@ -59,16 +59,16 @@ interactions:
             } ],
             "devices" : [ ],
             "link" : [ {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/2538F7D66792E0B7?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/09312B3D39CF7A7F?apikey=V4L1D4P1K3Y",
               "rel" : "self",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/2538F7D66792E0B7?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/09312B3D39CF7A7F?apikey=V4L1D4P1K3Y",
               "rel" : "updateContact",
               "method" : "PUT",
               "type" : "application/vnd.whispir.contact-v1+json,application/vnd.whispir.contact-v1+xml"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/2538F7D66792E0B7?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/09312B3D39CF7A7F?apikey=V4L1D4P1K3Y",
               "rel" : "deleteContact",
               "method" : "DELETE"
             } ]
@@ -82,19 +82,19 @@ interactions:
         Content-Type:
           - application/vnd.whispir.contact-v1+json
         Date:
-          - Sat, 31 Mar 2018 21:11:25 GMT
+          - Sun, 22 Apr 2018 12:54:50 GMT
         Expires:
-          - Sat, 31 Mar 2018 21:11:25 GMT
+          - Sun, 22 Apr 2018 12:54:50 GMT
         Location:
-          - https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/2538F7D66792E0B7?apikey=V4L1D4P1K3Y
+          - https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/09312B3D39CF7A7F?apikey=V4L1D4P1K3Y
         Server:
           - Apache
         Vary:
           - Accept-Encoding
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-30.mashery.com
+          - prod-j-worker-ap-southeast-2a-32.mashery.com
         content-length:
-          - '1590'
+          - '1551'
       status:
         code: 201
         message: Created
@@ -114,7 +114,7 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/2538F7D66792E0B7?apikey=V4L1D4P1K3Y
+      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/09312B3D39CF7A7F?apikey=V4L1D4P1K3Y
     response:
       body:
         string: |-
@@ -127,13 +127,13 @@ interactions:
               "latitude" : 0.0,
               "type" : "CurrentLocation"
             } ],
-            "lastModifiedTime" : "2018-04-01T07:11:25+10:00",
+            "lastModifiedTime" : "2018-04-22T22:54:50+10:00",
             "status" : "A",
             "timezone" : "+10",
-            "workEmailAddress1" : "success+7af86737-079c-4bb5-a1c1-0d7da6ccf785@simulator.amazonses.com",
-            "workMobilePhone1" : "61423456789",
+            "workEmailAddress1" : "success+f684efa0-769c-40a9-957f-898e7b32aed3@simulator.amazonses.com",
+            "workMobilePhone1" : "61425631021",
             "workCountry" : "Australia",
-            "mri" : "John_Wick.1338739.whispyr_tests@Contact.us.whispir.com",
+            "mri" : "John_Wick.1372087.whispyr_tests@Contact.us.whispir.com",
             "messagingoptions" : [ {
               "channel" : "sms",
               "primary" : "WorkMobilePhone1",
@@ -155,7 +155,7 @@ interactions:
             } ],
             "devices" : [ ],
             "link" : [ {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/2538F7D66792E0B7?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/09312B3D39CF7A7F?apikey=V4L1D4P1K3Y",
               "rel" : "self",
               "method" : "GET"
             } ]
@@ -168,9 +168,9 @@ interactions:
         Content-Type:
           - application/vnd.whispir.contact-v1+json
         Date:
-          - Sat, 31 Mar 2018 21:11:26 GMT
+          - Sun, 22 Apr 2018 12:54:51 GMT
         Expires:
-          - Sat, 31 Mar 2018 21:11:26 GMT
+          - Sun, 22 Apr 2018 12:54:51 GMT
         Server:
           - Apache
         Vary:
@@ -178,7 +178,91 @@ interactions:
         X-Mashery-Responder:
           - prod-j-worker-ap-southeast-2b-33.mashery.com
         content-length:
-          - '1128'
+          - '1115'
+      status:
+        code: 200
+        message: OK
+  - request:
+      body: null
+      headers:
+        Accept:
+          - application/vnd.whispir.contact-v1+json
+        Accept-Encoding:
+          - gzip, deflate
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.contact-v1+json
+        User-Agent:
+          - whispyr/0.1.0
+        authorization:
+          - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+      method: GET
+      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/09312B3D39CF7A7F?apikey=V4L1D4P1K3Y
+    response:
+      body:
+        string: |-
+          {
+            "type" : "PROJECT",
+            "firstName" : "John",
+            "lastName" : "Wick",
+            "locations" : [ {
+              "longitude" : 0.0,
+              "latitude" : 0.0,
+              "type" : "CurrentLocation"
+            } ],
+            "lastModifiedTime" : "2018-04-22T22:54:50+10:00",
+            "status" : "A",
+            "timezone" : "+10",
+            "workEmailAddress1" : "success+f684efa0-769c-40a9-957f-898e7b32aed3@simulator.amazonses.com",
+            "workMobilePhone1" : "61425631021",
+            "workCountry" : "Australia",
+            "mri" : "John_Wick.1372087.whispyr_tests@Contact.us.whispir.com",
+            "messagingoptions" : [ {
+              "channel" : "sms",
+              "primary" : "WorkMobilePhone1",
+              "secondary" : "",
+              "tertiary" : "",
+              "enabled" : true
+            }, {
+              "channel" : "email",
+              "primary" : "WorkEmailAddress1",
+              "secondary" : "",
+              "tertiary" : "",
+              "enabled" : true
+            }, {
+              "channel" : "voice",
+              "primary" : "WorkMobilePhone1",
+              "secondary" : "",
+              "tertiary" : "",
+              "enabled" : true
+            } ],
+            "devices" : [ ],
+            "link" : [ {
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/09312B3D39CF7A7F?apikey=V4L1D4P1K3Y",
+              "rel" : "self",
+              "method" : "GET"
+            } ]
+          }
+      headers:
+        Cache-Control:
+          - max-age=0
+        Connection:
+          - keep-alive
+        Content-Type:
+          - application/vnd.whispir.contact-v1+json
+        Date:
+          - Sun, 22 Apr 2018 12:54:51 GMT
+        Expires:
+          - Sun, 22 Apr 2018 12:54:51 GMT
+        Server:
+          - Apache
+        Vary:
+          - Accept-Encoding
+        X-Mashery-Responder:
+          - prod-j-worker-ap-southeast-2a-32.mashery.com
+        content-length:
+          - '1115'
         transfer-encoding:
           - chunked
       status:
@@ -202,7 +286,7 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/2538F7D66792E0B7?apikey=V4L1D4P1K3Y
+      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/09312B3D39CF7A7F?apikey=V4L1D4P1K3Y
     response:
       body:
         string: ''
@@ -212,13 +296,13 @@ interactions:
         Connection:
           - keep-alive
         Date:
-          - Sat, 31 Mar 2018 21:11:26 GMT
+          - Sun, 22 Apr 2018 12:54:52 GMT
         Expires:
-          - Sat, 31 Mar 2018 21:11:26 GMT
+          - Sun, 22 Apr 2018 12:54:52 GMT
         Server:
           - Apache
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-31.mashery.com
+          - prod-j-worker-ap-southeast-2b-33.mashery.com
       status:
         code: 204
         message: No Content

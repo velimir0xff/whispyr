@@ -4,8 +4,6 @@
 """Contacts tests for `whispyr` package"""
 
 import pytest
-import uuid
-import random
 
 from whispyr import Contact, ClientError
 
@@ -64,69 +62,6 @@ def _test_delete(contacts, contact_id):
 
     exc = excinfo.value
     assert exc.response.status_code == 404
-
-
-@pytest.fixture(params=[True])
-def contact(request, workspace):
-    delete = request.param
-    return _create_fixture_contact(
-        request, workspace.contacts, delete=delete)
-
-
-@pytest.fixture(params=[True])
-def generic_contact(request, whispir):
-    delete = request.param
-    return _create_fixture_contact(
-        request, whispir.contacts, delete=delete)
-
-
-@pytest.fixture(params=[2])
-def contacts(request, workspace):
-    num = request.param
-    return [_create_fixture_contact(request, workspace.contacts)
-            for _ in range(num)]
-
-
-def _create_fixture_contact(request, contacts, delete=True):
-    email = 'success+{}@simulator.amazonses.com'.format(uuid.uuid4())
-    number = random.randrange(61420000000, 61430000000)
-    contact = {
-        'firstName': 'John',
-        'lastName': 'Wick',
-        'status': 'A',
-        'timezone': 'Australia/Melbourne',
-        'workEmailAddress1': email,
-        'workMobilePhone1': '61423456789',
-        'workCountry': 'Australia',
-        'messagingoptions': [
-            {
-                'channel': 'sms',
-                'enabled': 'true',
-                'primary': 'WorkMobilePhone1'
-            },
-            {
-                'channel': 'email',
-                'enabled': 'true',
-                'primary': 'WorkEmailAddress1'
-            },
-            {
-                'channel': 'voice',
-                'enabled': 'true',
-                'primary': 'WorkMobilePhone1'
-            }
-        ]
-    }
-
-    contact = contacts.create(**contact)
-    _check_basic_contact(contact)
-
-    if delete:
-        def _delete():
-            contacts.delete(contact['id'])
-
-        request.addfinalizer(_delete)
-
-    return contact
 
 
 def _check_list(workspace, contacts, expected_count):

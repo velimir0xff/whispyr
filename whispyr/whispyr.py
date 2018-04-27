@@ -294,6 +294,10 @@ class Contacts(Collection):
     pass
 
 
+class Apps(Collection):
+    list_name = 'applications'
+
+
 class Workspace(Container):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -301,6 +305,7 @@ class Workspace(Container):
         self.templates = Templates(self.whispir, self)
         self.response_rules = ResponseRules(self.whispir, self)
         self.contacts = Contacts(self.whispir, self)
+        self.apps = Apps(self.whispir, self)
 
 
 class Message(Container):
@@ -329,6 +334,9 @@ class ResponseRule(Container):
 class Contact(Container):
     pass
 
+class App(Container):
+    pass
+
 
 def _singularize(string):
     rules = {'ies': 'y', 'uses': 'us', 's': ''}
@@ -343,4 +351,3 @@ def _find_link(links, relation, default=None):
     def is_relation(it):
         return it['rel'] == relation
     return next((it for it in links if is_relation(it)), default)
-        self.apps = Apps(self)
