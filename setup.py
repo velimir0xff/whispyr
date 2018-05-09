@@ -11,7 +11,7 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = ['Click>=6.0', ]
+requirements = []
 
 setup_requirements = ['pytest-runner', ]
 
@@ -33,11 +33,6 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     description="a python client library for whispir.io",
-    entry_points={
-        'console_scripts': [
-            'whispyr=whispyr.cli:main',
-        ],
-    },
     install_requires=requirements,
     license="MIT license",
     long_description=readme + '\n\n' + history,
