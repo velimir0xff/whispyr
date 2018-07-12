@@ -10,3 +10,5 @@ from .whispyr import Whispir, Message, MessageStatus, MessageResponse, \
     Template, Workspace, ResponseRule, Contact, App
 
 from .whispyr import WhispirError, ClientError, ServerError, JSONDecodeError
+
+from .whispyr import WhispirRetry

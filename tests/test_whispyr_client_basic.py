@@ -11,7 +11,7 @@ import pytest
 import re
 
 import whispyr
-from whispyr import ClientError
+from whispyr import ClientError, WhispirRetry
 
 httpretty.HTTPretty.allow_net_connect = False
 
@@ -21,9 +21,10 @@ TEST_PASSWORD = 'P4ZZW0RD'
 TEST_API_KEY = 'V4L1D4P1K3Y'
 
 
-@pytest.fixture
-def whispir():
-    return whispyr.Whispir(TEST_USERNAME, TEST_PASSWORD, TEST_API_KEY)
+@pytest.fixture(params=[{'retry': WhispirRetry()}])
+def whispir(request):
+    params = request.param
+    return whispyr.Whispir(TEST_USERNAME, TEST_PASSWORD, TEST_API_KEY, **params)
 
 
 @httpretty.activate
@@ -83,6 +84,36 @@ def test_retry_succeeded(whispir):
     )
 
     assert whispir.request('get', 'workspaces') == {}
+
+
+@httpretty.activate
+@pytest.mark.parametrize('whispir', [{'retry': WhispirRetry(total=1)}],
+                         indirect=True)
+def test_retry_limit(whispir):
+    qps_headers = {
+        'X-Mashery-Error-Code': 'ERR_403_DEVELOPER_OVER_QPS',
+        'X-Mashery-Error-Detail': 'Account Over Queries Per Second Limit',
+        'Retry-After': 1
+    }
+
+    qps_response = HTTPretty.Response(body='', status=403, adding_headers=qps_headers)
+
+    httpretty.register_uri(
+        httpretty.GET, re.compile(r'.*', re.M),
+        responses=[
+            qps_response,
+            qps_response,
+            qps_response,
+            HTTPretty.Response(body='{}', status=200),
+        ]
+    )
+
+    with pytest.raises(ClientError) as excinfo:
+        whispir.request('get', 'workspaces')
+
+    exc = excinfo.value
+    assert exc.response.status_code == 403
+
 
 
 @httpretty.activate
