@@ -7,10 +7,13 @@ from . import __version__
 from collections import UserDict
 
 from requests import Session
+from requests.adapters import HTTPAdapter
 from requests.auth import HTTPBasicAuth, AuthBase
 
 from urllib.parse import urljoin, urlparse, parse_qsl
 
+from urllib3.util import Retry
+from urllib3.exceptions import MaxRetryError
 
 WHISPIR_BASE_URL = 'https://api.whispir.com'
 
@@ -46,14 +49,41 @@ class WhispirAuth(AuthBase):
         return new_req
 
 
+class WhispirRetry(Retry):
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.RETRY_AFTER_STATUS_CODES = frozenset([403, 413, 429, 503])
+        self.raise_on_status = False
+        self.raise_on_redirect = False
+
+    def _is_method_retryable(self, method):
+        return True
+
+    def increment(self, method=None, url=None, response=None, error=None,
+                  _pool=None, _stacktrace=None):
+        if response:
+            mashery_error = response.getheader("X-Mashery-Error-Code")
+            if mashery_error == 'ERR_403_DEVELOPER_OVER_QPD':
+                raise MaxRetryError(_pool, url, error)
+        return super().increment(method=method, url=url, response=response, error=error,
+                                 _pool=_pool, _stacktrace=_stacktrace)
+
+
+DEFAULT_RETRY = WhispirRetry()
+
+
 class Whispir:
 
     def __init__(self, username, password, api_key,
-                 base_url=WHISPIR_BASE_URL, page_size=20):
+                 base_url=WHISPIR_BASE_URL, page_size=20, retry=DEFAULT_RETRY):
         self._base_url = base_url
+        self.page_size = page_size
         self._session = Session()
         self._session.auth = WhispirAuth(api_key, username, password)
-        self.page_size = page_size
+        adapter = HTTPAdapter(max_retries=retry)
+        self._session.mount('http://', adapter)
+        self._session.mount('https://', adapter)
         self._session.headers.update({
             'User-Agent': 'whispyr/{}'.format(__version__)
         })

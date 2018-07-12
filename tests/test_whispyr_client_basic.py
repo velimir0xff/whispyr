@@ -3,11 +3,15 @@
 """Tests for `whispyr` package"""
 
 import base64
+
 import httpretty
+from httpretty import HTTPretty
+
 import pytest
 import re
 
 import whispyr
+from whispyr import ClientError
 
 httpretty.HTTPretty.allow_net_connect = False
 
@@ -57,6 +61,68 @@ def test_user_agent_is_set(whispir):
     assert 'User-Agent' in request.headers
     expexted_agent = 'whispyr/{}'.format(whispyr.__version__)
     assert request.headers['User-Agent'] == expexted_agent
+
+
+@httpretty.activate
+def test_retry_succeeded(whispir):
+    qps_headers = {
+        'X-Mashery-Error-Code': 'ERR_403_DEVELOPER_OVER_QPS',
+        'X-Mashery-Error-Detail': 'Account Over Queries Per Second Limit',
+        'Retry-After': 1
+    }
+
+    qps_response = HTTPretty.Response(body='', status=403, adding_headers=qps_headers)
+
+    httpretty.register_uri(
+        httpretty.GET, re.compile(r'.*', re.M),
+        responses=[
+            qps_response,
+            qps_response,
+            HTTPretty.Response(body='{}', status=200),
+        ]
+    )
+
+    assert whispir.request('get', 'workspaces') == {}
+
+
+@httpretty.activate
+def test_do_not_retry_qpd(whispir):
+    qps_headers = {
+        'X-Mashery-Error-Code': 'ERR_403_DEVELOPER_OVER_QPD',
+        'X-Mashery-Error-Detail': 'Account Over Queries Per Day Limit',
+        'Retry-After': 20 * 60 * 60 # 20 hours in seconds
+    }
+
+    httpretty.register_uri(
+        httpretty.GET, re.compile(r'.*', re.M),
+        responses=[
+            HTTPretty.Response(body='', status=403, adding_headers=qps_headers),
+            HTTPretty.Response(body='{}', status=200),
+        ]
+    )
+
+    with pytest.raises(ClientError) as excinfo:
+        whispir.request('get', 'workspaces')
+
+    exc = excinfo.value
+    assert exc.response.status_code == 403
+
+
+@httpretty.activate
+def test_no_retry_for_forbidden(whispir):
+    httpretty.register_uri(
+        httpretty.GET, re.compile(r'.*', re.M),
+        responses=[
+            HTTPretty.Response(body='', status=403),
+            HTTPretty.Response(body='{}', status=200),
+        ]
+    )
+
+    with pytest.raises(ClientError) as excinfo:
+        whispir.request('get', 'workspaces')
+
+    exc = excinfo.value
+    assert exc.response.status_code == 403
 
 
 def _basic_auth(username, password):
