@@ -66,8 +66,9 @@ class WhispirRetry(Retry):
             mashery_error = response.getheader("X-Mashery-Error-Code")
             if mashery_error == 'ERR_403_DEVELOPER_OVER_QPD':
                 raise MaxRetryError(_pool, url, error)
-        return super().increment(method=method, url=url, response=response, error=error,
-                                 _pool=_pool, _stacktrace=_stacktrace)
+        return super().increment(
+            method=method, url=url, response=response, error=error,
+            _pool=_pool, _stacktrace=_stacktrace)
 
 
 DEFAULT_RETRY = WhispirRetry()
