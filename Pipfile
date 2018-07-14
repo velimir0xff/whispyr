@@ -4,7 +4,6 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-requests = "*"
 whispyr = {editable = true, path = "."}
 
 [dev-packages]
