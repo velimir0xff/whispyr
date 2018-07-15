@@ -26,12 +26,7 @@ a python client library for whispir.io
 Features
 --------
 
-* TODO
-
-Credits
--------
-
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
-
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+* Very thin client for `whispir.io` API.
+* Adding a new whispir endpoint as easy as declaring a new class (almost)
+* Configurable retry policies
+* Decent test code coverage
