@@ -371,8 +371,8 @@ class App(Container):
 
 
 def _singularize(string):
-    rules = {'ies': 'y', 'uses': 'us', 's': ''}
-    for suffix, replacement in rules.items():
+    rules = [('ies', 'y'), ('uses', 'us'), ('s', '')]
+    for suffix, replacement in rules:
         if string.endswith(suffix):
             return string[:-len(suffix)] + replacement
 
