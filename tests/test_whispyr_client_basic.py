@@ -24,7 +24,8 @@ TEST_API_KEY = 'V4L1D4P1K3Y'
 @pytest.fixture(params=[{'retry': WhispirRetry()}])
 def whispir(request):
     params = request.param
-    return whispyr.Whispir(TEST_USERNAME, TEST_PASSWORD, TEST_API_KEY, **params)
+    return whispyr.Whispir(TEST_USERNAME, TEST_PASSWORD, TEST_API_KEY,
+                           **params)
 
 
 @httpretty.activate
@@ -72,7 +73,8 @@ def test_retry_succeeded(whispir):
         'Retry-After': 1
     }
 
-    qps_response = HTTPretty.Response(body='', status=403, adding_headers=qps_headers)
+    qps_response = HTTPretty.Response(
+        body='', status=403, adding_headers=qps_headers)
 
     httpretty.register_uri(
         httpretty.GET, re.compile(r'.*', re.M),
@@ -96,7 +98,8 @@ def test_retry_limit(whispir):
         'Retry-After': 1
     }
 
-    qps_response = HTTPretty.Response(body='', status=403, adding_headers=qps_headers)
+    qps_response = HTTPretty.Response(
+        body='', status=403, adding_headers=qps_headers)
 
     httpretty.register_uri(
         httpretty.GET, re.compile(r'.*', re.M),
@@ -115,19 +118,19 @@ def test_retry_limit(whispir):
     assert exc.response.status_code == 403
 
 
-
 @httpretty.activate
 def test_do_not_retry_qpd(whispir):
     qps_headers = {
         'X-Mashery-Error-Code': 'ERR_403_DEVELOPER_OVER_QPD',
         'X-Mashery-Error-Detail': 'Account Over Queries Per Day Limit',
-        'Retry-After': 20 * 60 * 60 # 20 hours in seconds
+        'Retry-After': 20 * 60 * 60  # 20 hours in seconds
     }
 
     httpretty.register_uri(
         httpretty.GET, re.compile(r'.*', re.M),
         responses=[
-            HTTPretty.Response(body='', status=403, adding_headers=qps_headers),
+            HTTPretty.Response(
+                body='', status=403, adding_headers=qps_headers),
             HTTPretty.Response(body='{}', status=200),
         ]
     )

@@ -50,8 +50,10 @@ def test_update_reponse_rule(workspace, cassette, response_rule):
 def test_delete_response_rule(workspace, cassette, response_rule):
     _test_delete(workspace.response_rules, response_rule['id'])
 
+
 @pytest.mark.parametrize('generic_response_rule', [False], indirect=True)
-def test_delete_generic_response_rule(whispir, cassette, generic_response_rule):
+def test_delete_generic_response_rule(
+        whispir, cassette, generic_response_rule):
     _test_delete(whispir.response_rules, generic_response_rule['id'])
 
 

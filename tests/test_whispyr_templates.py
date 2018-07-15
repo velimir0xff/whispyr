@@ -105,6 +105,7 @@ def test_update_template(workspace, cassette, template):
 def test_delete_template(workspace, cassette, template):
     _test_delete(workspace.templates, template)
 
+
 @pytest.mark.parametrize('generic_template', [False], indirect=True)
 def test_delete_generic_template(whispir, cassette, generic_template):
     _test_delete(whispir.templates, generic_template)

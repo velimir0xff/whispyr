@@ -3,7 +3,6 @@
 """YAML serializer"""
 
 import yaml
-import collections
 
 # Use the libYAML versions if possible
 try:

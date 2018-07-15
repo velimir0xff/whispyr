@@ -50,6 +50,7 @@ def test_update_contact(workspace, cassette, contact):
 def test_delete_contact(workspace, cassette, contact):
     _test_delete(workspace.contacts, contact['id'])
 
+
 @pytest.mark.parametrize('generic_contact', [False], indirect=True)
 def test_delete_generic_contact(whispir, cassette, generic_contact):
     _test_delete(whispir.contacts, generic_contact['id'])
@@ -71,6 +72,7 @@ def _check_list(workspace, contacts, expected_count):
     assert len(contacts) == expected_count
     for contact in contacts:
         _check_basic_contact(contact)
+
 
 def _check_basic_contact(contact):
     assert isinstance(contact, Contact)

@@ -62,6 +62,7 @@ def _check_list(workspace, apps, expected_count):
     for app in apps:
         _check_basic_app(app)
 
+
 def _check_basic_app(app):
     assert isinstance(app, App)
     assert 'id' in app
