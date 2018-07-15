@@ -10,6 +10,7 @@ whispyr
         :target: https://travis-ci.org/velimir0xff/whispyr
 
 .. image:: https://img.shields.io/coveralls/github/velimir0xff/whispyr/master.svg
+        :target: https://coveralls.io/github/velimir0xff/whispyr?branch=master
         :alt: Code coverage
 
 .. image:: https://readthedocs.org/projects/whispyr/badge/?version=latest
