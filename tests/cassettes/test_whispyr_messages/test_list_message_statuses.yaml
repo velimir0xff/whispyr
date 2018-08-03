@@ -15,14 +15,14 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/09CD9065116DF39F/messagestatus?apikey=V4L1D4P1K3Y&limit=20&offset=0
+      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/09CD9065116DF39F/messagestatus?apikey=V4L1D4P1K3Y
     response:
       body:
         string: |-
           {
             "messageStatuses" : [ {
               "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/09CD9065116DF39F/messagestatus?limit=20&offset=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/09CD9065116DF39F/messagestatus?apikey=V4L1D4P1K3Y",
                 "rel" : "self",
                 "method" : "GET"
               } ],

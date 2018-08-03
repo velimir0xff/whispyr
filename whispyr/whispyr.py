@@ -302,7 +302,7 @@ class Messages(Streamable, Collection):
     send = create
 
 
-class MessageStatuses(Collection):
+class MessageStatuses(Nonpaginatable, Collection):
 
     list_name = 'messageStatuses'
     resource = 'messagestatus'
