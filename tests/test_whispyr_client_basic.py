@@ -21,14 +21,12 @@ TEST_PASSWORD = 'P4ZZW0RD'
 TEST_API_KEY = 'V4L1D4P1K3Y'
 
 
-@pytest.fixture(params=[{'retry': WhispirRetry()}])
+@pytest.fixture
 def whispir(request):
-    params = request.param
-    return whispyr.Whispir(TEST_USERNAME, TEST_PASSWORD, TEST_API_KEY,
-                           **params)
+    with httpretty.enabled():
+        yield whispyr.Whispir(TEST_USERNAME, TEST_PASSWORD, TEST_API_KEY)
 
 
-@httpretty.activate
 def test_basic_auth(whispir):
     httpretty.register_uri(httpretty.GET, re.compile(r'.*', re.M), body='{}')
     whispir.request('get', 'workspaces')
@@ -41,7 +39,6 @@ def test_basic_auth(whispir):
     assert basic_auth == expected_basic
 
 
-@httpretty.activate
 def test_api_key_provided(whispir):
     httpretty.register_uri(httpretty.GET, re.compile(r'.*', re.M), body='{}')
     whispir.request('get', 'workspaces')
@@ -53,7 +50,6 @@ def test_api_key_provided(whispir):
     assert api_key == TEST_API_KEY
 
 
-@httpretty.activate
 def test_user_agent_is_set(whispir):
     httpretty.register_uri(httpretty.GET, re.compile(r'.*', re.M), body='{}')
     whispir.request('get', 'workspaces')
@@ -65,7 +61,6 @@ def test_user_agent_is_set(whispir):
     assert request.headers['User-Agent'] == expexted_agent
 
 
-@httpretty.activate
 def test_retry_succeeded(whispir):
     qps_headers = {
         'X-Mashery-Error-Code': 'ERR_403_DEVELOPER_OVER_QPS',
@@ -88,10 +83,7 @@ def test_retry_succeeded(whispir):
     assert whispir.request('get', 'workspaces') == {}
 
 
-@httpretty.activate
-@pytest.mark.parametrize('whispir', [{'retry': WhispirRetry(total=1)}],
-                         indirect=True)
-def test_retry_limit(whispir):
+def test_retry_limit():
     qps_headers = {
         'X-Mashery-Error-Code': 'ERR_403_DEVELOPER_OVER_QPS',
         'X-Mashery-Error-Detail': 'Account Over Queries Per Second Limit',
@@ -111,6 +103,10 @@ def test_retry_limit(whispir):
         ]
     )
 
+    retry = WhispirRetry(total=1)
+    whispir = whispyr.Whispir(
+        TEST_USERNAME, TEST_PASSWORD, TEST_API_KEY, retry=retry)
+
     with pytest.raises(ClientError) as excinfo:
         whispir.request('get', 'workspaces')
 
@@ -118,7 +114,6 @@ def test_retry_limit(whispir):
     assert exc.response.status_code == 403
 
 
-@httpretty.activate
 def test_do_not_retry_qpd(whispir):
     qps_headers = {
         'X-Mashery-Error-Code': 'ERR_403_DEVELOPER_OVER_QPD',
@@ -142,7 +137,6 @@ def test_do_not_retry_qpd(whispir):
     assert exc.response.status_code == 403
 
 
-@httpretty.activate
 def test_no_retry_for_forbidden(whispir):
     httpretty.register_uri(
         httpretty.GET, re.compile(r'.*', re.M),

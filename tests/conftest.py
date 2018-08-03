@@ -12,13 +12,18 @@ import uuid
 import random
 import hashlib
 
-from collections import ByteString
+from six import binary_type
 
 from vcr import VCR
 from vcr.request import Request
 from vcr.util import CaseInsensitiveDict
 
 from whispyr import Whispir
+
+try:
+    from functools import singledispatch
+except ImportError:
+    from singledispatch import singledispatch
 
 
 TEST_USERNAME = 'U53RN4M3'
@@ -230,7 +235,7 @@ def scrub_pattern(pattern, replacement=''):
     def scrub_them_all(seq):
         return list(map(scrub_it, seq))
 
-    @functools.singledispatch
+    @singledispatch
     def before_record(response):
         if 'Set-Cookie' in response['headers']:
             del response['headers']['Set-Cookie']
@@ -276,7 +281,7 @@ def compose(functions):
 
 
 def replace(string, pattern, replacement):
-    if isinstance(string, ByteString):
+    if isinstance(string, binary_type):
         pattern = pattern.encode('ascii')
         replacement = replacement.encode('ascii')
     return string.replace(pattern, replacement)
