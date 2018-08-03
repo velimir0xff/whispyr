@@ -15,3 +15,5 @@ deploy:
     tags: true
     repo: velimir0xff/whispyr
     python: 3.6
+env:
+  - POST_COVERAGE_COMMAND=coveralls
