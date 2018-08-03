@@ -11,7 +11,7 @@ interactions:
         Content-Type:
           - application/vnd.whispir.workspace-v1+json
         User-Agent:
-          - whispyr/0.1.0
+          - whispyr/0.2.0
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -111,7 +111,7 @@ interactions:
         Content-Type:
           - application/vnd.whispir.workspace-v1+json
         User-Agent:
-          - whispyr/0.1.0
+          - whispyr/0.2.0
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -211,7 +211,7 @@ interactions:
         Content-Type:
           - application/vnd.whispir.workspace-v1+json
         User-Agent:
-          - whispyr/0.1.0
+          - whispyr/0.2.0
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
