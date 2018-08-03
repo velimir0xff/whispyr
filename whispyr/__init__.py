@@ -4,7 +4,7 @@
 
 __author__ = """Grigory Starinkin"""
 __email__ = 'starinkin@gmail.com'
-__version__ = '0.2.0'
+__version__ = '0.2.1'
 
 from .whispyr import Whispir, WhispirRetry
 

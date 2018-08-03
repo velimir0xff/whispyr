@@ -2,6 +2,11 @@
 History
 =======
 
+0.2.1 (2018-08-03)
+------------------
+
+* Workaround broken pagination for messagestatus endpoint
+
 0.2.0 (2018-08-03)
 ------------------
 
