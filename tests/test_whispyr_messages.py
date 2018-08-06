@@ -60,6 +60,18 @@ def test_list_message_statuses(workspace, cassette):
         assert 'categories' in status
 
 
+def test_list_message_detailed_statuses(whispir, cassette):
+    # message ID here is explicitly specified as it's easier than to
+    # send a response back from test
+    message = whispir.messages.Message(id='64271CF61AE5F786')
+    statuses = message.statuses.list(view='detailed')
+    statuses = list(statuses)
+    assert len(statuses) > 0
+    for status in statuses:
+        assert isinstance(status, MessageStatus)
+        assert 'status' in status
+
+
 def test_list_message_responses(workspace, cassette):
     # message ID here is explicitly specified as it's easier than to
     # send a response back from test
