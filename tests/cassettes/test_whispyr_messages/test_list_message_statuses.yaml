@@ -15,14 +15,14 @@ interactions:
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/09CD9065116DF39F/messagestatus?apikey=V4L1D4P1K3Y
+      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/09CD9065116DF39F/messagestatus?apikey=V4L1D4P1K3Y&limit=0
     response:
       body:
         string: |-
           {
             "messageStatuses" : [ {
               "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/09CD9065116DF39F/messagestatus?apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages/09CD9065116DF39F/messagestatus?limit=0&apikey=V4L1D4P1K3Y",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -59,17 +59,19 @@ interactions:
         Content-Type:
           - application/vnd.whispir.messagestatus-v1+json
         Date:
-          - Tue, 27 Mar 2018 23:03:50 GMT
+          - Mon, 06 Aug 2018 08:56:08 GMT
         Expires:
-          - Tue, 27 Mar 2018 23:03:50 GMT
+          - Mon, 06 Aug 2018 08:56:08 GMT
         Server:
           - Apache
         Vary:
           - Accept-Encoding
         X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-31.mashery.com
+          - prod-j-worker-tlsv1-ap-southeast-2a-01.mashery.com
         content-length:
-          - '794'
+          - '771'
+        transfer-encoding:
+          - chunked
       status:
         code: 200
         message: OK

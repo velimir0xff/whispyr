@@ -252,6 +252,15 @@ class Streamable(object):
             kwargs['offset'] += limit
 
 
+class Limitless(object):
+    """This is a hack for broken whispir.io pagination when there's
+    only option to get list of all items is to pass limit=0"""
+
+    def _list(self, path, **kwargs):
+        kwargs['limit'] = 0
+        return self._get_page(path, **kwargs)
+
+
 class Container(UserDict, object):
 
     def __init__(self, collection, id=None, **kwargs):
@@ -302,7 +311,7 @@ class Messages(Streamable, Collection):
     send = create
 
 
-class MessageStatuses(Nonpaginatable, Collection):
+class MessageStatuses(Limitless, Collection):
 
     list_name = 'messageStatuses'
     resource = 'messagestatus'
