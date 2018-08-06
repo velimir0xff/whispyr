@@ -67,7 +67,8 @@ def make_vcr(pytestconfig, cassette_library_dir):
         'filter_headers': [
             ('authorization', replace_auth),
             ('set-cookie', None),
-            ('cookie', None)
+            ('cookie', None),
+            ('User-Agent', None)
         ],
         'filter_query_parameters': [('apikey', TEST_API_KEY)],
         'before_record_response': scrubber,

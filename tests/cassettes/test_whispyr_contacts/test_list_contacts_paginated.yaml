@@ -13,8 +13,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -109,8 +107,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -198,8 +194,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -293,8 +287,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -380,8 +372,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -475,8 +465,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -562,8 +550,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -657,8 +643,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -744,8 +728,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -839,8 +821,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -928,8 +908,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -1023,8 +1001,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -1112,8 +1088,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -1209,8 +1183,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -1298,8 +1270,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -1395,8 +1365,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -1482,8 +1450,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -1577,8 +1543,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -1664,8 +1628,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -1759,8 +1721,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -1846,8 +1806,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -1941,8 +1899,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -2028,8 +1984,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -2125,8 +2079,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -2212,8 +2164,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -2307,8 +2257,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -2396,8 +2344,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -2491,8 +2437,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -2578,8 +2522,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -2673,8 +2615,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -2760,8 +2700,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -2855,8 +2793,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -2942,8 +2878,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -3037,8 +2971,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -3124,8 +3056,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -3219,8 +3149,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -3306,8 +3234,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -3401,8 +3327,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -3488,8 +3412,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -3583,8 +3505,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -3670,8 +3590,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -3765,8 +3683,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -3852,8 +3768,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -3947,8 +3861,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -4034,8 +3946,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -4129,8 +4039,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -4216,8 +4124,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -4311,8 +4217,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -4398,8 +4302,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -4493,8 +4395,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -4580,8 +4480,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -4677,8 +4575,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -4766,8 +4662,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -4863,8 +4757,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -4950,8 +4842,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -5047,8 +4937,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -5134,8 +5022,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -5229,8 +5115,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -5316,8 +5200,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -5411,8 +5293,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -5498,8 +5378,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -5593,8 +5471,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -5680,8 +5556,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -5775,8 +5649,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -5864,8 +5736,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -5959,8 +5829,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -6046,8 +5914,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -6141,8 +6007,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -6228,8 +6092,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -6323,8 +6185,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -6410,8 +6270,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -6505,8 +6363,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -6594,8 +6450,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -6691,8 +6545,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -6780,8 +6632,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -6875,8 +6725,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -6962,8 +6810,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -7057,8 +6903,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -7144,8 +6988,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -7239,8 +7081,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -7326,8 +7166,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -7421,8 +7259,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -7508,8 +7344,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -7603,8 +7437,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -7690,8 +7522,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -7785,8 +7615,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -7872,8 +7700,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -7967,8 +7793,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -8054,8 +7878,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -8149,8 +7971,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -8236,8 +8056,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -8331,8 +8149,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -8420,8 +8236,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -8517,8 +8331,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -8604,8 +8416,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -8699,8 +8509,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -8786,8 +8594,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -8881,8 +8687,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -8968,8 +8772,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -9063,8 +8865,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -9150,8 +8950,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -9245,8 +9043,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -9332,8 +9128,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -9427,8 +9221,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -9514,8 +9306,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -9609,8 +9399,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -9696,8 +9484,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -9791,8 +9577,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -9878,8 +9662,6 @@ interactions:
           - '484'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: POST
@@ -9973,8 +9755,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -10057,8 +9837,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -10368,8 +10146,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -10683,8 +10459,6 @@ interactions:
           - keep-alive
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: GET
@@ -10931,8 +10705,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -10969,8 +10741,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11007,8 +10777,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11045,8 +10813,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11083,8 +10849,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11121,8 +10885,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11159,8 +10921,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11197,8 +10957,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11235,8 +10993,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11273,8 +11029,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11311,8 +11065,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11349,8 +11101,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11387,8 +11137,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11425,8 +11173,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11463,8 +11209,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11501,8 +11245,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11539,8 +11281,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11577,8 +11317,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11615,8 +11353,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11653,8 +11389,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11691,8 +11425,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11729,8 +11461,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11767,8 +11497,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11805,8 +11533,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11843,8 +11569,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11881,8 +11605,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11919,8 +11641,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11957,8 +11677,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -11995,8 +11713,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12033,8 +11749,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12071,8 +11785,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12109,8 +11821,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12147,8 +11857,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12185,8 +11893,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12223,8 +11929,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12261,8 +11965,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12299,8 +12001,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12337,8 +12037,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12375,8 +12073,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12413,8 +12109,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12451,8 +12145,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12489,8 +12181,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12527,8 +12217,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12565,8 +12253,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12603,8 +12289,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12641,8 +12325,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12679,8 +12361,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12717,8 +12397,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12755,8 +12433,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12793,8 +12469,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12831,8 +12505,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12869,8 +12541,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12907,8 +12577,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12945,8 +12613,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
@@ -12983,8 +12649,6 @@ interactions:
           - '0'
         Content-Type:
           - application/vnd.whispir.contact-v1+json
-        User-Agent:
-          - whispyr/0.2.1
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
       method: DELETE
