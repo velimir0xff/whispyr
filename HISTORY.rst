@@ -2,6 +2,11 @@
 History
 =======
 
+0.2.2 (2018-08-06)
+------------------
+
+* Fix message statuses pagination with detailed view
+
 0.2.1 (2018-08-03)
 ------------------
 
