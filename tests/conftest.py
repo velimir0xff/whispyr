@@ -128,10 +128,8 @@ def app(request, whispir, workspace, gcm_api_key, rand_name, cassette):
 @pytest.fixture(params=[2])
 def apps(request, whispir, workspace, gcm_api_key, rand_name, cassette):
     num = request.param
-    return [
-        _create_fixture_app(
-            request, whispir.apps, workspace, gcm_api_key, rand_name)
-            for _ in range(num)]
+    return repeatfunc(_create_fixture_app, num,
+                      request, whispir.apps, workspace, gcm_api_key, rand_name)
 
 
 def _create_fixture_app(request, apps, workspace, gcm_api_key, rand_name,
@@ -316,3 +314,13 @@ def pytest_addoption(parser):
     parser.addoption('--vcr-mode', default='once',
                      choices=['once', 'new_episodes', 'none', 'all'],
                      help='Set VCR mode')
+
+
+def repeatfunc(func, times=None, *args):
+    """Repeat calls to func with specified arguments.
+
+    Example:  repeatfunc(random.random)
+    Stolen form:
+    https://docs.python.org/3/library/itertools.html#itertools-recipes
+    """
+    return itertools.starmap(func, itertools.repeat(args, times))
