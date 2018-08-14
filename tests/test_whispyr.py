@@ -6,4 +6,4 @@ import whispyr
 
 
 def test_version():
-    assert whispyr.__version__ == '0.2.2'
+    assert whispyr.__version__ == '0.3.0'
