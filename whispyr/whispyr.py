@@ -14,8 +14,6 @@ from requests.auth import HTTPBasicAuth, AuthBase
 from urllib3.util import Retry
 from urllib3.exceptions import MaxRetryError
 
-WHISPIR_BASE_URL = 'https://api.whispir.com'
-
 
 class WhispirError(Exception):
 
@@ -44,7 +42,7 @@ class WhispirAuth(AuthBase):
 
     def __call__(self, request):
         new_req = self._basic_auth(request)
-        new_req.prepare_url(new_req.url, {'apikey': self._api_key})
+        new_req.headers.update({'x-api-key': self._api_key})
         return new_req
 
 
@@ -75,8 +73,12 @@ DEFAULT_RETRY = WhispirRetry()
 
 class Whispir(object):
 
-    def __init__(self, username, password, api_key,
-                 base_url=WHISPIR_BASE_URL, page_size=20, retry=DEFAULT_RETRY):
+    def __init__(self, username, password, api_key, region='us', base_url=None,
+                 page_size=20, retry=DEFAULT_RETRY):
+        assert region or base_url, \
+            'either region or base_url has to be defined'
+        if not base_url:
+            base_url = 'https://api.{region}.whispir.com'.format(region=region)
         self._base_url = base_url
         self.page_size = page_size
         self._session = Session()

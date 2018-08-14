@@ -15,8 +15,10 @@ interactions:
           - application/vnd.whispir.message-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: POST
-      uri: https://api.whispir.com/messages?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/messages
     response:
       body:
         string: |-
@@ -27,20 +29,28 @@ interactions:
           - no-cache="set-cookie"
         Connection:
           - keep-alive
-        Content-Length:
-          - '45'
         Content-Type:
           - application/vnd.whispir.message-v1+json
         Date:
-          - Tue, 27 Mar 2018 23:03:41 GMT
+          - Tue, 14 Aug 2018 16:10:29 GMT
         Expires:
-          - Tue, 27 Mar 2018 23:03:41 GMT
+          - Tue, 14 Aug 2018 16:10:29 GMT
         Location:
-          - https://api.whispir.com/messages/857E5CC80C199252?apikey=V4L1D4P1K3Y
-        Server:
+          - https://api.whispir.com/messages/4E659C17F290583C
+        content-length:
+          - '45'
+        x-amz-apigw-id:
+          - LnzGTHigSK4FfGw=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Content-Length:
+          - '45'
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:10:29 GMT
+        x-amzn-Remapped-Server:
           - Apache
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-33.mashery.com
+        x-amzn-RequestId:
+          - 8fec0051-9fdc-11e8-80fd-69b5e836710a
       status:
         code: 202
         message: Accepted

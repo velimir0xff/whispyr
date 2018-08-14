@@ -12,19 +12,30 @@ interactions:
           - application/vnd.whispir.workspace-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: GET
-      uri: https://api.whispir.com/workspaces?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/workspaces
     response:
       body:
         string: |-
           {
             "workspaces" : [ {
+              "id" : "6DD8216F7FEAB9F6",
+              "projectName" : "69031942a42bbe6af90aa17460e9c536",
+              "status" : "A",
+              "link" : [ {
+                "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6",
+                "rel" : "self",
+                "method" : "GET"
+              } ]
+            }, {
               "id" : "8080DE5434485ED4",
               "projectName" : "api test",
               "projectNumber" : "42",
               "status" : "A",
               "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4?apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/workspaces/8080DE5434485ED4",
                 "rel" : "self",
                 "method" : "GET"
               } ]
@@ -35,7 +46,7 @@ interactions:
               "status" : "A",
               "billingcostcentre" : "na",
               "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/82C9C5DF11C63AED?apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/workspaces/82C9C5DF11C63AED",
                 "rel" : "self",
                 "method" : "GET"
               } ]
@@ -46,7 +57,7 @@ interactions:
               "status" : "A",
               "billingcostcentre" : "na",
               "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/C3A1B60DEED39BB3?apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/workspaces/C3A1B60DEED39BB3",
                 "rel" : "self",
                 "method" : "GET"
               } ]
@@ -57,7 +68,7 @@ interactions:
               "status" : "A",
               "billingcostcentre" : "na",
               "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/C7E1D64BD3F17B45?apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/workspaces/C7E1D64BD3F17B45",
                 "rel" : "self",
                 "method" : "GET"
               } ]
@@ -66,12 +77,12 @@ interactions:
               "projectName" : "whispyr tests",
               "status" : "A",
               "link" : [ {
-                "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982?apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982",
                 "rel" : "self",
                 "method" : "GET"
               } ]
             } ],
-            "status" : "1 to 5 of 5    ",
+            "status" : "1 to 6 of 6    ",
             "link" : [ ]
           }
       headers:
@@ -83,17 +94,23 @@ interactions:
         Content-Type:
           - application/vnd.whispir.workspace-v1+json
         Date:
-          - Tue, 27 Mar 2018 23:13:48 GMT
+          - Tue, 14 Aug 2018 16:25:30 GMT
         Expires:
-          - Tue, 27 Mar 2018 23:13:48 GMT
-        Server:
-          - Apache
+          - Tue, 14 Aug 2018 16:25:30 GMT
         Vary:
           - Accept-Encoding
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-31.mashery.com
         content-length:
-          - '1580'
+          - '1673'
+        x-amz-apigw-id:
+          - Ln1TFHh-SK4FigQ=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:25:30 GMT
+        x-amzn-Remapped-Server:
+          - Apache
+        x-amzn-RequestId:
+          - a8fae160-9fde-11e8-8655-3b328a01601b
       status:
         code: 200
         message: OK

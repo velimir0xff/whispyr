@@ -1,7 +1,7 @@
 interactions:
   - request:
       body: |-
-        {"name": "2e2bb4ce-6a79-4ded-84c5-b09c1b256204", "description": "8168ab62-c34a-47f3-9538-b60d1351d729", "responseTemplatePatterns": {"responseTemplatePattern": [{"name": "20dad506-ff53-4cdb-b044-0dce53c2bf4f", "textPrompt": "YES", "voicePrompt": "1", "spokenVoicePrompt": "to select YES", "pattern": "startswith", "colour": "#00947d"}]}}
+        {"name": "f771619d-4e20-4738-8734-151531b45732", "description": "04dc66a9-2de9-4740-b51b-a314d2d5e8c7", "responseTemplatePatterns": {"responseTemplatePattern": [{"name": "dc8def3d-07c3-42df-9e03-bb03bc0f8ca5", "textPrompt": "YES", "voicePrompt": "1", "spokenVoicePrompt": "to select YES", "pattern": "startswith", "colour": "#00947d"}]}}
       headers:
         Accept:
           - application/vnd.whispir.responserule-v1+json
@@ -15,18 +15,20 @@ interactions:
           - application/vnd.whispir.responserule-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: POST
-      uri: https://api.whispir.com/responserules?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/responserules
     response:
       body:
         string: |-
           {
-            "id" : "13C8D2066C40AC68",
-            "name" : "2e2bb4ce-6a79-4ded-84c5-b09c1b256204",
-            "description" : "8168ab62-c34a-47f3-9538-b60d1351d729",
+            "id" : "8A4A92EEDC595082",
+            "name" : "f771619d-4e20-4738-8734-151531b45732",
+            "description" : "04dc66a9-2de9-4740-b51b-a314d2d5e8c7",
             "responseTemplatePatterns" : {
               "responseTemplatePattern" : [ {
-                "name" : "20dad506-ff53-4cdb-b044-0dce53c2bf4f",
+                "name" : "dc8def3d-07c3-42df-9e03-bb03bc0f8ca5",
                 "textPrompt" : "YES",
                 "voicePrompt" : "1",
                 "spokenVoicePrompt" : "to select YES",
@@ -35,16 +37,16 @@ interactions:
               } ]
             },
             "link" : [ {
-              "uri" : "https://api.whispir.com/responserules/13C8D2066C40AC68?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/responserules/8A4A92EEDC595082",
               "rel" : "self",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/responserules/13C8D2066C40AC68?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/responserules/8A4A92EEDC595082",
               "rel" : "updateResponseRule",
               "method" : "PUT",
               "type" : "application/vnd.whispir.responserule-v1+xml,application/vnd.whispir.responserule-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/responserules/13C8D2066C40AC68?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/responserules/8A4A92EEDC595082",
               "rel" : "deleteResponseRule",
               "method" : "DELETE"
             } ]
@@ -58,19 +60,27 @@ interactions:
         Content-Type:
           - application/vnd.whispir.responserule-v1+json
         Date:
-          - Wed, 28 Mar 2018 22:01:30 GMT
+          - Tue, 14 Aug 2018 16:11:30 GMT
         Expires:
-          - Wed, 28 Mar 2018 22:01:30 GMT
+          - Tue, 14 Aug 2018 16:11:30 GMT
         Location:
-          - https://api.whispir.com/responserules/13C8D2066C40AC68?apikey=V4L1D4P1K3Y
-        Server:
-          - Apache
+          - https://api.whispir.com/responserules/8A4A92EEDC595082
         Vary:
           - Accept-Encoding
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-32.mashery.com
         content-length:
-          - '1037'
+          - '941'
+        x-amz-apigw-id:
+          - LnzP1E2-SK4FnOg=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Content-Length:
+          - '419'
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:11:30 GMT
+        x-amzn-Remapped-Server:
+          - Apache
+        x-amzn-RequestId:
+          - b453c35b-9fdc-11e8-9bf6-75a3d4c8a2b0
       status:
         code: 201
         message: Created
@@ -89,8 +99,10 @@ interactions:
           - application/vnd.whispir.responserule-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: DELETE
-      uri: https://api.whispir.com/responserules/13C8D2066C40AC68?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/responserules/8A4A92EEDC595082
     response:
       body:
         string: ''
@@ -99,14 +111,24 @@ interactions:
           - max-age=0
         Connection:
           - keep-alive
+        Content-Type:
+          - application/json
         Date:
-          - Wed, 28 Mar 2018 22:01:31 GMT
+          - Tue, 14 Aug 2018 16:11:30 GMT
         Expires:
-          - Wed, 28 Mar 2018 22:01:31 GMT
-        Server:
+          - Tue, 14 Aug 2018 16:11:30 GMT
+        content-length:
+          - '0'
+        x-amz-apigw-id:
+          - LnzP3FhfSK4Fmrw=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:11:30 GMT
+        x-amzn-Remapped-Server:
           - Apache
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-33.mashery.com
+        x-amzn-RequestId:
+          - b471f9cb-9fdc-11e8-a199-4d4b3139b41b
       status:
         code: 204
         message: No Content
@@ -123,8 +145,10 @@ interactions:
           - application/vnd.whispir.responserule-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: GET
-      uri: https://api.whispir.com/responserules/13C8D2066C40AC68?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/responserules/8A4A92EEDC595082
     response:
       body:
         string: |-
@@ -141,17 +165,25 @@ interactions:
         Content-Type:
           - application/vnd.whispir.responserule-v1+json
         Date:
-          - Wed, 28 Mar 2018 22:01:31 GMT
+          - Tue, 14 Aug 2018 16:11:30 GMT
         Expires:
-          - Wed, 28 Mar 2018 22:01:31 GMT
-        Server:
-          - Apache
+          - Tue, 14 Aug 2018 16:11:30 GMT
         Vary:
           - Accept-Encoding
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-30.mashery.com
         content-length:
           - '165'
+        x-amz-apigw-id:
+          - LnzP5HSryK4FS5g=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Content-Length:
+          - '153'
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:11:30 GMT
+        x-amzn-Remapped-Server:
+          - Apache
+        x-amzn-RequestId:
+          - b48f6cc0-9fdc-11e8-ab19-07e69564559d
       status:
         code: 404
         message: Not Found
