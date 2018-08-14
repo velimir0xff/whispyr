@@ -1,7 +1,7 @@
 interactions:
   - request:
       body: |-
-        {"projectName": "whispyr tests", "status": "A"}
+        {"projectName": "69031942a42bbe6af90aa17460e9c536", "status": "A"}
       headers:
         Accept:
           - application/vnd.whispir.workspace-v1+json
@@ -10,108 +10,110 @@ interactions:
         Connection:
           - keep-alive
         Content-Length:
-          - '47'
+          - '66'
         Content-Type:
           - application/vnd.whispir.workspace-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: POST
-      uri: https://api.whispir.com/workspaces?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/workspaces
     response:
       body:
         string: |-
           {
-            "id" : "B6302F7C7B9A8982",
-            "projectName" : "whispyr tests",
+            "id" : "6DD8216F7FEAB9F6",
+            "projectName" : "69031942a42bbe6af90aa17460e9c536",
             "status" : "A",
             "link" : [ {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6",
               "rel" : "self",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6",
               "rel" : "editWorkspaces",
               "method" : "PUT",
               "type" : "application/vnd.whispir.workspace-v1+xml,application/vnd.whispir.workspace-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6/messages",
               "rel" : "retrieveMessage",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6/messages",
               "rel" : "createMessage",
               "method" : "POST",
               "type" : "application/vnd.whispir.message-v1+xml,application/vnd.whispir.message-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6/messages",
               "rel" : "createMessage",
               "method" : "POST",
               "type" : "application/vnd.whispir.bulkmessage-v1+xml,application/vnd.whispir.bulkmessage-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6/contacts",
               "rel" : "retrieveContacts",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6/contacts",
               "rel" : "createContact",
               "method" : "POST",
               "type" : "application/vnd.whispir.contact-v1+xml,application/vnd.whispir.contact-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/users",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6/users",
               "rel" : "createUser",
               "method" : "POST",
               "type" : "application/vnd.whispir.user-v1+xml,application/vnd.whispir.user-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/users",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6/users",
               "rel" : "retrieveUsers",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6/templates",
               "rel" : "createTemplate",
               "method" : "POST",
               "type" : "application/vnd.whispir.template-v1+xml,application/vnd.whispir.template-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6/templates",
               "rel" : "retrieveTemplates",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/distributionlists",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6/distributionlists",
               "rel" : "createDistList",
               "method" : "POST",
               "type" : "application/vnd.whispir.distributionlist-v1+xml,application/vnd.whispir.distributionlist-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/distributionlists",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6/distributionlists",
               "rel" : "retrieveDistLists",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/scenarios",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6/scenarios",
               "rel" : "createScenario",
               "method" : "POST",
               "type" : "application/vnd.whispir.scenario-v1+xml,application/vnd.whispir.scenario-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/scenarios",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6/scenarios",
               "rel" : "retrieveScenarios",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6/responserules",
               "rel" : "retrieveResponseRules",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules",
+              "uri" : "https://api.whispir.com/workspaces/6DD8216F7FEAB9F6/responserules",
               "rel" : "createResponseRule",
               "method" : "POST",
               "type" : "application/vnd.whispir.responserule-v1+xml,application/vnd.whispir.responserule-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/resources?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/resources",
               "rel" : "createResource",
               "method" : "POST",
               "type" : "application/vnd.whispir.resource-v1+xml,application/vnd.whispir.resource-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/resources?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/resources",
               "rel" : "retrieveResources",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/resources?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/resources",
               "rel" : "importContacts",
               "method" : "POST",
               "type" : "application/vnd.whispir.importcontact-v1+xml,application/vnd.whispir.importcontact-v1+json"
@@ -126,19 +128,27 @@ interactions:
         Content-Type:
           - application/vnd.whispir.workspace-v1+json
         Date:
-          - Fri, 23 Mar 2018 14:05:17 GMT
+          - Tue, 14 Aug 2018 16:22:50 GMT
         Expires:
-          - Fri, 23 Mar 2018 14:05:17 GMT
+          - Tue, 14 Aug 2018 16:22:48 GMT
         Location:
-          - https://api.whispir.com/workspaces/B6302F7C7B9A8982?apikey=V4L1D4P1K3Y
-        Server:
-          - Apache
+          - https://api.whispir.com/workspaces/6DD8216F7FEAB9F6
         Vary:
           - Accept-Encoding
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-32.mashery.com
         content-length:
-          - '4014'
+          - '3873'
+        x-amz-apigw-id:
+          - Ln055EUgyK4FfGw=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Content-Length:
+          - '554'
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:22:48 GMT
+        x-amzn-Remapped-Server:
+          - Apache
+        x-amzn-RequestId:
+          - 48e0104b-9fde-11e8-80fd-69b5e836710a
       status:
         code: 201
         message: Created

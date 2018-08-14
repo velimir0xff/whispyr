@@ -33,6 +33,11 @@ TEST_GCM_API_KEY = '9OO9l3ClouDm355491n94P1K3y'
 
 
 @pytest.fixture
+def rand_name():
+    return hashlib.md5(str(uuid.uuid4()).encode('utf-8')).hexdigest()
+
+
+@pytest.fixture
 def whispir(pytestconfig):
     username = pytestconfig.getoption('--whispir-username')
     password = pytestconfig.getoption('--whispir-password')
@@ -68,9 +73,9 @@ def make_vcr(pytestconfig, cassette_library_dir):
             ('authorization', replace_auth),
             ('set-cookie', None),
             ('cookie', None),
-            ('User-Agent', None)
+            ('User-Agent', None),
+            ('x-api-key', TEST_API_KEY)
         ],
-        'filter_query_parameters': [('apikey', TEST_API_KEY)],
         'before_record_response': scrubber,
         'before_record_request': scrubber,
         'path_transformer': VCR.ensure_suffix('.yaml'),
@@ -112,22 +117,26 @@ def workspace(whispir):
     return whispir.workspaces.show(workspace['id'])
 
 
-@pytest.fixture(params=[False])
-def app(request, whispir, workspace, gcm_api_key, cassette):
+@pytest.fixture(params=[True])
+def app(request, whispir, workspace, gcm_api_key, rand_name, cassette):
     delete = request.param
     return _create_fixture_app(
-        request, whispir.apps, workspace, gcm_api_key, delete=delete)
+        request, whispir.apps, workspace, gcm_api_key, rand_name,
+        delete=delete)
 
 
 @pytest.fixture(params=[2])
-def apps(request, whispir, workspace, gcm_api_key, cassette):
+def apps(request, whispir, workspace, gcm_api_key, rand_name, cassette):
     num = request.param
-    return [_create_fixture_app(request, whispir.apps, workspace, gcm_api_key)
+    return [
+        _create_fixture_app(
+            request, whispir.apps, workspace, gcm_api_key, rand_name)
             for _ in range(num)]
 
 
-def _create_fixture_app(request, apps, workspace, gcm_api_key, delete=True):
-    name = hashlib.md5(str(uuid.uuid4()).encode('utf-8')).hexdigest()
+def _create_fixture_app(request, apps, workspace, gcm_api_key, rand_name,
+                        delete=True):
+    name = rand_name
     app = {
         'name': name,
         'description': 'App ({}) to test whispyr apps CRUD works'.format(name),
@@ -159,7 +168,7 @@ def _create_fixture_app(request, apps, workspace, gcm_api_key, delete=True):
     return app
 
 
-@pytest.fixture(params=[False])
+@pytest.fixture(params=[True])
 def contact(request, workspace, cassette):
     delete = request.param
     return _create_fixture_contact(

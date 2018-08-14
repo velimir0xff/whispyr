@@ -1,7 +1,7 @@
 interactions:
   - request:
       body: |-
-        {"firstName": "John", "lastName": "Wick", "status": "A", "timezone": "Australia/Melbourne", "workEmailAddress1": "success+9784e2ee-986a-487a-8cac-d53ec9fcf037@simulator.amazonses.com", "workMobilePhone1": "61424478400", "workCountry": "Australia", "messagingoptions": [{"channel": "sms", "enabled": "true", "primary": "WorkMobilePhone1"}, {"channel": "email", "enabled": "true", "primary": "WorkEmailAddress1"}, {"channel": "voice", "enabled": "true", "primary": "WorkMobilePhone1"}]}
+        {"firstName": "John", "lastName": "Wick", "status": "A", "timezone": "Australia/Melbourne", "workEmailAddress1": "success+5af92b4f-d16e-42d8-be8e-adec3e1c92ab@simulator.amazonses.com", "workMobilePhone1": "61426683754", "workCountry": "Australia", "messagingoptions": [{"channel": "sms", "enabled": "true", "primary": "WorkMobilePhone1"}, {"channel": "email", "enabled": "true", "primary": "WorkEmailAddress1"}, {"channel": "voice", "enabled": "true", "primary": "WorkMobilePhone1"}]}
       headers:
         Accept:
           - application/vnd.whispir.contact-v1+json
@@ -15,8 +15,10 @@ interactions:
           - application/vnd.whispir.contact-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: POST
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/workspaces/B6302F7C7B9A8982/contacts
     response:
       body:
         string: |-
@@ -29,13 +31,13 @@ interactions:
               "latitude" : 0.0,
               "type" : "CurrentLocation"
             } ],
-            "lastModifiedTime" : "2018-04-22T22:54:57+10:00",
+            "lastModifiedTime" : "2018-08-15T02:03:03+10:00",
             "status" : "A",
             "timezone" : "+10",
-            "workEmailAddress1" : "success+9784e2ee-986a-487a-8cac-d53ec9fcf037@simulator.amazonses.com",
-            "workMobilePhone1" : "61424478400",
+            "workEmailAddress1" : "success+5af92b4f-d16e-42d8-be8e-adec3e1c92ab@simulator.amazonses.com",
+            "workMobilePhone1" : "61426683754",
             "workCountry" : "Australia",
-            "mri" : "John_Wick.1372089.whispyr_tests@Contact.us.whispir.com",
+            "mri" : "John_Wick.3068489.whispyr_tests@Contact.us.whispir.com",
             "messagingoptions" : [ {
               "channel" : "sms",
               "primary" : "WorkMobilePhone1",
@@ -57,16 +59,16 @@ interactions:
             } ],
             "devices" : [ ],
             "link" : [ {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/A140FC98F3DF7FC6?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/FE99DA5B426C750A",
               "rel" : "self",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/A140FC98F3DF7FC6?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/FE99DA5B426C750A",
               "rel" : "updateContact",
               "method" : "PUT",
               "type" : "application/vnd.whispir.contact-v1+json,application/vnd.whispir.contact-v1+xml"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/A140FC98F3DF7FC6?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/FE99DA5B426C750A",
               "rel" : "deleteContact",
               "method" : "DELETE"
             } ]
@@ -80,21 +82,27 @@ interactions:
         Content-Type:
           - application/vnd.whispir.contact-v1+json
         Date:
-          - Sun, 22 Apr 2018 12:54:57 GMT
+          - Tue, 14 Aug 2018 16:03:03 GMT
         Expires:
-          - Sun, 22 Apr 2018 12:54:57 GMT
+          - Tue, 14 Aug 2018 16:03:03 GMT
         Location:
-          - https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/A140FC98F3DF7FC6?apikey=V4L1D4P1K3Y
-        Server:
-          - Apache
+          - https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/FE99DA5B426C750A
         Vary:
           - Accept-Encoding
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-31.mashery.com
         content-length:
-          - '1551'
-        transfer-encoding:
-          - chunked
+          - '1494'
+        x-amz-apigw-id:
+          - LnyAsHbryK4FQ7A=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Content-Length:
+          - '564'
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:03:03 GMT
+        x-amzn-Remapped-Server:
+          - Apache
+        x-amzn-RequestId:
+          - 866d6326-9fdb-11e8-be0a-efb8e1879712
       status:
         code: 201
         message: Created
@@ -111,8 +119,10 @@ interactions:
           - application/vnd.whispir.contact-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: GET
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/A140FC98F3DF7FC6?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/workspaces/B6302F7C7B9A8982/contacts/FE99DA5B426C750A
     response:
       body:
         string: |-
@@ -125,13 +135,13 @@ interactions:
               "latitude" : 0.0,
               "type" : "CurrentLocation"
             } ],
-            "lastModifiedTime" : "2018-04-22T22:54:57+10:00",
+            "lastModifiedTime" : "2018-08-15T02:03:03+10:00",
             "status" : "A",
             "timezone" : "+10",
-            "workEmailAddress1" : "success+9784e2ee-986a-487a-8cac-d53ec9fcf037@simulator.amazonses.com",
-            "workMobilePhone1" : "61424478400",
+            "workEmailAddress1" : "success+5af92b4f-d16e-42d8-be8e-adec3e1c92ab@simulator.amazonses.com",
+            "workMobilePhone1" : "61426683754",
             "workCountry" : "Australia",
-            "mri" : "John_Wick.1372089.whispyr_tests@Contact.us.whispir.com",
+            "mri" : "John_Wick.3068489.whispyr_tests@Contact.us.whispir.com",
             "messagingoptions" : [ {
               "channel" : "sms",
               "primary" : "WorkMobilePhone1",
@@ -153,7 +163,7 @@ interactions:
             } ],
             "devices" : [ ],
             "link" : [ {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/A140FC98F3DF7FC6?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/FE99DA5B426C750A",
               "rel" : "self",
               "method" : "GET"
             } ]
@@ -166,17 +176,25 @@ interactions:
         Content-Type:
           - application/vnd.whispir.contact-v1+json
         Date:
-          - Sun, 22 Apr 2018 12:54:57 GMT
+          - Tue, 14 Aug 2018 16:03:03 GMT
         Expires:
-          - Sun, 22 Apr 2018 12:54:57 GMT
-        Server:
-          - Apache
+          - Tue, 14 Aug 2018 16:03:03 GMT
         Vary:
           - Accept-Encoding
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-32.mashery.com
         content-length:
-          - '1115'
+          - '1096'
+        x-amz-apigw-id:
+          - LnyAuGjxSK4FigQ=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Content-Length:
+          - '504'
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:03:03 GMT
+        x-amzn-Remapped-Server:
+          - Apache
+        x-amzn-RequestId:
+          - 868de34d-9fdb-11e8-8655-3b328a01601b
       status:
         code: 200
         message: OK
@@ -196,8 +214,10 @@ interactions:
           - application/vnd.whispir.contact-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: PUT
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/A140FC98F3DF7FC6?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/workspaces/B6302F7C7B9A8982/contacts/FE99DA5B426C750A
     response:
       body:
         string: ''
@@ -206,14 +226,24 @@ interactions:
           - max-age=0
         Connection:
           - keep-alive
+        Content-Type:
+          - application/json
         Date:
-          - Sun, 22 Apr 2018 12:54:58 GMT
+          - Tue, 14 Aug 2018 16:03:04 GMT
         Expires:
-          - Sun, 22 Apr 2018 12:54:58 GMT
-        Server:
+          - Tue, 14 Aug 2018 16:03:04 GMT
+        content-length:
+          - '0'
+        x-amz-apigw-id:
+          - LnyAwEoByK4FX3g=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:03:04 GMT
+        x-amzn-Remapped-Server:
           - Apache
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-30.mashery.com
+        x-amzn-RequestId:
+          - 86abf2ff-9fdb-11e8-9189-1daf62ae7bf2
       status:
         code: 204
         message: No Content
@@ -230,8 +260,10 @@ interactions:
           - application/vnd.whispir.contact-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: GET
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/A140FC98F3DF7FC6?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/workspaces/B6302F7C7B9A8982/contacts/FE99DA5B426C750A
     response:
       body:
         string: |-
@@ -243,11 +275,11 @@ interactions:
               "latitude" : 0.0,
               "type" : "CurrentLocation"
             } ],
-            "lastModifiedTime" : "2018-04-22T12:54:58Z",
+            "lastModifiedTime" : "2018-08-14T16:03:04Z",
             "status" : "A",
             "timezone" : "0",
             "workCountry" : "Australia",
-            "mri" : "John_updated_Wick_updated.1372089.whispyr_tests@Contact.us.whispir.com",
+            "mri" : "John_updated_Wick_updated.3068489.whispyr_tests@Contact.us.whispir.com",
             "messagingoptions" : [ {
               "channel" : "sms",
               "primary" : "WorkMobilePhone1",
@@ -269,7 +301,7 @@ interactions:
             } ],
             "devices" : [ ],
             "link" : [ {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/A140FC98F3DF7FC6?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/FE99DA5B426C750A",
               "rel" : "self",
               "method" : "GET"
             } ]
@@ -282,17 +314,25 @@ interactions:
         Content-Type:
           - application/vnd.whispir.contact-v1+json
         Date:
-          - Sun, 22 Apr 2018 12:54:58 GMT
+          - Tue, 14 Aug 2018 16:03:04 GMT
         Expires:
-          - Sun, 22 Apr 2018 12:54:58 GMT
-        Server:
-          - Apache
+          - Tue, 14 Aug 2018 16:03:04 GMT
         Vary:
           - Accept-Encoding
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-31.mashery.com
         content-length:
-          - '984'
+          - '965'
+        x-amz-apigw-id:
+          - LnyAzG2zyK4FZew=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Content-Length:
+          - '434'
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:03:04 GMT
+        x-amzn-Remapped-Server:
+          - Apache
+        x-amzn-RequestId:
+          - 86ce9632-9fdb-11e8-a1e0-9385e1948569
       status:
         code: 200
         message: OK
@@ -311,8 +351,10 @@ interactions:
           - application/vnd.whispir.contact-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: DELETE
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts/A140FC98F3DF7FC6?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/workspaces/B6302F7C7B9A8982/contacts/FE99DA5B426C750A
     response:
       body:
         string: ''
@@ -321,14 +363,24 @@ interactions:
           - max-age=0
         Connection:
           - keep-alive
+        Content-Type:
+          - application/json
         Date:
-          - Sun, 22 Apr 2018 12:54:59 GMT
+          - Tue, 14 Aug 2018 16:03:04 GMT
         Expires:
-          - Sun, 22 Apr 2018 12:54:59 GMT
-        Server:
+          - Tue, 14 Aug 2018 16:03:04 GMT
+        content-length:
+          - '0'
+        x-amz-apigw-id:
+          - LnyA1EWASK4FZQw=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:03:04 GMT
+        x-amzn-Remapped-Server:
           - Apache
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-31.mashery.com
+        x-amzn-RequestId:
+          - 86eca50f-9fdb-11e8-a9a8-ed6c1c6322e4
       status:
         code: 204
         message: No Content

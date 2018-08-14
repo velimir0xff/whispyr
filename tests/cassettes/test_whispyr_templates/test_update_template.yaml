@@ -15,8 +15,10 @@ interactions:
           - application/vnd.whispir.template-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: POST
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/workspaces/B6302F7C7B9A8982/templates
     response:
       body:
         string: |-
@@ -49,17 +51,17 @@ interactions:
             },
             "voice" : { },
             "responseTemplateId" : "7D9A8AAA54747711",
-            "id" : "314F4CC135FA6BFB",
+            "id" : "9BF39F3757EF3CDE",
             "link" : [ {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/314F4CC135FA6BFB?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/9BF39F3757EF3CDE",
               "rel" : "self",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/314F4CC135FA6BFB?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/9BF39F3757EF3CDE",
               "rel" : "updateTemplate",
               "method" : "PUT"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/314F4CC135FA6BFB?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/9BF39F3757EF3CDE",
               "rel" : "deleteTemplate",
               "method" : "DELETE"
             } ]
@@ -73,19 +75,25 @@ interactions:
         Content-Type:
           - application/vnd.whispir.template-v1+json
         Date:
-          - Tue, 27 Mar 2018 23:11:21 GMT
+          - Tue, 14 Aug 2018 16:12:32 GMT
         Expires:
-          - Tue, 27 Mar 2018 23:11:21 GMT
+          - Tue, 14 Aug 2018 16:12:32 GMT
         Location:
-          - https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/314F4CC135FA6BFB?apikey=V4L1D4P1K3Y
-        Server:
-          - Apache
+          - https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/9BF39F3757EF3CDE
         Vary:
           - Accept-Encoding
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-32.mashery.com
         content-length:
-          - '1206'
+          - '1110'
+        x-amz-apigw-id:
+          - LnzZoGxcSK4FaWQ=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:12:32 GMT
+        x-amzn-Remapped-Server:
+          - Apache
+        x-amzn-RequestId:
+          - d9ac01c1-9fdc-11e8-b4a7-97f183991aab
       status:
         code: 201
         message: Created
@@ -105,8 +113,10 @@ interactions:
           - application/vnd.whispir.template-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: PUT
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/314F4CC135FA6BFB?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/workspaces/B6302F7C7B9A8982/templates/9BF39F3757EF3CDE
     response:
       body:
         string: ''
@@ -115,14 +125,24 @@ interactions:
           - max-age=0
         Connection:
           - keep-alive
+        Content-Type:
+          - application/json
         Date:
-          - Tue, 27 Mar 2018 23:11:22 GMT
+          - Tue, 14 Aug 2018 16:12:33 GMT
         Expires:
-          - Tue, 27 Mar 2018 23:11:22 GMT
-        Server:
+          - Tue, 14 Aug 2018 16:12:33 GMT
+        content-length:
+          - '0'
+        x-amz-apigw-id:
+          - LnzZqGgUyK4FigQ=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:12:33 GMT
+        x-amzn-Remapped-Server:
           - Apache
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-30.mashery.com
+        x-amzn-RequestId:
+          - d9ce7dbb-9fdc-11e8-8655-3b328a01601b
       status:
         code: 204
         message: No Content
@@ -139,8 +159,10 @@ interactions:
           - application/vnd.whispir.template-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: GET
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/314F4CC135FA6BFB?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/workspaces/B6302F7C7B9A8982/templates/9BF39F3757EF3CDE
     response:
       body:
         string: |-
@@ -173,17 +195,17 @@ interactions:
             },
             "voice" : { },
             "responseTemplateId" : "7D9A8AAA54747711",
-            "id" : "314F4CC135FA6BFB",
+            "id" : "9BF39F3757EF3CDE",
             "link" : [ {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/314F4CC135FA6BFB?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/9BF39F3757EF3CDE",
               "rel" : "self",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/314F4CC135FA6BFB?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/9BF39F3757EF3CDE",
               "rel" : "deleteTemplate",
               "method" : "DELETE"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/314F4CC135FA6BFB?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/9BF39F3757EF3CDE",
               "rel" : "updateTemplate",
               "method" : "PUT"
             } ]
@@ -196,17 +218,23 @@ interactions:
         Content-Type:
           - application/vnd.whispir.template-v1+json
         Date:
-          - Tue, 27 Mar 2018 23:11:23 GMT
+          - Tue, 14 Aug 2018 16:12:33 GMT
         Expires:
-          - Tue, 27 Mar 2018 23:11:23 GMT
-        Server:
-          - Apache
+          - Tue, 14 Aug 2018 16:12:33 GMT
         Vary:
           - Accept-Encoding
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-33.mashery.com
         content-length:
-          - '1214'
+          - '1118'
+        x-amz-apigw-id:
+          - LnzZtE6bSK4Fmaw=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:12:33 GMT
+        x-amzn-Remapped-Server:
+          - Apache
+        x-amzn-RequestId:
+          - d9f47bf5-9fdc-11e8-901b-2f2fa07bacd6
       status:
         code: 200
         message: OK
@@ -225,8 +253,10 @@ interactions:
           - application/vnd.whispir.template-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: DELETE
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates/314F4CC135FA6BFB?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/workspaces/B6302F7C7B9A8982/templates/9BF39F3757EF3CDE
     response:
       body:
         string: ''
@@ -235,14 +265,24 @@ interactions:
           - max-age=0
         Connection:
           - keep-alive
+        Content-Type:
+          - application/json
         Date:
-          - Tue, 27 Mar 2018 23:11:23 GMT
+          - Tue, 14 Aug 2018 16:12:33 GMT
         Expires:
-          - Tue, 27 Mar 2018 23:11:23 GMT
-        Server:
+          - Tue, 14 Aug 2018 16:12:33 GMT
+        content-length:
+          - '0'
+        x-amz-apigw-id:
+          - LnzZvGzJSK4FZew=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:12:33 GMT
+        x-amzn-Remapped-Server:
           - Apache
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2b-31.mashery.com
+        x-amzn-RequestId:
+          - da15992c-9fdc-11e8-a1e0-9385e1948569
       status:
         code: 204
         message: No Content

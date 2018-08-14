@@ -12,8 +12,10 @@ interactions:
           - application/vnd.whispir.workspace-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: GET
-      uri: https://api.whispir.com/workspaces/B6302F7C7B9A8982?apikey=V4L1D4P1K3Y
+      uri: https://api.us.whispir.com/workspaces/B6302F7C7B9A8982
     response:
       body:
         string: |-
@@ -22,93 +24,93 @@ interactions:
             "projectName" : "whispyr tests",
             "status" : "A",
             "link" : [ {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982",
               "rel" : "self",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982",
               "rel" : "editWorkspaces",
               "method" : "PUT",
               "type" : "application/vnd.whispir.workspace-v1+xml,application/vnd.whispir.workspace-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages",
               "rel" : "retrieveMessage",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages",
               "rel" : "createMessage",
               "method" : "POST",
               "type" : "application/vnd.whispir.message-v1+xml,application/vnd.whispir.message-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/messages",
               "rel" : "createMessage",
               "method" : "POST",
               "type" : "application/vnd.whispir.bulkmessage-v1+xml,application/vnd.whispir.bulkmessage-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts",
               "rel" : "retrieveContacts",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/contacts",
               "rel" : "createContact",
               "method" : "POST",
               "type" : "application/vnd.whispir.contact-v1+xml,application/vnd.whispir.contact-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/users?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/users",
               "rel" : "createUser",
               "method" : "POST",
               "type" : "application/vnd.whispir.user-v1+xml,application/vnd.whispir.user-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/users?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/users",
               "rel" : "retrieveUsers",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates",
               "rel" : "createTemplate",
               "method" : "POST",
               "type" : "application/vnd.whispir.template-v1+xml,application/vnd.whispir.template-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/templates",
               "rel" : "retrieveTemplate",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/distributionlists?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/distributionlists",
               "rel" : "createDistList",
               "method" : "POST",
               "type" : "application/vnd.whispir.distributionlist-v1+xml,application/vnd.whispir.distributionlist-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/distributionlists?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/distributionlists",
               "rel" : "retrieveDistLists",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982",
               "rel" : "createScenario",
               "method" : "POST",
               "type" : "application/vnd.whispir.scenario-v1+xml,application/vnd.whispir.scenario-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/scenarios?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/scenarios",
               "rel" : "retrieveScenarios",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules",
               "rel" : "retrieveResponseRules",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/responserules",
               "rel" : "createResponseRule",
               "method" : "POST",
               "type" : "application/vnd.whispir.responserule-v1+xml,application/vnd.whispir.responserule-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/resources?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/resources",
               "rel" : "createResource",
               "method" : "POST",
               "type" : "application/vnd.whispir.resource-v1+xml,application/vnd.whispir.resource-v1+json"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/resources?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/resources",
               "rel" : "retrieveResources",
               "method" : "GET"
             }, {
-              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/resources?apikey=V4L1D4P1K3Y",
+              "uri" : "https://api.whispir.com/workspaces/B6302F7C7B9A8982/resources",
               "rel" : "importContacts",
               "method" : "POST",
               "type" : "application/vnd.whispir.importcontact-v1+xml,application/vnd.whispir.importcontact-v1+json"
@@ -123,17 +125,23 @@ interactions:
         Content-Type:
           - application/vnd.whispir.workspace-v1+json
         Date:
-          - Tue, 27 Mar 2018 23:13:50 GMT
+          - Tue, 14 Aug 2018 16:25:30 GMT
         Expires:
-          - Tue, 27 Mar 2018 23:13:50 GMT
-        Server:
-          - Apache
+          - Tue, 14 Aug 2018 16:25:30 GMT
         Vary:
           - Accept-Encoding
-        X-Mashery-Responder:
-          - prod-j-worker-ap-southeast-2a-30.mashery.com
         content-length:
-          - '4534'
+          - '3894'
+        x-amz-apigw-id:
+          - Ln1TMFT0yK4FZQw=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:25:30 GMT
+        x-amzn-Remapped-Server:
+          - Apache
+        x-amzn-RequestId:
+          - a96d2af9-9fde-11e8-a9a8-ed6c1c6322e4
       status:
         code: 200
         message: OK

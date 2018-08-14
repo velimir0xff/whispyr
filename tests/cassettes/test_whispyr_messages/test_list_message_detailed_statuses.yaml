@@ -12,8 +12,10 @@ interactions:
           - application/vnd.whispir.messagestatus-v1+json
         authorization:
           - Basic VTUzUk40TTM6UDRaWlcwUkQ=
+        x-api-key:
+          - V4L1D4P1K3Y
       method: GET
-      uri: https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?apikey=V4L1D4P1K3Y&limit=0&view=detailed
+      uri: https://api.us.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0
     response:
       body:
         string: |-
@@ -22,7 +24,7 @@ interactions:
               "name" : "success+0@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -44,7 +46,7 @@ interactions:
               "name" : "success+100@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -66,7 +68,7 @@ interactions:
               "name" : "success+101@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -88,7 +90,7 @@ interactions:
               "name" : "success+102@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -110,7 +112,7 @@ interactions:
               "name" : "success+103@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -132,7 +134,7 @@ interactions:
               "name" : "success+104@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -154,7 +156,7 @@ interactions:
               "name" : "success+105@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -176,7 +178,7 @@ interactions:
               "name" : "success+106@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -198,7 +200,7 @@ interactions:
               "name" : "success+107@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -220,7 +222,7 @@ interactions:
               "name" : "success+108@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -242,7 +244,7 @@ interactions:
               "name" : "success+109@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -264,7 +266,7 @@ interactions:
               "name" : "success+10@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -286,7 +288,7 @@ interactions:
               "name" : "success+110@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -308,7 +310,7 @@ interactions:
               "name" : "success+111@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -330,7 +332,7 @@ interactions:
               "name" : "success+112@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -352,7 +354,7 @@ interactions:
               "name" : "success+113@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -374,7 +376,7 @@ interactions:
               "name" : "success+114@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -396,7 +398,7 @@ interactions:
               "name" : "success+115@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -418,7 +420,7 @@ interactions:
               "name" : "success+116@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -440,7 +442,7 @@ interactions:
               "name" : "success+117@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -462,7 +464,7 @@ interactions:
               "name" : "success+118@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -484,7 +486,7 @@ interactions:
               "name" : "success+119@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -506,7 +508,7 @@ interactions:
               "name" : "success+11@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -528,7 +530,7 @@ interactions:
               "name" : "success+120@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -550,7 +552,7 @@ interactions:
               "name" : "success+121@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -572,7 +574,7 @@ interactions:
               "name" : "success+122@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -594,7 +596,7 @@ interactions:
               "name" : "success+123@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -616,7 +618,7 @@ interactions:
               "name" : "success+124@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -638,7 +640,7 @@ interactions:
               "name" : "success+125@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -660,7 +662,7 @@ interactions:
               "name" : "success+126@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -682,7 +684,7 @@ interactions:
               "name" : "success+127@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -704,7 +706,7 @@ interactions:
               "name" : "success+128@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -726,7 +728,7 @@ interactions:
               "name" : "success+129@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -748,7 +750,7 @@ interactions:
               "name" : "success+12@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -770,7 +772,7 @@ interactions:
               "name" : "success+130@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -792,7 +794,7 @@ interactions:
               "name" : "success+131@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -814,7 +816,7 @@ interactions:
               "name" : "success+132@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -836,7 +838,7 @@ interactions:
               "name" : "success+133@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -858,7 +860,7 @@ interactions:
               "name" : "success+134@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -880,7 +882,7 @@ interactions:
               "name" : "success+135@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -902,7 +904,7 @@ interactions:
               "name" : "success+136@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -924,7 +926,7 @@ interactions:
               "name" : "success+137@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -946,7 +948,7 @@ interactions:
               "name" : "success+138@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -968,7 +970,7 @@ interactions:
               "name" : "success+139@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -990,7 +992,7 @@ interactions:
               "name" : "success+13@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1012,7 +1014,7 @@ interactions:
               "name" : "success+140@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1034,7 +1036,7 @@ interactions:
               "name" : "success+141@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1056,7 +1058,7 @@ interactions:
               "name" : "success+142@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1078,7 +1080,7 @@ interactions:
               "name" : "success+143@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1100,7 +1102,7 @@ interactions:
               "name" : "success+144@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1122,7 +1124,7 @@ interactions:
               "name" : "success+145@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1144,7 +1146,7 @@ interactions:
               "name" : "success+146@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1166,7 +1168,7 @@ interactions:
               "name" : "success+147@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1188,7 +1190,7 @@ interactions:
               "name" : "success+148@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1210,7 +1212,7 @@ interactions:
               "name" : "success+149@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1232,7 +1234,7 @@ interactions:
               "name" : "success+14@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1254,7 +1256,7 @@ interactions:
               "name" : "success+150@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1276,7 +1278,7 @@ interactions:
               "name" : "success+151@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1298,7 +1300,7 @@ interactions:
               "name" : "success+152@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1320,7 +1322,7 @@ interactions:
               "name" : "success+153@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1342,7 +1344,7 @@ interactions:
               "name" : "success+154@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1364,7 +1366,7 @@ interactions:
               "name" : "success+155@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1386,7 +1388,7 @@ interactions:
               "name" : "success+156@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1408,7 +1410,7 @@ interactions:
               "name" : "success+157@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1430,7 +1432,7 @@ interactions:
               "name" : "success+158@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1452,7 +1454,7 @@ interactions:
               "name" : "success+159@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1474,7 +1476,7 @@ interactions:
               "name" : "success+15@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1496,7 +1498,7 @@ interactions:
               "name" : "success+160@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1518,7 +1520,7 @@ interactions:
               "name" : "success+161@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1540,7 +1542,7 @@ interactions:
               "name" : "success+162@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1562,7 +1564,7 @@ interactions:
               "name" : "success+163@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1584,7 +1586,7 @@ interactions:
               "name" : "success+164@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1606,7 +1608,7 @@ interactions:
               "name" : "success+165@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1628,7 +1630,7 @@ interactions:
               "name" : "success+166@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1650,7 +1652,7 @@ interactions:
               "name" : "success+167@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1672,7 +1674,7 @@ interactions:
               "name" : "success+168@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1694,7 +1696,7 @@ interactions:
               "name" : "success+169@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1716,7 +1718,7 @@ interactions:
               "name" : "success+16@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1738,7 +1740,7 @@ interactions:
               "name" : "success+170@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1760,7 +1762,7 @@ interactions:
               "name" : "success+171@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1782,7 +1784,7 @@ interactions:
               "name" : "success+172@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1804,7 +1806,7 @@ interactions:
               "name" : "success+173@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1826,7 +1828,7 @@ interactions:
               "name" : "success+174@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1848,7 +1850,7 @@ interactions:
               "name" : "success+175@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1870,7 +1872,7 @@ interactions:
               "name" : "success+176@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1892,7 +1894,7 @@ interactions:
               "name" : "success+177@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1914,7 +1916,7 @@ interactions:
               "name" : "success+178@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1936,7 +1938,7 @@ interactions:
               "name" : "success+179@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1958,7 +1960,7 @@ interactions:
               "name" : "success+17@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -1980,7 +1982,7 @@ interactions:
               "name" : "success+180@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2002,7 +2004,7 @@ interactions:
               "name" : "success+181@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2024,7 +2026,7 @@ interactions:
               "name" : "success+182@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2046,7 +2048,7 @@ interactions:
               "name" : "success+183@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2068,7 +2070,7 @@ interactions:
               "name" : "success+184@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2090,7 +2092,7 @@ interactions:
               "name" : "success+185@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2112,7 +2114,7 @@ interactions:
               "name" : "success+186@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2134,7 +2136,7 @@ interactions:
               "name" : "success+187@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2156,7 +2158,7 @@ interactions:
               "name" : "success+188@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2178,7 +2180,7 @@ interactions:
               "name" : "success+189@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2200,7 +2202,7 @@ interactions:
               "name" : "success+18@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2222,7 +2224,7 @@ interactions:
               "name" : "success+190@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2244,7 +2246,7 @@ interactions:
               "name" : "success+191@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2266,7 +2268,7 @@ interactions:
               "name" : "success+192@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2288,7 +2290,7 @@ interactions:
               "name" : "success+193@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2310,7 +2312,7 @@ interactions:
               "name" : "success+194@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2332,7 +2334,7 @@ interactions:
               "name" : "success+195@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2354,7 +2356,7 @@ interactions:
               "name" : "success+196@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2376,7 +2378,7 @@ interactions:
               "name" : "success+197@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2398,7 +2400,7 @@ interactions:
               "name" : "success+198@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2420,7 +2422,7 @@ interactions:
               "name" : "success+199@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2442,7 +2444,7 @@ interactions:
               "name" : "success+19@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2464,7 +2466,7 @@ interactions:
               "name" : "success+1@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2486,7 +2488,7 @@ interactions:
               "name" : "success+200@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2508,7 +2510,7 @@ interactions:
               "name" : "success+201@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2530,7 +2532,7 @@ interactions:
               "name" : "success+202@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2552,7 +2554,7 @@ interactions:
               "name" : "success+20@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2574,7 +2576,7 @@ interactions:
               "name" : "success+21@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2596,7 +2598,7 @@ interactions:
               "name" : "success+22@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2618,7 +2620,7 @@ interactions:
               "name" : "success+23@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2640,7 +2642,7 @@ interactions:
               "name" : "success+24@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2662,7 +2664,7 @@ interactions:
               "name" : "success+25@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2684,7 +2686,7 @@ interactions:
               "name" : "success+26@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2706,7 +2708,7 @@ interactions:
               "name" : "success+27@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2728,7 +2730,7 @@ interactions:
               "name" : "success+28@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2750,7 +2752,7 @@ interactions:
               "name" : "success+29@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2772,7 +2774,7 @@ interactions:
               "name" : "success+2@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2794,7 +2796,7 @@ interactions:
               "name" : "success+30@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2816,7 +2818,7 @@ interactions:
               "name" : "success+31@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2838,7 +2840,7 @@ interactions:
               "name" : "success+32@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2860,7 +2862,7 @@ interactions:
               "name" : "success+33@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2882,7 +2884,7 @@ interactions:
               "name" : "success+34@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2904,7 +2906,7 @@ interactions:
               "name" : "success+35@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2926,7 +2928,7 @@ interactions:
               "name" : "success+36@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2948,7 +2950,7 @@ interactions:
               "name" : "success+37@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2970,7 +2972,7 @@ interactions:
               "name" : "success+38@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -2992,7 +2994,7 @@ interactions:
               "name" : "success+39@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3014,7 +3016,7 @@ interactions:
               "name" : "success+3@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3036,7 +3038,7 @@ interactions:
               "name" : "success+40@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3058,7 +3060,7 @@ interactions:
               "name" : "success+41@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3080,7 +3082,7 @@ interactions:
               "name" : "success+42@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3102,7 +3104,7 @@ interactions:
               "name" : "success+43@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3124,7 +3126,7 @@ interactions:
               "name" : "success+44@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3146,7 +3148,7 @@ interactions:
               "name" : "success+45@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3168,7 +3170,7 @@ interactions:
               "name" : "success+46@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3190,7 +3192,7 @@ interactions:
               "name" : "success+47@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3212,7 +3214,7 @@ interactions:
               "name" : "success+48@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3234,7 +3236,7 @@ interactions:
               "name" : "success+49@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3256,7 +3258,7 @@ interactions:
               "name" : "success+4@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3278,7 +3280,7 @@ interactions:
               "name" : "success+50@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3300,7 +3302,7 @@ interactions:
               "name" : "success+51@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3322,7 +3324,7 @@ interactions:
               "name" : "success+52@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3344,7 +3346,7 @@ interactions:
               "name" : "success+53@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3366,7 +3368,7 @@ interactions:
               "name" : "success+54@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3388,7 +3390,7 @@ interactions:
               "name" : "success+55@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3410,7 +3412,7 @@ interactions:
               "name" : "success+56@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3432,7 +3434,7 @@ interactions:
               "name" : "success+57@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3454,7 +3456,7 @@ interactions:
               "name" : "success+58@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3476,7 +3478,7 @@ interactions:
               "name" : "success+59@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3498,7 +3500,7 @@ interactions:
               "name" : "success+5@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3520,7 +3522,7 @@ interactions:
               "name" : "success+60@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3542,7 +3544,7 @@ interactions:
               "name" : "success+61@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3564,7 +3566,7 @@ interactions:
               "name" : "success+62@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3586,7 +3588,7 @@ interactions:
               "name" : "success+63@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3608,7 +3610,7 @@ interactions:
               "name" : "success+64@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3630,7 +3632,7 @@ interactions:
               "name" : "success+65@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3652,7 +3654,7 @@ interactions:
               "name" : "success+66@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3674,7 +3676,7 @@ interactions:
               "name" : "success+67@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3696,7 +3698,7 @@ interactions:
               "name" : "success+68@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3718,7 +3720,7 @@ interactions:
               "name" : "success+69@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3740,7 +3742,7 @@ interactions:
               "name" : "success+6@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3762,7 +3764,7 @@ interactions:
               "name" : "success+70@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3784,7 +3786,7 @@ interactions:
               "name" : "success+71@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3806,7 +3808,7 @@ interactions:
               "name" : "success+72@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3828,7 +3830,7 @@ interactions:
               "name" : "success+73@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3850,7 +3852,7 @@ interactions:
               "name" : "success+74@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3872,7 +3874,7 @@ interactions:
               "name" : "success+75@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3894,7 +3896,7 @@ interactions:
               "name" : "success+76@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3916,7 +3918,7 @@ interactions:
               "name" : "success+77@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3938,7 +3940,7 @@ interactions:
               "name" : "success+78@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3960,7 +3962,7 @@ interactions:
               "name" : "success+79@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -3982,7 +3984,7 @@ interactions:
               "name" : "success+7@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4004,7 +4006,7 @@ interactions:
               "name" : "success+80@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4026,7 +4028,7 @@ interactions:
               "name" : "success+81@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4048,7 +4050,7 @@ interactions:
               "name" : "success+82@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4070,7 +4072,7 @@ interactions:
               "name" : "success+83@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4092,7 +4094,7 @@ interactions:
               "name" : "success+84@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4114,7 +4116,7 @@ interactions:
               "name" : "success+85@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4136,7 +4138,7 @@ interactions:
               "name" : "success+86@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4158,7 +4160,7 @@ interactions:
               "name" : "success+87@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4180,7 +4182,7 @@ interactions:
               "name" : "success+88@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4202,7 +4204,7 @@ interactions:
               "name" : "success+89@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4224,7 +4226,7 @@ interactions:
               "name" : "success+8@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4246,7 +4248,7 @@ interactions:
               "name" : "success+90@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4268,7 +4270,7 @@ interactions:
               "name" : "success+91@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4290,7 +4292,7 @@ interactions:
               "name" : "success+92@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4312,7 +4314,7 @@ interactions:
               "name" : "success+93@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4334,7 +4336,7 @@ interactions:
               "name" : "success+94@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4356,7 +4358,7 @@ interactions:
               "name" : "success+95@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4378,7 +4380,7 @@ interactions:
               "name" : "success+96@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4400,7 +4402,7 @@ interactions:
               "name" : "success+97@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4422,7 +4424,7 @@ interactions:
               "name" : "success+98@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4444,7 +4446,7 @@ interactions:
               "name" : "success+99@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4466,7 +4468,7 @@ interactions:
               "name" : "success+9@simulator.amazonses.com",
               "info" : " Email message sent OK. ",
               "link" : [ {
-                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?view=detailed&limit=0&apikey=V4L1D4P1K3Y",
+                "uri" : "https://api.whispir.com/messages/64271CF61AE5F786/messagestatus?limit=0&view=detailed",
                 "rel" : "self",
                 "method" : "GET"
               } ],
@@ -4497,17 +4499,23 @@ interactions:
         Content-Type:
           - application/vnd.whispir.messagestatus-v1+json
         Date:
-          - Mon, 06 Aug 2018 08:52:23 GMT
+          - Tue, 14 Aug 2018 16:10:36 GMT
         Expires:
-          - Mon, 06 Aug 2018 08:52:23 GMT
-        Server:
-          - Apache
+          - Tue, 14 Aug 2018 16:10:34 GMT
         Vary:
           - Accept-Encoding
-        X-Mashery-Responder:
-          - prod-j-worker-tlsv1-ap-southeast-2a-01.mashery.com
         content-length:
-          - '126530'
+          - '122673'
+        x-amz-apigw-id:
+          - LnzHGF7XyK4FaWQ=
+        x-amzn-Remapped-Connection:
+          - keep-alive
+        x-amzn-Remapped-Date:
+          - Tue, 14 Aug 2018 16:10:34 GMT
+        x-amzn-Remapped-Server:
+          - Apache
+        x-amzn-RequestId:
+          - 92f9dcc1-9fdc-11e8-b4a7-97f183991aab
       status:
         code: 200
         message: OK

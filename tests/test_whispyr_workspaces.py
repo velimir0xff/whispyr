@@ -5,9 +5,8 @@
 from whispyr import Workspace
 
 
-def test_create_workspace(cassette, whispir):
-    workspace = whispir.workspaces.create(
-        projectName='whispyr tests', status='A')
+def test_create_workspace(cassette, whispir, rand_name):
+    workspace = whispir.workspaces.create(projectName=rand_name, status='A')
     assert isinstance(workspace, Workspace)
     assert 'id' in workspace
 

@@ -45,8 +45,8 @@ def test_api_key_provided(whispir):
 
     assert httpretty.has_request()
     request = httpretty.last_request()
-    assert 'apikey' in request.querystring
-    api_key = request.querystring['apikey'][0]
+    assert 'x-api-key' in request.headers
+    api_key = request.headers['x-api-key']
     assert api_key == TEST_API_KEY
 
 
